@@ -2,9 +2,13 @@
 
 Challenge Room 1 is a room.
 
-In Challenge Room 1 is a supporter called the experimentation table. On the experimentation table is a container called the potion tray. On the experimentation table is a thing called the recipe book. On the experimentation table is a container called a beaker. In Challenge Room 1 is a thing called the broken vial.
+In Challenge Room 1 is a supporter called the experimentation table. On the experimentation table is a container called the potion tray. On the experimentation table is a thing called the recipe book. On the experimentation table is a container called a beaker. The carrying capacity of the beaker is 1. In Challenge Room 1 is a thing called the broken vial. In Challenge Room 1 is a thing called the stone encasing.
 
-In the potion tray is a thing called the red vial. In the potion tray is a thing called the yellow vial. In the potion tray is a thing called the blue vial. In the potion tray is a thing called the white vial. In the potion tray is a thing called the black vial. In the potion tray is a thing called the clear vial. 
+The red vial is a thing. The yellow vial is a thing. The blue vial is a thing. The white vial is a thing. The black vial is a thing. The clear vial is a thing.
+
+In the potion tray is the red vial, the yellow vial, the blue vial, the white vial, the black vial, the clear vial. 
+
+The purple potion is a thing. The purple potion is nowhere. The suspicious potion is a thing. The suspicious potion is nowhere. The red gem is a thing. The red gem is nowhere.
 
 North of Challenge Room 1 is a room called Exit Room.
 
@@ -24,6 +28,8 @@ Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thin
 
 In Challenge Room 3 is the old table, the locked chest, Wall Piece Right, Wall Piece Up, stack of pebbles, Y-shaped wooden stick, magical staff.
 
+[ ignition implementation ]
+
 Understand "ignite [something] with [something preferably held]" as igniting it with.
 
 Igniting it with is an action applying to two things.
@@ -38,10 +44,13 @@ Check igniting it with:
 	if the noun is not the man-eating vines:
 		say "[The noun] is not flammable."
 		
+[crafting implementation ]
 
 Understand "combine [something] with [something]" as combining it with. Combining it with is an action applying to two carried things. Understand the command "connect" as "combine".
 
 Understand the command "attach" as something new. Understand "attach [something] to [something]" as combining it with.
+
+Understand the command "craft" as something new. Understand "craft [something] with [something]" as combining it with.
 
 The combining it with action has an object called the item built.
 
@@ -64,6 +73,81 @@ Carry out combining it with:
 
 Report combining it with:
 	say "You now have [an item built]."
-
-
 	
+[ brewing implementation ]
+
+Understand the command "brew" as something new. Understand "brew [something] with [something]" as brewing it with. Brewing it with is an action applying to two things.
+
+The brewing it with action has an object called the potion.
+
+Setting action variables for brewing something with something:
+	let L be {the red vial, the yellow vial, the blue vial, the white vial, the black vial, the clear vial};
+	if the nothing is in the beaker:
+		if the noun is the red vial:
+			if the second noun is the blue vial:
+				now the potion is the purple potion;
+			otherwise if the second noun is listed in L:
+				now the potion is the suspicious potion;
+		otherwise if the noun is the blue vial:
+			if the second noun is the red vial:
+				now the potion is the purple potion;
+			otherwise if the second noun is listed in L:
+				now the potion is the suspicious potion;
+		otherwise if the noun is listed in L:
+			if the second noun is listed in L:
+				now the potion is the suspicious potion;
+
+Check brewing it with:
+	if something is in the beaker:
+		say "There is no space in the beaker for a new potion." instead;
+	otherwise if the potion is nothing:
+		say "You can't mix [the noun] and [the second noun] into anything useful." instead;
+
+Carry out brewing it with:
+	move the potion to the beaker.
+
+Report brewing it with:
+	say "You now have [a potion]."
+	
+[ dumping implementation ]
+
+Understand the command "dump" as something new. Understand "dump [something]" as dumping it. Dumping it is an action applying to a thing.
+
+Check dumping it:
+	if the noun is not in a container:
+		say "The [the noun] can't be dumped.";
+	otherwise if the noun is not the purple potion and the noun is not the suspicious potion:
+		say "The [the noun] can't be dumped.";
+
+Carry out dumping it:
+	if the thing is in the beaker:
+		if the purple potion is in the beaker:
+			now the purple potion is nowhere;
+		otherwise if the suspicious potion is in the beaker:
+			now the suspicious potion is nowhere;
+
+Report dumping it:
+	say "The [noun] fizzled away."
+	
+[ potion use implementation ]
+
+Understand the command "use" as something new. Understand "use [something] on [something]" as using it on. Using it on is an action applying to two things.
+
+Check using it on:
+	if the noun is not the purple potion and the noun is not the suspicious potion:
+		say "You cannot use [noun] on [second noun].";
+		
+Carry out using it on:
+	if the noun is the purple potion:
+		now the purple potion is nowhere;
+		if the second noun is the stone encasing:
+			now the stone encasing is nowhere;
+			now the red gem is in Challenge Room 1;
+	otherwise if the noun is the suspicious potion:
+		now the suspicious potion is nowhere;
+
+Report using it on:	
+	if the noun is the purple potion and the second noun is the stone encasing:
+		say "The stone encasing fizzled away. A red gem is left in its place.";
+	otherwise:
+		say "Nothing happened.";
