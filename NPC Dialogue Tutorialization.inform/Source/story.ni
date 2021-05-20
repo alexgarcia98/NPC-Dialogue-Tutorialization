@@ -20,7 +20,7 @@ The wall torch is a thing. The man-eating vines is a thing.
 
 In Challenge Room 2 is the wall torch, the vines.
 
-Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The locked chest is a container. The locked chest is lockable and locked. The matching key of locked chest is the invisible key. The magic magnifying glass is a thing. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of pebbles is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the locked chest. The magical staff is a thing.
+Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The locked chest is a container. The locked chest is lockable and locked. The matching key of locked chest is the invisible key. The magic magnifying glass is a thing. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of pebbles is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the locked chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere.
 
 In Challenge Room 3 is the old table, the locked chest, Wall Piece Right, Wall Piece Up, stack of pebbles, Y-shaped wooden stick, magical staff.
 
@@ -37,3 +37,33 @@ Report igniting it with:
 Check igniting it with:
 	if the noun is not the man-eating vines:
 		say "[The noun] is not flammable."
+		
+
+Understand "combine [something] with [something]" as combining it with. Combining it with is an action applying to two carried things. Understand the command "connect" as "combine".
+
+Understand the command "attach" as something new. Understand "attach [something] to [something]" as combining it with.
+
+The combining it with action has an object called the item built.
+
+Setting action variables for combining something with something:
+	if the noun is the rubber band:
+		if the second noun is the y-shaped wooden stick:
+			now the item built is the slingshot;
+	otherwise if the noun is the y-shaped wooden stick:
+		if the second noun is the rubber band:
+			now the item built is the slingshot;
+
+Check combining it with:
+	if the item built is nothing,
+		say "You can't combine [the noun] and [the second noun] into anything useful." instead.
+
+Carry out combining it with:
+	move the item built to the holder of the noun;
+	now the noun is nowhere;
+	now the second noun is nowhere.
+
+Report combining it with:
+	say "You now have [an item built]."
+
+
+	

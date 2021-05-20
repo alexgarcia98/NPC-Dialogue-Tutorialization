@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-10"/>
+  <activeNode nodeId="node-26"/>
   <item nodeId="node-1">
     <command xml:space="preserve">NPC Dialogue Tutorialization</command>
-    <result xml:space="preserve">NPC Dialogue Tutorialization&#x000A;An Interactive Fiction by Alexander Garcia&#x000A;Release 1 / Serial number 210517 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Challenge Room 1&#x000A;You can see the experimentation table (on which are the potion tray (in which are the red vial, the yellow vial, the blue vial, the white vial, the black vial and the clear vial), the recipe book and a beaker (empty)) and the broken vial here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">NPC Dialogue Tutorialization&#x000A;An Interactive Fiction by Alexander Garcia&#x000A;Release 1 / Serial number 210519 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Challenge Room 1&#x000A;You can see the experimentation table (on which are the potion tray (in which are the red vial, the yellow vial, the blue vial, the white vial, the black vial and the clear vial), the recipe book and a beaker (empty)) and the broken vial here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -18,15 +18,18 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-3"/>
+      <child nodeId="node-11"/>
     </children>
   </item>
   <item nodeId="node-3">
     <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You can see Wall Piece Right, Wall Piece Up, a locked chest (closed), an old table (on which are Wall Piece Down, an invisible key, a rubber band and a lifting potion), a Y-shaped wooden stick and a stack of pebbles here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You can see Wall Piece Right, Wall Piece Up, a locked chest (closed), an old table (on which are Wall Piece Down, an invisible key, a rubber band and a lifting potion), a Y-shaped wooden stick, a stack of pebbles and a magical staff here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-4"/>
+      <child nodeId="node-18"/>
+      <child nodeId="node-22"/>
     </children>
   </item>
   <item nodeId="node-4">
@@ -85,6 +88,141 @@
   </item>
   <item nodeId="node-10">
     <command xml:space="preserve">go inside the supply closet</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-18">
+    <command xml:space="preserve">take y-shaped wooden stick</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-19"/>
+    </children>
+  </item>
+  <item nodeId="node-19">
+    <command xml:space="preserve">take rubber band</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-20"/>
+    </children>
+  </item>
+  <item nodeId="node-20">
+    <command xml:space="preserve">craft y-shaped wooden stick, rubber band together</command>
+    <result xml:space="preserve">Y-shaped wooden stick: rubber band: That isn't available.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-21"/>
+    </children>
+  </item>
+  <item nodeId="node-21">
+    <command xml:space="preserve">craft y-shaped wooden stick and rubber band together</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-22">
+    <command xml:space="preserve">take rubber band</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-23"/>
+    </children>
+  </item>
+  <item nodeId="node-23">
+    <command xml:space="preserve">take y-shaped wooden stick</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-24"/>
+    </children>
+  </item>
+  <item nodeId="node-24">
+    <command xml:space="preserve">combine rubber band with y-shaped wooden stick</command>
+    <result xml:space="preserve">You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-25"/>
+    </children>
+  </item>
+  <item nodeId="node-25">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-26"/>
+    </children>
+  </item>
+  <item nodeId="node-26">
+    <command xml:space="preserve">combine slingshot with slingshot</command>
+    <result xml:space="preserve">You can't combine the slingshot and the slingshot into anything useful.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-11">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Challenge Room 2&#x000A;You can see a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-12"/>
+    </children>
+  </item>
+  <item nodeId="node-12">
+    <command xml:space="preserve">take torch</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-13"/>
+    </children>
+  </item>
+  <item nodeId="node-13">
+    <command xml:space="preserve">ignite man-eating vines with torch</command>
+    <result xml:space="preserve">The the man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-14"/>
+    </children>
+  </item>
+  <item nodeId="node-14">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-15"/>
+    </children>
+  </item>
+  <item nodeId="node-15">
+    <command xml:space="preserve">look around</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-16"/>
+    </children>
+  </item>
+  <item nodeId="node-16">
+    <command xml:space="preserve">look torch</command>
+    <result xml:space="preserve">You see nothing special about the wall torch.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-17"/>
+    </children>
+  </item>
+  <item nodeId="node-17">
+    <command xml:space="preserve">look vines</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
