@@ -12,11 +12,19 @@ The purple potion is a thing. The purple potion is nowhere. The suspicious potio
 
 North of Challenge Room 1 is a room called Exit Room.
 
-West of the Exit Room is a room called Challenge Room 2.
+West of the Exit Room is a room called Challenge Room 2 South.
+
+Challenge Room 2 North is a room.
+
+The trench is north of Challenge Room 2 South and south of Challenge Room 2 North. The trench is a door.
+
+The trench is lockable and locked. 
+
+In Challenge Room 2 North is a supporter called the yellow pedestal. On the yellow pedestal is a thing called the yellow gem.
 
 East of the Exit Room is a room called Challenge Room 3.
 
-Inside from Challenge Room 2 is a room called Supply Closet.
+West of Challenge Room 2 is a room called Supply Closet.
 
 In Supply Closet is a thing called the suspicious broom.
 
@@ -30,19 +38,20 @@ In Challenge Room 3 is the old table, the locked chest, Wall Piece Right, Wall P
 
 [ ignition implementation ]
 
-Understand "ignite [something] with [something preferably held]" as igniting it with.
-
-Igniting it with is an action applying to two things.
+Understand "ignite [something] with [something preferably held]" as igniting it with. Igniting it with is an action applying to two things. 
+Understand the command "burn" as something new. Understand "burn [something] with [something preferably held]" as igniting it with.
 
 Carry out igniting it with:
 	now the noun is nowhere.
 	
 Report igniting it with:
-	say "The [the noun] has been burnt to a crisp."
+	say "The [noun] has been burnt to a crisp."
 
 Check igniting it with:
+	if the second noun is not the torch:
+		say "You can't burn something with [second noun]";
 	if the noun is not the man-eating vines:
-		say "[The noun] is not flammable."
+		say "[noun] is not flammable.";
 		
 [crafting implementation ]
 
@@ -151,3 +160,30 @@ Report using it on:
 		say "The stone encasing fizzled away. A red gem is left in its place.";
 	otherwise:
 		say "Nothing happened.";
+		
+[ broom flying implementation ]
+
+Understand the command "fly" as something new. Understand "fly on [something]" as flying on. Flying on is an action applying to one thing.
+
+Check flying on:
+	if the noun is not the suspicious broom:
+		say "You cannot fly on [noun].";
+
+Carry out flying on:
+	if the holder of the noun is in Challenge Room 2 South:
+		if the vines are nowhere:
+			now the holder of the noun is in Challenge Room 2 North;
+	otherwise if the holder of the noun is in Challenge Room 2 North:
+		now the holder of the noun is in Challenge Room 2 South;
+
+Report flying on:
+	if the holder of the noun is in Challenge Room 2 North:
+		if the vines are nowhere:
+			say "You have flown into the north side of the room.";
+		otherwise:
+			say "As you approach the man-eating vines, a shiver goes down your entire body. You decide against flying across.";
+	otherwise if the holder of the noun is in Challenge Room 2 South:
+		say "You have flown into the south side of the room.";
+	otherwise:
+		say "You cannot fly in here.";
+		
