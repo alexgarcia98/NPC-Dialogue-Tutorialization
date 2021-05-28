@@ -91,6 +91,8 @@ Report combining it with:
 
 Understand the command "brew" as something new. Understand "brew [something] with [something]" as brewing it with. Brewing it with is an action applying to two things.
 
+Understand the command "mix" as something new. Understand "mix [something] with [something]" as brewing it with.
+
 The brewing it with action has an object called the potion.
 
 Setting action variables for brewing something with something:
@@ -146,6 +148,8 @@ Report dumping it:
 
 Understand the command "use" as something new. Understand "use [something] on [something]" as using it on. Using it on is an action applying to two things.
 
+Understand the command "pour" as something new. Understand "pour [something] on [something]" as using it on.
+
 Check using it on:
 	if the noun is not the purple potion and the noun is not the suspicious potion:
 		say "You cannot use [noun] on [second noun].";
@@ -168,6 +172,8 @@ Report using it on:
 [ broom flying implementation ]
 
 Understand the command "fly" as something new. Understand "fly on [something]" as flying on. Flying on is an action applying to one thing.
+
+Understand the command "ride" as something new. Understand "ride on [something]" as flying on. 
 
 Check flying on:
 	if the noun is not the suspicious broom:
