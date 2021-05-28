@@ -12,6 +12,10 @@ The purple potion is a thing. The purple potion is nowhere. The suspicious potio
 
 North of Challenge Room 1 is a room called Exit Room.
 
+The formidable gate is north of the Exit Room. The formidable gate is a door. The formidable gate is lockable and locked.
+
+North of the formidable gate is a room called Last Room.
+
 West of the Exit Room is a room called Challenge Room 2 South.
 
 Challenge Room 2 North is a room.
@@ -32,9 +36,9 @@ The wall torch is a thing. The man-eating vines is a thing.
 
 In Challenge Room 2 is the wall torch, the vines.
 
-Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The locked chest is a container. The locked chest is lockable and locked. The matching key of locked chest is the invisible key. The magic magnifying glass is a thing. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of pebbles is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the locked chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere.
+Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The locked chest is a container. The locked chest is lockable and locked. The matching key of locked chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the locked chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. Wall Piece Right is nowhere. Wall Piece Up is nowhere. The suspended net is a thing. The torn net is a thing. The torn net is nowhere. The broken wall is a thing. The blue pedestal is a thing. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal.
 
-In Challenge Room 3 is the old table, the locked chest, Wall Piece Right, Wall Piece Up, stack of pebbles, Y-shaped wooden stick, magical staff.
+In Challenge Room 3 is the old table, the locked chest, stack of boulders, Y-shaped wooden stick, net, magical staff, broken wall.
 
 [ ignition implementation ]
 
@@ -187,3 +191,193 @@ Report flying on:
 	otherwise:
 		say "You cannot fly in here.";
 		
+[ slingshot implementation ]
+
+Understand the command "shoot" as something new. Understand "shoot [something] with [something preferably held]" as shooting it with. Shooting it with is an action applying to two things.
+
+Check shooting it with:
+	if the second noun is not the slingshot:
+		say "You cannot use [second noun] to shoot things with."
+		
+Carry out shooting it with:
+	if the noun is the suspended net:
+		now the suspended net is nowhere;
+		now the torn net is in Challenge Room 3;
+		now Wall Piece Right is in Challenge Room 3;
+	
+Report shooting it with:
+	if the noun is the suspended net:
+		say "You picked up a nearby rock and shot [the noun]. [The noun] plummeted to the ground, along with Wall Piece Right.";
+	otherwise:
+		say "You picked up a nearby rock and shot [the noun]. [The noun] does not appear to be damaged.";
+		
+[ lift potion implementation ]
+
+Lift status is a kind of value. The lift statuses are normal and capable.
+
+A person has a lift status. The lift status of a player is normal.
+
+Understand the command "drink" as something new. Understand "drink [something]" as drinking it. Drinking it is an action applying to one thing.
+
+Check drinking it:
+	if the noun is not the lifting potion:
+		say "You don't think it's a good idea to drink this."
+
+Carry out drinking it:
+	now the lift status of the player is capable;
+	
+Report drinking it:
+	say "You are now exuding a strange magical aura. It feels as if you can now lift things with ease."
+
+[ lifting implementation ]
+
+Rock status is a kind of value. The rock statuses are none, first, multiple.
+
+Rock staff status is a kind of value. The rock staff statuses are no attempt, tried, tried again, and successful.
+
+A person has a rock status. The rock status of a player is none.
+
+A person has a rock staff status. The rock staff status of a player is no attempt.
+
+Understand the command "lift" as something new. Understand "lift [something]" as lifting it. Lifting it is an action applying to one thing. Understand "lift [something] with [something preferably held]" as lifting it with. Lifting it with is an action applying to two things.
+
+Carry out lifting it:
+	if the noun is the stack of boulders:
+		if the rock status of the player is none:
+			now the rock status of the player is first;
+		otherwise if the rock status of the player is first:
+			now the rock status of the player is multiple;
+
+Report lifting it:
+	if the noun is the stack of boulders:
+		if the rock status of the player is multiple:
+			if the lift status of the player is capable:
+				say "The magical aura does not seem to have made lifting the [noun] any easier.";
+			otherwise:
+				say "Despite your best efforts, you are unable to lift the [noun].";
+		otherwise:
+			if the lift status of the player is capable:
+				say "Despite consuming the lifting potion, the [noun] does not seem like it will move easily.";
+			otherwise:
+				say "The [noun] seems to be too heavy for you to lift by hand.";
+	otherwise:
+		say "After lifting the [noun], you found nothing interesting. You decided to put the [noun] back down.";
+
+Check lifting it with:
+	if the second noun is not the magical staff:
+		say "You cannot lift objects using the [second noun]";
+		
+Carry out lifting it with:
+	if the lift status of the player is capable:
+		if the noun is the stack of boulders:
+			now Wall Piece Up is in Challenge Room 3;
+			if the rock staff status of the player is no attempt:
+				now the rock staff status of the player is tried;
+			otherwise if the rock staff status of the player is tried:
+				now the rock staff status of the player is successful;
+		otherwise:
+			if the rock staff status of the player is no attempt:
+				now the rock staff status of the player is tried;
+			otherwise if the rock staff status of the player is tried:
+				now the rock staff status of the player is tried again;
+			
+Report lifting it with:
+	if the lift status of the player is capable:
+		if the rock staff status of the player is tried:
+			if the noun is the stack of boulders:
+				say "You channeled your newfound aura into the staff. To your surprise, the [noun] began to float in the air. Behind the [noun] was Wall Piece Up. You moved the [noun] to the side, allowing access to Wall Piece Up.";
+			otherwise:
+				say "You channeled your newfound aura into the staff. To your surprise, the [noun] began to float in the air. However you found nothing interesting. You decided to put the [noun] back down.";
+		otherwise if the rock staff status of the player is tried again:
+			if the noun is the stack of boulders:
+				say "The [noun] began to float in the air. Behind the [noun] was Wall Piece Up. You moved the [noun] to the side, allowing access to Wall Piece Up.";
+			otherwise:
+				say "After lifting the [noun] with the [second noun], you found nothing interesting. You decided to put the [noun] back down.";
+		otherwise:
+			say "After lifting the [noun] with the [second noun], you found nothing interesting. You decided to put the [noun] back down.";
+	otherwise:
+		say "Nothing happened.";
+		
+[ wall pieces construction implementation ]
+
+An up wall status is a kind of value. The up wall statuses are upPresent and upAbsent.
+
+A down wall status is a kind of value. The down wall statuses are downPresent and downAbsent.
+
+A left wall status is a kind of value. The left wall statuses are leftPresent and leftAbsent.
+
+A right wall status is a kind of value. The right wall statuses are rightPresent and rightAbsent.
+
+The broken wall has an up wall status. The up wall status of the broken wall is upAbsent.
+
+The broken wall has an down wall status. The down wall status of the broken wall is downAbsent.
+
+The broken wall has an left wall status. The left wall status of the broken wall is leftAbsent.
+
+The broken wall has an right wall status. The right wall status of the broken wall is rightAbsent.
+
+Understand the command "place" as something new. Understand "place [something preferably held] in [something]" as placing it in. Placing it in is an action applying to two things.
+
+Check placing it in:
+	if the second noun is the broken wall:
+		if the noun is not Wall Piece Up and the noun is not Wall Piece Down and the noun is not Wall Piece Left and the noun is not Wall Piece Right:
+			say "The [noun] does not seem to fit in the broken wall.";
+	otherwise:
+		say "There is no space to place the [noun] on the [second noun]";
+
+Carry out placing it in:
+	if the noun is Wall Piece Up:
+		now the up wall status of the broken wall is upPresent;
+		now Wall Piece Up is nowhere;
+	otherwise if the noun is Wall Piece Down:
+		now the down wall status of the broken wall is downPresent;
+		now Wall Piece Down is nowhere;
+	otherwise if the noun is Wall Piece Left:
+		now the left wall status of the broken wall is leftPresent;
+		now Wall Piece Left is nowhere;
+	otherwise if the noun is Wall Piece Right:
+		now the right wall status of the broken wall is rightPresent;
+		now Wall Piece Right is nowhere;
+	if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
+		now the blue pedestal is in Challenge Room 3.
+		
+Report placing it in:
+	say "[noun] seemed to fit perfectly into the broken wall. You hear a faint clicking sound.";
+	if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
+		say "With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.";
+		
+[ invisible key and magic glasses]
+
+KeyVisibility is a kind of value. The KeyVisibilities are keyVisible and keyInvisible.
+
+The invisible key has a KeyVisibility. The KeyVisibility of the invisible key is keyInvisible.
+
+Every turn:
+	if the player is wearing the pair of magic glasses:
+		now the KeyVisibility of the invisible key is keyVisible;
+		if the player does not have the invisible key:
+			now the invisible key is on the old table;
+	otherwise:
+		now the KeyVisibility of the invisible key is keyInvisible;
+		if the player does not have the invisible key:
+			now the invisible key is nowhere;
+
+After wearing the pair of magic glasses:
+	if the player is in Challenge Room 3:
+		if the player does not have the invisible key:
+			say "There now appears to be a key on the old table."
+			
+After taking off the pair of magic glasses:
+	if the player is in Challenge Room 3:
+		if the player does not have the invisible key:
+			say "The key seems to have disappeared from sight."
+
+[ end game? ]
+
+Every turn:
+	if the player is in the Last Room:
+		end the story;
+	if the player has the red gem and the player has the blue gem and the player has the yellow gem:
+		now the formidable gate is unlocked;
+	otherwise:
+		now the formidable gate is locked;
