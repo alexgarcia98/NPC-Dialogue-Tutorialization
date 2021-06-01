@@ -40,6 +40,8 @@ In Challenge Room 1 is a supporter called the experimentation table. On the expe
 
 The red vial is a thing. The yellow vial is a thing. The blue vial is a thing. The white vial is a thing. The black vial is a thing. The clear vial is a thing.
 
+Understand "red potion" as red vial. Understand "yellow potion" as yellow vial. Understand "blue potion" as blue vial. Understand "white portion" as white vial. Understand "black potion" as black vial. Understand "clear potion" as clear vial.
+
 In the potion tray is the red vial, the yellow vial, the blue vial, the white vial, the black vial, the clear vial. 
 
 The purple potion is a thing. The purple potion is nowhere. The suspicious potion is a thing. The suspicious potion is nowhere. The red gem is a thing. The red gem is nowhere.
@@ -387,6 +389,9 @@ Carry out brewing it with:
 
 Report brewing it with:
 	say "You now have [a potion]."
+	
+Understand the command "mix" as something new. Understand "mix [something] with [something]" as brewing it with.
+
 
 Section 4 - Dumping Implementation
 
