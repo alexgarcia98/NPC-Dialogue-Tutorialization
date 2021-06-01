@@ -127,6 +127,10 @@ The description of the wall torch is "Your eyes are drawn to its flames. It exci
 
 The description of the suspicious broom is "On the broom is a metal tag. It reads, 'Nimbus 2000 (property of Hogwarts).' It’s an older model, so nobody will miss it if you take it."
 
+Every turn:
+	If the suspicious broom is seen:
+		now the printed name of the suspicious broom is "Nimbus 2000".
+
 The description of Challenge Room 2 South is "You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet."
 
 Rule for printing the locale description of Challenge Room 2 South:
@@ -198,6 +202,56 @@ Instead of talking to Janitor:
 Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The old chest is a container. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. Wall Piece Right is nowhere. Wall Piece Up is nowhere. The suspended net is a thing. The torn net is a thing. The torn net is nowhere. The broken wall is a thing. The blue pedestal is a thing. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal.
 
 In Challenge Room 3 is the old table, the old chest, stack of boulders, Y-shaped wooden stick, net, magical staff, broken wall.
+
+The description of Challenge Room 3 is "You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?"
+
+The printed name of Wall Piece Left is "broken stone". The printed name of Wall Piece Right is "stone slab". The printed name of Wall Piece Up is "stone shard".  The printed name of Wall Piece Down is "jagged stone".
+
+The description of Wall Piece Left is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
+
+The description of Wall Piece Right is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
+
+The description of Wall Piece Up is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
+
+The description of Wall Piece Down is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
+
+The description of the broken wall is "A wall that appears to have several holes in it. It looks like there are four places that something may fit into."
+
+The description of the old chest is "An old chest that looks like it might contain a pirate’s treasure."
+
+The description of the invisible key is "A shiny key that dazzles you with how shiny it is."
+
+The description of the old table is "A nice, sturdy table made of wood. You knock on it for good luck."
+
+The printed name of the pair of magic glasses is "suspicious pair of glasses".
+
+Every turn:
+	if the pair of magic glasses is seen:
+		now the printed name of the pair of magic glasses is "pair of magic glasses".
+		
+The description of the pair of magic glasses is "A pair of glasses that seems to be exuding a magical aura."
+
+The description of the suspended net is "An unreachable net that holds a wall piece. The net is hanging from a rotting wooden hook."
+
+The description of the Y-shaped wooden stick is "A neat stick that is just here for some reason. Maybe someone grew a tree here once?"
+
+The description of the rubber band is "A mysterious object from…THE FUTURE. It seems to stretch very well."
+
+The description of the stack of boulders is "A giant stack of boulders; it looks heavy."
+
+The description of the magical staff is "A magical staff for magical people."
+
+The printed name of the lifting potion is "strange potion".
+
+The description of the lifting potion is "The potion looks suspicious, but you’ve drank swamp water before, so it can’t be that bad."
+
+The description of the blue pedestal is "A rotting wooden pedestal. What is it with this room and wood?"
+
+The description of the blue gem is "[if blue gem is on pedestal]The gem that you need from this room. It’s on a rotting wooden pedestal. What is it with this room and wood?[otherwise]The blue gem that you need to escape. The deep blue hue reminds you of the ocean."
+
+The description of the slingshot is "A slingshot that you created. You can fire some powerful shots with this using some nearby pebbles."
+
+The description of the torn net is "A torn net. You wonder how the wall piece didn't just break through this flimsy net on its own."
 
 [ ignition implementation ]
 
@@ -396,6 +450,7 @@ Check drinking it:
 
 Carry out drinking it:
 	now the lift status of the player is capable;
+	now the printed name of the lifting potion is "lifting potion";
 	
 Report drinking it:
 	say "You are now exuding a strange magical aura. It feels as if you can now lift things with ease."

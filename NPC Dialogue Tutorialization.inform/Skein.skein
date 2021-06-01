@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
+<<<<<<< Updated upstream
   <activeNode nodeId="node-303"/>
   <item nodeId="node-1">
     <command xml:space="preserve">NPC Dialogue Tutorialization</command>
     <result xml:space="preserve">NPC Dialogue Tutorialization&#x000A;An Interactive Fiction by Alexander Garcia&#x000A;Release 1 / Serial number 210601 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Challenge Room 2 South&#x000A;You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+=======
+  <activeNode nodeId="node-255"/>
+  <item nodeId="node-1">
+    <command xml:space="preserve">NPC Dialogue Tutorialization</command>
+    <result xml:space="preserve">NPC Dialogue Tutorialization&#x000A;An Interactive Fiction by Alexander Garcia&#x000A;Release 1 / Serial number 210601 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Challenge Room 1&#x000A;You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area.&#x000A;&#x000A;In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it.&#x000A;&#x000A;&gt;</result>
+>>>>>>> Stashed changes
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -21,10 +28,13 @@
       <child nodeId="node-249"/>
       <child nodeId="node-251"/>
       <child nodeId="node-252"/>
+<<<<<<< Updated upstream
       <child nodeId="node-259"/>
       <child nodeId="node-266"/>
       <child nodeId="node-283"/>
       <child nodeId="node-303"/>
+=======
+>>>>>>> Stashed changes
     </children>
   </item>
   <item nodeId="node-2">
@@ -39,7 +49,7 @@
   </item>
   <item nodeId="node-3">
     <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You can see an old chest (closed), an old table (on which are Wall Piece Down, a pair of magic glasses, a rubber band and a lifting potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net and a broken wall here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a pair of magic glasses, a rubber band and a lifting potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net and a broken wall here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -901,9 +911,9 @@
   </item>
   <item nodeId="node-102">
     <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You walk into a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-103"/>
       <child nodeId="node-114"/>
@@ -1231,6 +1241,10 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-140"/>
+<<<<<<< Updated upstream
+=======
+      <child nodeId="node-253"/>
+>>>>>>> Stashed changes
     </children>
   </item>
   <item nodeId="node-140">
@@ -1284,6 +1298,33 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+<<<<<<< Updated upstream
+=======
+  <item nodeId="node-253">
+    <command xml:space="preserve">look at broom</command>
+    <result xml:space="preserve">On the broom is a metal tag. It reads, "Nimbus 2000 (property of Hogwarts)." It's an older model, so nobody will miss it if you take it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-254"/>
+    </children>
+  </item>
+  <item nodeId="node-254">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the Nimbus 2000 here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-255"/>
+    </children>
+  </item>
+  <item nodeId="node-255">
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+>>>>>>> Stashed changes
   <item nodeId="node-146">
     <command xml:space="preserve">go north</command>
     <result xml:space="preserve">You'd rather not join the food chain today.&#x000A;&#x000A;&gt;</result>
@@ -2144,7 +2185,10 @@
     <changed>YES</changed>
     <children>
       <child nodeId="node-246"/>
+<<<<<<< Updated upstream
       <child nodeId="node-253"/>
+=======
+>>>>>>> Stashed changes
     </children>
   </item>
   <item nodeId="node-246">
@@ -2171,6 +2215,7 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+<<<<<<< Updated upstream
   <item nodeId="node-253">
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
@@ -2222,6 +2267,8 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+=======
+>>>>>>> Stashed changes
   <item nodeId="node-249">
     <command xml:space="preserve">look table</command>
     <result xml:space="preserve">On the experimentation table are the potion tray (in which are a red vial, a yellow vial, a blue vial, a white vial, a black vial and a clear vial), the recipe book and a beaker (empty).&#x000A;&#x000A;&gt;</result>
