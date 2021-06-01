@@ -1,5 +1,7 @@
 "NPC Dialogue Tutorialization" by Alexander Garcia
 
+Section 1 - Gameplay Modifications
+
 [ Gameplay ]
 
 Use brief room descriptions.
@@ -24,7 +26,7 @@ A thing can be seen or unseen.
 Carry out examining a thing:
 	now the noun is seen.
 
-[ Challenge Room 1 ]
+Section 2 - Challenge Room 1
 
 Challenge Room 1 is a room. NPC is a man in Challenge Room 1. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingRedGem.
 
@@ -91,11 +93,7 @@ Instead of talking to NPC:
 			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make a purple potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how.";
 	now NPC is talked to;
 
-The formidable gate is north of the Exit Room. The formidable gate is a door. The formidable gate is lockable and locked.
-
-North of the formidable gate is a room called Last Room.
-
-[ Challenge Room 2 ]
+Section 3 - Challenge Room 2
 
 West of the Exit Room is a room called Challenge Room 2 South.  Janitor is a man in Challenge Room 2 South. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingYellowGem.
 
@@ -197,7 +195,7 @@ Instead of talking to Janitor:
 			say “Janitor: Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don’t burn yourself in the process, okay?”;
 	now Janitor is talked to;
 
-[ Challenge Room 3]
+Section 4 - Challenge Room 3
 
 Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The old chest is a container. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. Wall Piece Right is nowhere. Wall Piece Up is nowhere. The suspended net is a thing. The torn net is a thing. The torn net is nowhere. The broken wall is a thing. The blue pedestal is a thing. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal.
 
@@ -252,6 +250,14 @@ The description of the blue gem is "[if blue gem is on pedestal]The gem that you
 The description of the slingshot is "A slingshot that you created. You can fire some powerful shots with this using some nearby pebbles."
 
 The description of the torn net is "A torn net. You wonder how the wall piece didn't just break through this flimsy net on its own."
+
+Section 5 - Endgame
+
+The formidable gate is north of the Exit Room. The formidable gate is a door. The formidable gate is lockable and locked.
+
+North of the formidable gate is a room called Last Room.
+
+Section 6 - Custom Actions
 
 [ ignition implementation ]
 
