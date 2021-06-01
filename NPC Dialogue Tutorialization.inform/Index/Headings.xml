@@ -130,49 +130,49 @@
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>C:\Users\Ziwei Wu\Desktop\All\Classes\CSC 582\CSC582FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Source\story.ni</string>
-        <key>Line</key><integer>463</integer>
+        <key>Line</key><integer>452</integer>
         <key>Title</key><string>Section 6 - Broom Flying Implementation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>C:\Users\Ziwei Wu\Desktop\All\Classes\CSC 582\CSC582FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Source\story.ni</string>
-        <key>Line</key><integer>491</integer>
+        <key>Line</key><integer>480</integer>
         <key>Title</key><string>Section 7 - Slingshot Implementation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>C:\Users\Ziwei Wu\Desktop\All\Classes\CSC 582\CSC582FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Source\story.ni</string>
-        <key>Line</key><integer>511</integer>
+        <key>Line</key><integer>500</integer>
         <key>Title</key><string>Section 8 - Lift Potion Implementation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>C:\Users\Ziwei Wu\Desktop\All\Classes\CSC 582\CSC582FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Source\story.ni</string>
-        <key>Line</key><integer>530</integer>
+        <key>Line</key><integer>519</integer>
         <key>Title</key><string>Section 9 - Lifting Implementation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>C:\Users\Ziwei Wu\Desktop\All\Classes\CSC 582\CSC582FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Source\story.ni</string>
-        <key>Line</key><integer>599</integer>
+        <key>Line</key><integer>588</integer>
         <key>Title</key><string>Section 10 - Wall Construction Implementation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>C:\Users\Ziwei Wu\Desktop\All\Classes\CSC 582\CSC582FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Source\story.ni</string>
-        <key>Line</key><integer>647</integer>
+        <key>Line</key><integer>636</integer>
         <key>Title</key><string>Section 11 - Magic Glasses and Invisible Key</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>C:\Users\Ziwei Wu\Desktop\All\Classes\CSC 582\CSC582FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Source\story.ni</string>
-        <key>Line</key><integer>673</integer>
+        <key>Line</key><integer>662</integer>
         <key>Title</key><string>Section 12 - End Game Status Checking</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-19"/>
+  <activeNode nodeId="node-26"/>
   <item nodeId="node-1">
     <command xml:space="preserve">NPC Dialogue Tutorialization</command>
     <result xml:space="preserve">NPC Dialogue Tutorialization&#x000A;An Interactive Fiction by Alexander Garcia&#x000A;Release 1 / Serial number 210601 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Challenge Room 1&#x000A;You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area.&#x000A;&#x000A;In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it.&#x000A;&#x000A;&gt;</result>
@@ -13,11 +13,39 @@
       <child nodeId="node-6"/>
       <child nodeId="node-9"/>
       <child nodeId="node-16"/>
+      <child nodeId="node-23"/>
     </children>
   </item>
   <item nodeId="node-2">
     <command xml:space="preserve">mix red vial with blue vial</command>
     <result xml:space="preserve">You now have a purple potion.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-20"/>
+    </children>
+  </item>
+  <item nodeId="node-20">
+    <command xml:space="preserve">take potion</command>
+    <result xml:space="preserve">Which do you mean, the potion tray or the purple potion?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-21"/>
+    </children>
+  </item>
+  <item nodeId="node-21">
+    <command xml:space="preserve">take purple potion</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-22"/>
+    </children>
+  </item>
+  <item nodeId="node-22">
+    <command xml:space="preserve">pour potion on stone encasing</command>
+    <result xml:space="preserve">(the purple potion on the stone encasing)&#x000A;The purple potion turns the NPC's stone-encased body back to normal.&#x000A;NPC: AH! What are you doing?! Wait&#x2026; I'm free! Thank you! But I would've preferred if you had given me a warning first.&#x000A;The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -155,6 +183,39 @@
   <item nodeId="node-19">
     <command xml:space="preserve">pour purple potion on npc</command>
     <result xml:space="preserve">NPC: AH! What are you doing?! Wait&#x2026; I'm free! Thank you! But I would've preferred if you had given me a warning first.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-23">
+    <command xml:space="preserve">mix blue vial with yellow vial</command>
+    <result xml:space="preserve">You now have a suspicious potion.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-24"/>
+    </children>
+  </item>
+  <item nodeId="node-24">
+    <command xml:space="preserve">take potion</command>
+    <result xml:space="preserve">Which do you mean, the potion tray or the suspicious potion?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-25"/>
+    </children>
+  </item>
+  <item nodeId="node-25">
+    <command xml:space="preserve">take suspicious potion</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-26"/>
+    </children>
+  </item>
+  <item nodeId="node-26">
+    <command xml:space="preserve">pour potion on stone encasing</command>
+    <result xml:space="preserve">(the suspicious potion on the stone encasing)&#x000A;The suspicious potion had no effect.&#x000A;NPC: AH! What are you doing?! I&#x2026; Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour a purple potion on me to release me. The recipe book on the table there should point you in the right direction.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
