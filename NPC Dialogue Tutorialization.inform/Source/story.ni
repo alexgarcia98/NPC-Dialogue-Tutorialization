@@ -26,6 +26,8 @@ A thing can be seen or unseen.
 Carry out examining a thing:
 	now the noun is seen.
 
+Release along with an interpreter.
+
 Section 2 - Challenge Room 1
 
 Challenge Room 1 is a room. NPC is a man in Challenge Room 1. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingRedGem.
@@ -250,6 +252,42 @@ The description of the blue gem is "[if blue gem is on pedestal]The gem that you
 The description of the slingshot is "A slingshot that you created. You can fire some powerful shots with this using some nearby pebbles."
 
 The description of the torn net is "A torn net. You wonder how the wall piece didn't just break through this flimsy net on its own."
+
+LastInteracted is a kind of value. The LastInteracteds are left1, left2, left3, left4, down1, misc1, right1, right2, right3, right4, right5, right6, up1, up2, up3, up4, misc2, misc3.
+
+A person has a LastInteracted. The LastInteracted of a player is misc1.
+
+The list of LeftItems is a list of objects that varies.
+
+The list of LeftItems is {old chest, invisible key, pair of magic glasses, Wall Piece Left}.
+
+The list of DownItems is a list of objects that varies.
+
+The list of DownItems is {Wall Piece Down}.
+
+The list of RightItems is a list of objects that varies.
+
+The list of RightItems is {suspended net, torn net, Y-shaped wooden stick, rubber band, slingshot, Wall Piece Right}.
+
+The list of UpItems is a list of objects that varies.
+
+The list of UpItems is {Wall Piece Up, stack of boulders, magical staff, lifting potion}
+
+The list of MiscItems is a list of objects that varies.
+
+The list of MiscItems is {blue gem, blue pedestal, old table}
+
+Carry out taking a thing:
+	if the noun is listed in the list of LeftItems:
+		now the LastInteracted of the player is left1;
+	otherwise if the noun is listed in the list of RightItems:
+		now the LastInteracted of the player is right1;
+	otherwise if the noun is listed in the list of UpItems:
+		now the LastInteracted of the player is up1;
+	otherwise if the noun is listed in the list of DownItems:
+		now the LastInteracted of the player is down1;
+	otherwise if the noun is listed in the list of MiscItems:
+		now the LastInteracted of the player is misc1;
 
 Section 5 - Endgame
 
