@@ -32,7 +32,7 @@ Part 2 - Challenge Room 1
 
 Section 1 - Items and Descriptions
 
-Challenge Room 1 is a room. NPC is a man in Challenge Room 1. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingRedGem.
+Challenge Room 1 is a room. 
 
 The description of Challenge Room 1 is "You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area."
 
@@ -70,6 +70,8 @@ North of Challenge Room 1 is a room called Exit Room.
 
 Section 2 - NPC
 
+NPC is a man in Challenge Room 1. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingRedGem.
+
 Instead of talking to NPC:
 	if player has red gem:
 		if timesTalkedToAfterGettingRedGem of NPC is 0:
@@ -101,7 +103,7 @@ Part 3 - Challenge Room 2
 
 Section 1 - Items and Descriptions
 
-West of the Exit Room is a room called Challenge Room 2 South.  Janitor is a man in Challenge Room 2 South. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingYellowGem.
+West of the Exit Room is a room called Challenge Room 2 South. 
 
 North of Challenge Room 2 South is a room called Challenge Room 2 North.
 
@@ -131,9 +133,11 @@ The description of the wall torch is "Your eyes are drawn to its flames. It exci
 
 The description of the suspicious broom is "On the broom is a metal tag. It reads, 'Nimbus 2000 (property of Hogwarts).' It’s an older model, so nobody will miss it if you take it."
 
-Every turn:
-	If the suspicious broom is seen:
+Carry out examining a thing:
+	If the noun is suspicious broom:
 		now the printed name of the suspicious broom is "Nimbus 2000".
+		
+Understand "Nimbus 2000" as suspicious broom.
 
 The description of Challenge Room 2 South is "You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet."
 
@@ -165,6 +169,10 @@ Instead of going to Challenge Room 2 North from Challenge Room 2 South:
 		say "You'd rather not join the food chain today.";
 
 Section 2 - NPC
+
+Janitor is a man in Challenge Room 2 South. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingYellowGem.
+
+The description of Janitor is "You see a man holding a variety of cleaning equipment. There seems to be a raw chicken wing hanging from his back pocket. The thought of his possible diet concerns you.".
 
 Instead of talking to Janitor:
 	if player has red gem:
@@ -209,9 +217,11 @@ Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thin
 
 In Challenge Room 3 is the old table, the old chest, stack of boulders, Y-shaped wooden stick, net, magical staff, broken wall.
 
-The description of Challenge Room 3 is "You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?"
+The description of Challenge Room 3 is "You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?[paragraph break]Voice: 'Here there! You probably can’t see me as I’m a ghost, but my name’s Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!'"
 
 The printed name of Wall Piece Left is "broken stone". The printed name of Wall Piece Right is "stone slab". The printed name of Wall Piece Up is "stone shard".  The printed name of Wall Piece Down is "jagged stone".
+
+Understand "broken stone" as Wall Piece Left. Understand "stone slab" as Wall Piece Right. Understand "stone shard" as Wall Piece Up. Understand "jagged stone" as Wall Piece Down.
 
 The description of Wall Piece Left is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
 
@@ -231,11 +241,13 @@ The description of the old table is "A nice, sturdy table made of wood. You knoc
 
 The printed name of the pair of magic glasses is "suspicious pair of glasses".
 
-Every turn:
-	if the pair of magic glasses is seen:
+Carry out examining a thing:
+	if the noun is pair of magic glasses:
 		now the printed name of the pair of magic glasses is "pair of magic glasses".
 		
 The description of the pair of magic glasses is "A pair of glasses that seems to be exuding a magical aura."
+
+Understand "suspicious pair of glasses" as the pair of magic glasses.
 
 The description of the suspended net is "An unreachable net that holds a wall piece. The net is hanging from a rotting wooden hook."
 
@@ -261,9 +273,13 @@ The description of the torn net is "A torn net. You wonder how the wall piece di
 
 Section 2 - NPC
 
-LastInteracted is a kind of value. The LastInteracteds are left1, left2, left3, left4, down1, misc1, right1, right2, right3, right4, right5, right6, up1, up2, up3, up4, misc2, misc3.
+Ghost is a man in Challenge Room 3. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingBlueGem. The ghost is talked to.
 
-A person has a LastInteracted. The LastInteracted of a player is misc1.
+The description of Ghost is "[if the BeenWorn of the player is hasBeenWorn]You see a cloud-like entity. Looks friendly.[otherwise]You are not sure what you should be looking at, but that booming voice from earlier tells you otherwise.".
+
+LastInteracted is a kind of value. The LastInteracteds are left1, left2, left3, left4, down1, misc1, right1, right2, right3, right4, right5, right6, up1, up2, up3, up4, misc2, misc3, startInteract.
+
+A person has a LastInteracted. The LastInteracted of a player is startInteract.
 
 The list of LeftItems is a list of objects that varies.
 
@@ -296,6 +312,32 @@ Carry out taking a thing:
 		now the LastInteracted of the player is down1;
 	otherwise if the noun is listed in the list of MiscItems:
 		now the LastInteracted of the player is misc1;
+
+Instead of talking to Ghost:
+	if player has blue gem:
+		if timesTalkedToAfterGettingBlueGem of Ghost is 0:
+			say "What are you still doing here, you already have the gem! Oh, are you worried that I'll be lonely here? Don't worry, I've been alone for years now. I'll eventually find something to do.";
+		otherwise:
+			say "Well, if you want to stay here, then be my guest. Hmm, let's share stories. There was this one time where… ";
+		increment timesTalkedToAfterGettingBlueGem of Ghost;
+	otherwise if LastInteracted of the player is misc1:
+		say "a";
+	otherwise if LastInteracted of the player is left1:
+		say "a";
+	otherwise if LastInteracted of the player is right1:
+		say "a";
+	otherwise if LastInteracted of the player is up1:
+		say "a";
+	otherwise if LastInteracted of the player is down1:
+		if player has Wall Piece Down:
+			say "Why are you asking me what to do? Place it in the wall, dummy!";
+		otherwise if down wall status of broken wall is downPresent:
+			say "Sweet, you figured out the easiest one. Now, do the rest.";
+		otherwise:
+			say "What'd you do with that jagged stone? Find it again and put it in the wall!!";
+	otherwise if Ghost is talked to:
+		say "What are you doing just standing around? Look over at that wall. Do you see how there are four missing pieces? You have to find them and put them back!";
+	now Ghost is talked to;
 
 Part 5 - Endgame
 
@@ -604,31 +646,37 @@ Check placing it in:
 		say "There is no space to place the [noun] on the [second noun]";
 
 Carry out placing it in:
-	if the noun is Wall Piece Up:
-		now the up wall status of the broken wall is upPresent;
-		now Wall Piece Up is nowhere;
-	otherwise if the noun is Wall Piece Down:
-		now the down wall status of the broken wall is downPresent;
-		now Wall Piece Down is nowhere;
-	otherwise if the noun is Wall Piece Left:
-		now the left wall status of the broken wall is leftPresent;
-		now Wall Piece Left is nowhere;
-	otherwise if the noun is Wall Piece Right:
-		now the right wall status of the broken wall is rightPresent;
-		now Wall Piece Right is nowhere;
-	if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
-		now the blue pedestal is in Challenge Room 3.
+	if the second noun is the broken wall:
+		if the noun is Wall Piece Up:
+			now the up wall status of the broken wall is upPresent;
+			now Wall Piece Up is nowhere;
+		otherwise if the noun is Wall Piece Down:
+			now the down wall status of the broken wall is downPresent;
+			now Wall Piece Down is nowhere;
+		otherwise if the noun is Wall Piece Left:
+			now the left wall status of the broken wall is leftPresent;
+			now Wall Piece Left is nowhere;
+		otherwise if the noun is Wall Piece Right:
+			now the right wall status of the broken wall is rightPresent;
+			now Wall Piece Right is nowhere;
+		if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
+			now the blue pedestal is in Challenge Room 3.
 		
 Report placing it in:
-	say "[noun] seemed to fit perfectly into the broken wall. You hear a faint clicking sound.";
-	if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
-		say "With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.";
+	if the second noun is the broken wall:
+		say "The [noun] seemed to fit perfectly into the broken wall. You hear a faint clicking sound.";
+		if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
+			say "With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.";
 		
 Section 11 - Magic Glasses and Invisible Key
 
 KeyVisibility is a kind of value. The KeyVisibilities are keyVisible and keyInvisible.
 
 The invisible key has a KeyVisibility. The KeyVisibility of the invisible key is keyInvisible.
+
+BeenWorn is a kind of value. The BeenWorns are hasBeenWorn and hasNotBeenWorn.
+
+A person has a beenWorn. The BeenWorn of a person is hasNotBeenWorn.
 
 Every turn:
 	if the player is wearing the pair of magic glasses:
@@ -643,7 +691,8 @@ Every turn:
 After wearing the pair of magic glasses:
 	if the player is in Challenge Room 3:
 		if the player does not have the invisible key:
-			say "There now appears to be a key on the old table."
+			say "There now appears to be a key on the old table.";
+	now the BeenWorn of the player is hasNotBeenWorn.
 			
 After taking off the pair of magic glasses:
 	if the player is in Challenge Room 3:
