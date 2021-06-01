@@ -2,7 +2,7 @@
 <ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
     <story>
         <identification>
-            <ifid>5EFA0E37-3F30-4A51-94BD-F9AB27464D4E</ifid>
+            <ifid>5F0C242D-2D41-47CE-A274-F8E321269A2E</ifid>
             <format>glulx</format>
         </identification>
         <bibliographic>
@@ -17,7 +17,7 @@
         <releases>
             <attached>
                 <release>
-                    <releasedate>2021-05-29</releasedate>
+                    <releasedate>2021-06-01</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6M62</compilerversion>
@@ -27,10 +27,10 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6M62</generatorversion>
-            <originated>2021-05-29</originated>
+            <originated>2021-06-01</originated>
         </colophon>
         <glulx>
-            <serial>210529</serial>
+            <serial>210601</serial>
             <release>1</release>
             <compiler>Inform 7 build 6M62</compiler>
         </glulx>

@@ -62,7 +62,7 @@ The description of the red gem is "The gem that you need to obtain from this roo
 
 North of Challenge Room 1 is a room called Exit Room.
 
-[ npc dialogue ]
+[ Challenge Room 1 NPC ]
 
 Instead of talking to NPC:
 	if player has red gem:
@@ -95,7 +95,9 @@ The formidable gate is north of the Exit Room. The formidable gate is a door. Th
 
 North of the formidable gate is a room called Last Room.
 
-West of the Exit Room is a room called Challenge Room 2 South.
+[ Challenge Room 2 ]
+
+West of the Exit Room is a room called Challenge Room 2 South.  Janitor is a man in Challenge Room 2 South. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingYellowGem.
 
 North of Challenge Room 2 South is a room called Challenge Room 2 North.
 
@@ -154,6 +156,45 @@ Instead of going to Challenge Room 2 North from Challenge Room 2 South:
 	otherwise:
 		say "You'd rather not join the food chain today.";
 
+[ Challenge Room 2 NPC ]
+
+Instead of talking to Janitor:
+	if player has red gem:
+		if timesTalkedToAfterGettingYellowGem of Janitor is 0:
+			say "Janitor: What are you still doing here? The vines are gone and you got your gem! Get out of here and get on to the next room!”;
+		otherwise:
+			say "Janitor: Are you deaf?! I said it’s time for you to move on to the next room!”;
+		increment timesTalkedToAfterGettingYellowGem of Janitor;
+	otherwise if Janitor is talked to:
+		if the man-eating vines are not in Challenge Room 2 South:
+			if Supply Closet is visited:
+				if player has the suspicious broom:
+					say "Janitor: That’s a Nimbus 2000 (property of Hogwarts) you found! You should be able fly across the gap no problem now that the vines are gone!”;
+				otherwise:
+					say "Janitor: Well, the vines are dead, but I don’t see a way across. Did you find anything in the closet that would be helpful?”;
+			otherwise:
+				say "Janitor: Well, the vines are dead, but I don’t see a way across. Maybe check in the closet?”;
+		otherwise if player has the wall torch:
+			say "Janitor: Be careful around them with that torch you’re holding; they’re really flammable, you see. One wrong move and you could burn them down along with yourself.”;
+		otherwise:
+			say "Janitor: Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don’t burn yourself in the process, okay?”;
+	otherwise:
+		if the man-eating vines are not in Challenge Room 2 South:
+			if Supply Closet is visited:
+				if player has the suspicious broom:
+					say "Janitor: Hey, how are you? You shouldn’t be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there’s a trench between us and that orb over there. Maybe you can use that broom to get over it.”;
+				otherwise:
+					say "Janitor: Hey, how are you? You shouldn’t be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there’s a trench between us and that orb over there. I saw you going through the closet. Did you find anything that would be helpful?”;
+			otherwise:
+				say "Janitor: Hey, how are you? You shouldn’t be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there’s a trench between us and that orb over there. Maybe there’s something useful in the closet that can help you.”;
+		otherwise if player has the wall torch:
+			say "Janitor: Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Be careful around them with that torch you’re holding; they’re really flammable, you see. One wrong move and you could burn them down along with yourself.”;
+		otherwise:
+			say “Janitor: Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don’t burn yourself in the process, okay?”;
+	now Janitor is talked to;
+
+[ Challenge Room 3]
+
 Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The old chest is a container. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. Wall Piece Right is nowhere. Wall Piece Up is nowhere. The suspended net is a thing. The torn net is a thing. The torn net is nowhere. The broken wall is a thing. The blue pedestal is a thing. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal.
 
 In Challenge Room 3 is the old table, the old chest, stack of boulders, Y-shaped wooden stick, net, magical staff, broken wall.
@@ -167,6 +208,7 @@ Carry out igniting it with:
 	now the noun is nowhere.
 	
 Report igniting it with:
+	say "Janitor: Hey, what are you doing?! Get out of there before you get burned as well!”;
 	say "The [noun] has been burnt to a crisp."
 
 Check igniting it with:

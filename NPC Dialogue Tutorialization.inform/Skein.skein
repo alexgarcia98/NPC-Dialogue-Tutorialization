@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-252"/>
+  <activeNode nodeId="node-303"/>
   <item nodeId="node-1">
     <command xml:space="preserve">NPC Dialogue Tutorialization</command>
-    <result xml:space="preserve">NPC Dialogue Tutorialization&#x000A;An Interactive Fiction by Alexander Garcia&#x000A;Release 1 / Serial number 210529 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Challenge Room 1&#x000A;You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area.&#x000A;&#x000A;In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">NPC Dialogue Tutorialization&#x000A;An Interactive Fiction by Alexander Garcia&#x000A;Release 1 / Serial number 210601 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Challenge Room 2 South&#x000A;You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-2"/>
-      <child nodeId="node-130"/>
-      <child nodeId="node-142"/>
-      <child nodeId="node-149"/>
-      <child nodeId="node-155"/>
-      <child nodeId="node-159"/>
-      <child nodeId="node-162"/>
-      <child nodeId="node-166"/>
-      <child nodeId="node-167"/>
+      <child nodeId="node-169"/>
+      <child nodeId="node-181"/>
+      <child nodeId="node-188"/>
+      <child nodeId="node-194"/>
+      <child nodeId="node-198"/>
+      <child nodeId="node-201"/>
+      <child nodeId="node-205"/>
       <child nodeId="node-206"/>
-      <child nodeId="node-210"/>
-      <child nodeId="node-212"/>
-      <child nodeId="node-213"/>
+      <child nodeId="node-245"/>
+      <child nodeId="node-249"/>
+      <child nodeId="node-251"/>
+      <child nodeId="node-252"/>
+      <child nodeId="node-259"/>
+      <child nodeId="node-266"/>
+      <child nodeId="node-283"/>
+      <child nodeId="node-303"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -30,7 +34,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-3"/>
-      <child nodeId="node-93"/>
+      <child nodeId="node-102"/>
     </children>
   </item>
   <item nodeId="node-3">
@@ -40,16 +44,16 @@
     <changed>YES</changed>
     <children>
       <child nodeId="node-4"/>
-      <child nodeId="node-11"/>
-      <child nodeId="node-15"/>
       <child nodeId="node-20"/>
-      <child nodeId="node-25"/>
-      <child nodeId="node-28"/>
-      <child nodeId="node-44"/>
-      <child nodeId="node-45"/>
-      <child nodeId="node-55"/>
-      <child nodeId="node-60"/>
-      <child nodeId="node-86"/>
+      <child nodeId="node-24"/>
+      <child nodeId="node-29"/>
+      <child nodeId="node-34"/>
+      <child nodeId="node-37"/>
+      <child nodeId="node-53"/>
+      <child nodeId="node-54"/>
+      <child nodeId="node-64"/>
+      <child nodeId="node-69"/>
+      <child nodeId="node-95"/>
     </children>
   </item>
   <item nodeId="node-4">
@@ -68,7 +72,7 @@
     <changed>YES</changed>
     <children>
       <child nodeId="node-6"/>
-      <child nodeId="node-214"/>
+      <child nodeId="node-11"/>
     </children>
   </item>
   <item nodeId="node-6">
@@ -113,87 +117,9 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-214">
+  <item nodeId="node-11">
     <command xml:space="preserve">burn vines with torch</command>
     <result xml:space="preserve">The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-215"/>
-    </children>
-  </item>
-  <item nodeId="node-215">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-216"/>
-    </children>
-  </item>
-  <item nodeId="node-216">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-217"/>
-    </children>
-  </item>
-  <item nodeId="node-217">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench and a wall torch here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-218"/>
-    </children>
-  </item>
-  <item nodeId="node-218">
-    <command xml:space="preserve">ride broom</command>
-    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-219"/>
-    </children>
-  </item>
-  <item nodeId="node-219">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">Challenge Room 2 North&#x000A;You can see a trench and the yellow pedestal (on which is the yellow gem) here.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-220"/>
-    </children>
-  </item>
-  <item nodeId="node-220">
-    <command xml:space="preserve">look at gem</command>
-    <result xml:space="preserve">The gem that you need from this room. It's on a nice looking pedestal. You wonder if you could also take the pedestal with you.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-221"/>
-    </children>
-  </item>
-  <item nodeId="node-221">
-    <command xml:space="preserve">take gem</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-222"/>
-    </children>
-  </item>
-  <item nodeId="node-222">
-    <command xml:space="preserve">look at yellow gem</command>
-    <result xml:space="preserve">The yellow gem that you need to escape. It's vibrancy reminds you of the sun.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-11">
-    <command xml:space="preserve">take y-shaped wooden stick</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -201,8 +127,8 @@
     </children>
   </item>
   <item nodeId="node-12">
-    <command xml:space="preserve">take rubber band</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -210,8 +136,8 @@
     </children>
   </item>
   <item nodeId="node-13">
-    <command xml:space="preserve">craft y-shaped wooden stick, rubber band together</command>
-    <result xml:space="preserve">Y-shaped wooden stick: rubber band: That isn't available.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -219,14 +145,17 @@
     </children>
   </item>
   <item nodeId="node-14">
-    <command xml:space="preserve">craft y-shaped wooden stick and rubber band together</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench and a wall torch here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-15"/>
+    </children>
   </item>
   <item nodeId="node-15">
-    <command xml:space="preserve">take rubber band</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">ride broom</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -234,8 +163,8 @@
     </children>
   </item>
   <item nodeId="node-16">
-    <command xml:space="preserve">take y-shaped wooden stick</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 North&#x000A;You can see a trench and the yellow pedestal (on which is the yellow gem) here.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -243,8 +172,8 @@
     </children>
   </item>
   <item nodeId="node-17">
-    <command xml:space="preserve">combine rubber band with y-shaped wooden stick</command>
-    <result xml:space="preserve">You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at gem</command>
+    <result xml:space="preserve">The gem that you need from this room. It's on a nice looking pedestal. You wonder if you could also take the pedestal with you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -252,8 +181,8 @@
     </children>
   </item>
   <item nodeId="node-18">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take gem</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -261,14 +190,14 @@
     </children>
   </item>
   <item nodeId="node-19">
-    <command xml:space="preserve">combine slingshot with slingshot</command>
-    <result xml:space="preserve">You can't combine the slingshot and the slingshot into anything useful.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at yellow gem</command>
+    <result xml:space="preserve">The yellow gem that you need to escape. It's vibrancy reminds you of the sun.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-20">
-    <command xml:space="preserve">craft rubber band and y-shaped wooden stick</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take y-shaped wooden stick</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -285,8 +214,8 @@
     </children>
   </item>
   <item nodeId="node-22">
-    <command xml:space="preserve">take stick</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft y-shaped wooden stick, rubber band together</command>
+    <result xml:space="preserve">Y-shaped wooden stick: rubber band: That isn't available.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -294,23 +223,23 @@
     </children>
   </item>
   <item nodeId="node-23">
-    <command xml:space="preserve">craft rubber band and stick</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft y-shaped wooden stick and rubber band together</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-24">
+    <command xml:space="preserve">take rubber band</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-24"/>
+      <child nodeId="node-25"/>
     </children>
   </item>
-  <item nodeId="node-24">
-    <command xml:space="preserve">combine rubber band with stick</command>
-    <result xml:space="preserve">You now have a slingshot.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
   <item nodeId="node-25">
-    <command xml:space="preserve">craft slingshot</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take y-shaped wooden stick</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -318,8 +247,8 @@
     </children>
   </item>
   <item nodeId="node-26">
-    <command xml:space="preserve"> craft stick with rubber band</command>
-    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">combine rubber band with y-shaped wooden stick</command>
+    <result xml:space="preserve">You now have a slingshot.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -327,23 +256,23 @@
     </children>
   </item>
   <item nodeId="node-27">
-    <command xml:space="preserve">shoot suspended net with slingshot</command>
-    <result xml:space="preserve">You picked up a nearby rock and shot suspended net. suspended net plummeted to the ground, along with Wall Piece Right.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-28">
-    <command xml:space="preserve">craft stick with band</command>
-    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-29"/>
+      <child nodeId="node-28"/>
     </children>
   </item>
+  <item nodeId="node-28">
+    <command xml:space="preserve">combine slingshot with slingshot</command>
+    <result xml:space="preserve">You can't combine the slingshot and the slingshot into anything useful.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-29">
-    <command xml:space="preserve">shoot net</command>
-    <result xml:space="preserve">(with the slingshot)&#x000A;You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with Wall Piece Right.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft rubber band and y-shaped wooden stick</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -351,8 +280,8 @@
     </children>
   </item>
   <item nodeId="node-30">
-    <command xml:space="preserve">look around</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take rubber band</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -360,8 +289,8 @@
     </children>
   </item>
   <item nodeId="node-31">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You can see Wall Piece Right, a torn net, a locked chest (closed), an old table (on which are Wall Piece Down, an invisible key and a lifting potion), a stack of rocks and a magical staff here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take stick</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -369,8 +298,8 @@
     </children>
   </item>
   <item nodeId="node-32">
-    <command xml:space="preserve">take wall piece right</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft rubber band and stick</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -378,17 +307,14 @@
     </children>
   </item>
   <item nodeId="node-33">
-    <command xml:space="preserve">take down</command>
-    <result xml:space="preserve">(Wall Piece Down)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">combine rubber band with stick</command>
+    <result xml:space="preserve">You now have a slingshot.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-34"/>
-    </children>
   </item>
   <item nodeId="node-34">
-    <command xml:space="preserve">unlock chest</command>
-    <result xml:space="preserve">What do you want to unlock the locked chest with?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft slingshot</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -396,8 +322,8 @@
     </children>
   </item>
   <item nodeId="node-35">
-    <command xml:space="preserve">incisible key</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve"> craft stick with rubber band</command>
+    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -405,17 +331,14 @@
     </children>
   </item>
   <item nodeId="node-36">
-    <command xml:space="preserve">invisible key</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">shoot suspended net with slingshot</command>
+    <result xml:space="preserve">You picked up a nearby rock and shot suspended net. suspended net plummeted to the ground, along with Wall Piece Right.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-37"/>
-    </children>
   </item>
   <item nodeId="node-37">
-    <command xml:space="preserve">unlock chest</command>
-    <result xml:space="preserve">What do you want to unlock the locked chest with?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft stick with band</command>
+    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -423,8 +346,8 @@
     </children>
   </item>
   <item nodeId="node-38">
-    <command xml:space="preserve">invisible key</command>
-    <result xml:space="preserve">(first taking the invisible key)&#x000A;You unlock the locked chest.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">shoot net</command>
+    <result xml:space="preserve">(with the slingshot)&#x000A;You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with Wall Piece Right.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -432,8 +355,8 @@
     </children>
   </item>
   <item nodeId="node-39">
-    <command xml:space="preserve">look in chest</command>
-    <result xml:space="preserve">You can't see inside, since the locked chest is closed.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look around</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -441,8 +364,8 @@
     </children>
   </item>
   <item nodeId="node-40">
-    <command xml:space="preserve">open chest</command>
-    <result xml:space="preserve">You open the locked chest, revealing Wall Piece Left.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You can see Wall Piece Right, a torn net, a locked chest (closed), an old table (on which are Wall Piece Down, an invisible key and a lifting potion), a stack of rocks and a magical staff here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -450,7 +373,7 @@
     </children>
   </item>
   <item nodeId="node-41">
-    <command xml:space="preserve">take left</command>
+    <command xml:space="preserve">take wall piece right</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
@@ -459,8 +382,8 @@
     </children>
   </item>
   <item nodeId="node-42">
-    <command xml:space="preserve">take wall piece left</command>
-    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take down</command>
+    <result xml:space="preserve">(Wall Piece Down)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -468,30 +391,35 @@
     </children>
   </item>
   <item nodeId="node-43">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  Wall Piece Left&#x000A;  an invisible key&#x000A;  Wall Piece Down&#x000A;  Wall Piece Right&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">unlock chest</command>
+    <result xml:space="preserve">What do you want to unlock the locked chest with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-44"/>
+    </children>
   </item>
   <item nodeId="node-44">
-    <command xml:space="preserve">drink potion</command>
-    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">incisible key</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-45"/>
+    </children>
   </item>
   <item nodeId="node-45">
-    <command xml:space="preserve">lift boulders</command>
-    <result xml:space="preserve">The stack of boulders seems to be too heavy for you to lift by hand.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">invisible key</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-46"/>
-      <child nodeId="node-51"/>
     </children>
   </item>
   <item nodeId="node-46">
-    <command xml:space="preserve">lift boulders</command>
-    <result xml:space="preserve">Despite your best efforts, you are unable to lift the stack of boulders.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">unlock chest</command>
+    <result xml:space="preserve">What do you want to unlock the locked chest with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -499,8 +427,8 @@
     </children>
   </item>
   <item nodeId="node-47">
-    <command xml:space="preserve">drink potion</command>
-    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">invisible key</command>
+    <result xml:space="preserve">(first taking the invisible key)&#x000A;You unlock the locked chest.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -508,8 +436,8 @@
     </children>
   </item>
   <item nodeId="node-48">
-    <command xml:space="preserve">lift boulders</command>
-    <result xml:space="preserve">The magical aura does not seem to have made lifting the stack of boulders any easier.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look in chest</command>
+    <result xml:space="preserve">You can't see inside, since the locked chest is closed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -517,8 +445,8 @@
     </children>
   </item>
   <item nodeId="node-49">
-    <command xml:space="preserve">take staff</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">open chest</command>
+    <result xml:space="preserve">You open the locked chest, revealing Wall Piece Left.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -526,14 +454,17 @@
     </children>
   </item>
   <item nodeId="node-50">
-    <command xml:space="preserve">lift boulders with staff</command>
-    <result xml:space="preserve">Behind the stack of boulders was Wall Piece Up. You moved the stack of boulders to the side, allowing access to Wall Piece Up.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take left</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-51"/>
+    </children>
   </item>
   <item nodeId="node-51">
-    <command xml:space="preserve">check rock status</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take wall piece left</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -541,32 +472,30 @@
     </children>
   </item>
   <item nodeId="node-52">
-    <command xml:space="preserve">check value rock status</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  Wall Piece Left&#x000A;  an invisible key&#x000A;  Wall Piece Down&#x000A;  Wall Piece Right&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-53"/>
-    </children>
   </item>
   <item nodeId="node-53">
-    <command xml:space="preserve">value rock status</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">drink potion</command>
+    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-54"/>
-    </children>
   </item>
   <item nodeId="node-54">
-    <command xml:space="preserve">rock status</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift boulders</command>
+    <result xml:space="preserve">The stack of boulders seems to be too heavy for you to lift by hand.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-55"/>
+      <child nodeId="node-60"/>
+    </children>
   </item>
   <item nodeId="node-55">
-    <command xml:space="preserve">take staff</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift boulders</command>
+    <result xml:space="preserve">Despite your best efforts, you are unable to lift the stack of boulders.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -574,8 +503,8 @@
     </children>
   </item>
   <item nodeId="node-56">
-    <command xml:space="preserve">lift boulders with staff</command>
-    <result xml:space="preserve">Nothing happened.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">drink potion</command>
+    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -583,8 +512,8 @@
     </children>
   </item>
   <item nodeId="node-57">
-    <command xml:space="preserve">drink potion</command>
-    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift boulders</command>
+    <result xml:space="preserve">The magical aura does not seem to have made lifting the stack of boulders any easier.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -592,8 +521,8 @@
     </children>
   </item>
   <item nodeId="node-58">
-    <command xml:space="preserve">lift boulders with staff</command>
-    <result xml:space="preserve">You channeled your newfound aura into the staff. To your surprise, the stack of boulders began to float in the air. Behind the stack of boulders was Wall Piece Up. You moved the stack of boulders to the side, allowing access to Wall Piece Up.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take staff</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -602,13 +531,13 @@
   </item>
   <item nodeId="node-59">
     <command xml:space="preserve">lift boulders with staff</command>
-    <result xml:space="preserve">After lifting the stack of boulders with the magical staff, you found nothing interesting. You decided to put the stack of boulders back down.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Behind the stack of boulders was Wall Piece Up. You moved the stack of boulders to the side, allowing access to Wall Piece Up.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-60">
-    <command xml:space="preserve">take down</command>
-    <result xml:space="preserve">(Wall Piece Down)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">check rock status</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -616,8 +545,8 @@
     </children>
   </item>
   <item nodeId="node-61">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">check value rock status</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -625,8 +554,8 @@
     </children>
   </item>
   <item nodeId="node-62">
-    <command xml:space="preserve">unlock chest</command>
-    <result xml:space="preserve">What do you want to unlock the locked chest with?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">value rock status</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -634,17 +563,14 @@
     </children>
   </item>
   <item nodeId="node-63">
-    <command xml:space="preserve">key</command>
-    <result xml:space="preserve">You unlock the locked chest.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">rock status</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-64"/>
-    </children>
   </item>
   <item nodeId="node-64">
-    <command xml:space="preserve">open chest</command>
-    <result xml:space="preserve">You open the locked chest, revealing Wall Piece Left.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take staff</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -652,8 +578,8 @@
     </children>
   </item>
   <item nodeId="node-65">
-    <command xml:space="preserve">take left</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift boulders with staff</command>
+    <result xml:space="preserve">Nothing happened.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -661,8 +587,8 @@
     </children>
   </item>
   <item nodeId="node-66">
-    <command xml:space="preserve">combine stick and band</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">drink potion</command>
+    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -670,8 +596,8 @@
     </children>
   </item>
   <item nodeId="node-67">
-    <command xml:space="preserve">craft stick and band</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift boulders with staff</command>
+    <result xml:space="preserve">You channeled your newfound aura into the staff. To your surprise, the stack of boulders began to float in the air. Behind the stack of boulders was Wall Piece Up. You moved the stack of boulders to the side, allowing access to Wall Piece Up.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -679,17 +605,14 @@
     </children>
   </item>
   <item nodeId="node-68">
-    <command xml:space="preserve">combine stick with band</command>
-    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift boulders with staff</command>
+    <result xml:space="preserve">After lifting the stack of boulders with the magical staff, you found nothing interesting. You decided to put the stack of boulders back down.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-69"/>
-    </children>
   </item>
   <item nodeId="node-69">
-    <command xml:space="preserve">shoot net</command>
-    <result xml:space="preserve">What do you want to shoot the suspended net with?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take down</command>
+    <result xml:space="preserve">(Wall Piece Down)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -697,8 +620,8 @@
     </children>
   </item>
   <item nodeId="node-70">
-    <command xml:space="preserve">slingshot</command>
-    <result xml:space="preserve">You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with Wall Piece Right.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -706,8 +629,8 @@
     </children>
   </item>
   <item nodeId="node-71">
-    <command xml:space="preserve">take right</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">unlock chest</command>
+    <result xml:space="preserve">What do you want to unlock the locked chest with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -715,8 +638,8 @@
     </children>
   </item>
   <item nodeId="node-72">
-    <command xml:space="preserve">take staff</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">key</command>
+    <result xml:space="preserve">You unlock the locked chest.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -724,8 +647,8 @@
     </children>
   </item>
   <item nodeId="node-73">
-    <command xml:space="preserve">drink potion</command>
-    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">open chest</command>
+    <result xml:space="preserve">You open the locked chest, revealing Wall Piece Left.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -733,8 +656,8 @@
     </children>
   </item>
   <item nodeId="node-74">
-    <command xml:space="preserve">lift boulders with staff</command>
-    <result xml:space="preserve">You channeled your newfound aura into the staff. To your surprise, the stack of boulders began to float in the air. Behind the stack of boulders was Wall Piece Up. You moved the stack of boulders to the side, allowing access to Wall Piece Up.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take left</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -742,8 +665,8 @@
     </children>
   </item>
   <item nodeId="node-75">
-    <command xml:space="preserve">take up</command>
-    <result xml:space="preserve">(Wall Piece Up)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">combine stick and band</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -751,8 +674,8 @@
     </children>
   </item>
   <item nodeId="node-76">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  Wall Piece Up&#x000A;  a magical staff&#x000A;  Wall Piece Right&#x000A;  a slingshot&#x000A;  Wall Piece Left&#x000A;  an invisible key&#x000A;  Wall Piece Down&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft stick and band</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -760,8 +683,8 @@
     </children>
   </item>
   <item nodeId="node-77">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a torn net, a locked chest (empty), an old table (on which is a lifting potion), a stack of boulders and a broken wall here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">combine stick with band</command>
+    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -769,8 +692,8 @@
     </children>
   </item>
   <item nodeId="node-78">
-    <command xml:space="preserve">place up in wall</command>
-    <result xml:space="preserve">Which do you mean, the broken wall, Wall Piece Up, Wall Piece Right, Wall Piece Left or Wall Piece Down?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">shoot net</command>
+    <result xml:space="preserve">What do you want to shoot the suspended net with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -778,8 +701,8 @@
     </children>
   </item>
   <item nodeId="node-79">
-    <command xml:space="preserve">place up in broken wall</command>
-    <result xml:space="preserve">Wall Piece Up seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">slingshot</command>
+    <result xml:space="preserve">You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with Wall Piece Right.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -787,8 +710,8 @@
     </children>
   </item>
   <item nodeId="node-80">
-    <command xml:space="preserve">place down in broken wall</command>
-    <result xml:space="preserve">Wall Piece Down seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take right</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -796,8 +719,8 @@
     </children>
   </item>
   <item nodeId="node-81">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a magical staff&#x000A;  Wall Piece Right&#x000A;  a slingshot&#x000A;  Wall Piece Left&#x000A;  an invisible key&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take staff</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -805,8 +728,8 @@
     </children>
   </item>
   <item nodeId="node-82">
-    <command xml:space="preserve">place right in broken wall</command>
-    <result xml:space="preserve">Wall Piece Right seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">drink potion</command>
+    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -814,8 +737,8 @@
     </children>
   </item>
   <item nodeId="node-83">
-    <command xml:space="preserve">place left in broken wall</command>
-    <result xml:space="preserve">Wall Piece Left seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift boulders with staff</command>
+    <result xml:space="preserve">You channeled your newfound aura into the staff. To your surprise, the stack of boulders began to float in the air. Behind the stack of boulders was Wall Piece Up. You moved the stack of boulders to the side, allowing access to Wall Piece Up.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -823,8 +746,8 @@
     </children>
   </item>
   <item nodeId="node-84">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a blue pedestal (on which is a blue gem), a torn net, a locked chest (empty), an old table (on which is a lifting potion), a stack of boulders and a broken wall here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take up</command>
+    <result xml:space="preserve">(Wall Piece Up)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -832,24 +755,26 @@
     </children>
   </item>
   <item nodeId="node-85">
-    <command xml:space="preserve">take blue gem</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  Wall Piece Up&#x000A;  a magical staff&#x000A;  Wall Piece Right&#x000A;  a slingshot&#x000A;  Wall Piece Left&#x000A;  an invisible key&#x000A;  Wall Piece Down&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-86"/>
+    </children>
   </item>
   <item nodeId="node-86">
-    <command xml:space="preserve">wear glasses</command>
-    <result xml:space="preserve">(first taking the pair of magic glasses)&#x000A;There now appears to be a key on the old table.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a torn net, a locked chest (empty), an old table (on which is a lifting potion), a stack of boulders and a broken wall here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-87"/>
-      <child nodeId="node-89"/>
     </children>
   </item>
   <item nodeId="node-87">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a locked chest (closed), an old table (on which are an invisible key, Wall Piece Down, a rubber band and a lifting potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net and a broken wall here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place up in wall</command>
+    <result xml:space="preserve">Which do you mean, the broken wall, Wall Piece Up, Wall Piece Right, Wall Piece Left or Wall Piece Down?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -857,14 +782,17 @@
     </children>
   </item>
   <item nodeId="node-88">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place up in broken wall</command>
+    <result xml:space="preserve">Wall Piece Up seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-89"/>
+    </children>
   </item>
   <item nodeId="node-89">
-    <command xml:space="preserve">remove glasses</command>
-    <result xml:space="preserve">The key seems to have disappeared from sight.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place down in broken wall</command>
+    <result xml:space="preserve">Wall Piece Down seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -872,8 +800,8 @@
     </children>
   </item>
   <item nodeId="node-90">
-    <command xml:space="preserve">wear glasses</command>
-    <result xml:space="preserve">There now appears to be a key on the old table.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a magical staff&#x000A;  Wall Piece Right&#x000A;  a slingshot&#x000A;  Wall Piece Left&#x000A;  an invisible key&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -881,8 +809,8 @@
     </children>
   </item>
   <item nodeId="node-91">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place right in broken wall</command>
+    <result xml:space="preserve">Wall Piece Right seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -890,47 +818,42 @@
     </children>
   </item>
   <item nodeId="node-92">
-    <command xml:space="preserve">remove glasses</command>
-    <result xml:space="preserve">&gt;</result>
+    <command xml:space="preserve">place left in broken wall</command>
+    <result xml:space="preserve">Wall Piece Left seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-93"/>
+    </children>
   </item>
   <item nodeId="node-93">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You walk into a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a blue pedestal (on which is a blue gem), a torn net, a locked chest (empty), an old table (on which is a lifting potion), a stack of boulders and a broken wall here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-94"/>
-      <child nodeId="node-105"/>
-      <child nodeId="node-127"/>
-      <child nodeId="node-223"/>
-      <child nodeId="node-230"/>
-      <child nodeId="node-242"/>
     </children>
   </item>
   <item nodeId="node-94">
-    <command xml:space="preserve">take torch</command>
+    <command xml:space="preserve">take blue gem</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-95"/>
-      <child nodeId="node-100"/>
-    </children>
   </item>
   <item nodeId="node-95">
-    <command xml:space="preserve">ignite man-eating vines with torch</command>
-    <result xml:space="preserve">The the man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">(first taking the pair of magic glasses)&#x000A;There now appears to be a key on the old table.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-96"/>
+      <child nodeId="node-98"/>
     </children>
   </item>
   <item nodeId="node-96">
     <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 2&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a locked chest (closed), an old table (on which are an invisible key, Wall Piece Down, a rubber band and a lifting potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net and a broken wall here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -938,17 +861,14 @@
     </children>
   </item>
   <item nodeId="node-97">
-    <command xml:space="preserve">look around</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-98"/>
-    </children>
   </item>
   <item nodeId="node-98">
-    <command xml:space="preserve">look torch</command>
-    <result xml:space="preserve">You see nothing special about the wall torch.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">remove glasses</command>
+    <result xml:space="preserve">The key seems to have disappeared from sight.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -956,14 +876,17 @@
     </children>
   </item>
   <item nodeId="node-99">
-    <command xml:space="preserve">look vines</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">There now appears to be a key on the old table.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-100"/>
+    </children>
   </item>
   <item nodeId="node-100">
-    <command xml:space="preserve">burn vines</command>
-    <result xml:space="preserve">(with the wall torch)&#x000A;The the man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -971,51 +894,56 @@
     </children>
   </item>
   <item nodeId="node-101">
-    <command xml:space="preserve">go inside</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">remove glasses</command>
+    <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-102"/>
-    </children>
   </item>
   <item nodeId="node-102">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You walk into a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-103"/>
+      <child nodeId="node-114"/>
+      <child nodeId="node-136"/>
+      <child nodeId="node-139"/>
+      <child nodeId="node-146"/>
+      <child nodeId="node-158"/>
     </children>
   </item>
   <item nodeId="node-103">
-    <command xml:space="preserve">go outside</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take torch</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-104"/>
+      <child nodeId="node-109"/>
     </children>
   </item>
   <item nodeId="node-104">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">Challenge Room 2 North&#x000A;You can see a trench and the yellow pedestal (on which is the yellow gem) here.&#x000A;&#x000A;You cannot fly in here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">ignite man-eating vines with torch</command>
+    <result xml:space="preserve">The the man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-105"/>
+    </children>
   </item>
   <item nodeId="node-105">
-    <command xml:space="preserve">go inside</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-106"/>
-      <child nodeId="node-116"/>
     </children>
   </item>
   <item nodeId="node-106">
-    <command xml:space="preserve">go outside</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look around</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1023,8 +951,8 @@
     </children>
   </item>
   <item nodeId="node-107">
-    <command xml:space="preserve">go inside the supply closet</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look torch</command>
+    <result xml:space="preserve">You see nothing special about the wall torch.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1032,17 +960,14 @@
     </children>
   </item>
   <item nodeId="node-108">
-    <command xml:space="preserve">go inside</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look vines</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-109"/>
-    </children>
   </item>
   <item nodeId="node-109">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">burn vines</command>
+    <result xml:space="preserve">(with the wall torch)&#x000A;The the man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1050,8 +975,8 @@
     </children>
   </item>
   <item nodeId="node-110">
-    <command xml:space="preserve">go outside</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go inside</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1059,8 +984,8 @@
     </children>
   </item>
   <item nodeId="node-111">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">As you approach the man-eating vines, a shiver goes down your entire body. You decide against flying across.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1068,8 +993,8 @@
     </children>
   </item>
   <item nodeId="node-112">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">(first opening the trench)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go outside</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1077,32 +1002,33 @@
     </children>
   </item>
   <item nodeId="node-113">
-    <command xml:space="preserve">take torch</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 North&#x000A;You can see a trench and the yellow pedestal (on which is the yellow gem) here.&#x000A;&#x000A;You cannot fly in here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-114"/>
-    </children>
   </item>
   <item nodeId="node-114">
-    <command xml:space="preserve">burn vines with torch</command>
-    <result xml:space="preserve">I only understood you as far as wanting to burn the man-eating vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go inside</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-115"/>
+      <child nodeId="node-125"/>
     </children>
   </item>
   <item nodeId="node-115">
-    <command xml:space="preserve">burn</command>
-    <result xml:space="preserve">What do you want to burn?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go outside</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-116"/>
+    </children>
   </item>
   <item nodeId="node-116">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go inside the supply closet</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1110,8 +1036,8 @@
     </children>
   </item>
   <item nodeId="node-117">
-    <command xml:space="preserve">go outside</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go inside</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1119,7 +1045,7 @@
     </children>
   </item>
   <item nodeId="node-118">
-    <command xml:space="preserve">take torch</command>
+    <command xml:space="preserve">take broom</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
@@ -1128,8 +1054,8 @@
     </children>
   </item>
   <item nodeId="node-119">
-    <command xml:space="preserve">burn vines with torch</command>
-    <result xml:space="preserve">The the man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go outside</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1138,7 +1064,7 @@
   </item>
   <item nodeId="node-120">
     <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">Challenge Room 2 North&#x000A;You can see a trench and the yellow pedestal (on which is the yellow gem) here.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">As you approach the man-eating vines, a shiver goes down your entire body. You decide against flying across.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1146,8 +1072,8 @@
     </children>
   </item>
   <item nodeId="node-121">
-    <command xml:space="preserve">take yellow gem</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening the trench)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1155,8 +1081,8 @@
     </children>
   </item>
   <item nodeId="node-122">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">(first opening the trench)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take torch</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1164,8 +1090,8 @@
     </children>
   </item>
   <item nodeId="node-123">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench here.&#x000A;&#x000A;You have flown into the south side of the room.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">burn vines with torch</command>
+    <result xml:space="preserve">I only understood you as far as wanting to burn the man-eating vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1173,17 +1099,14 @@
     </children>
   </item>
   <item nodeId="node-124">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">burn</command>
+    <result xml:space="preserve">What do you want to burn?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-125"/>
-    </children>
   </item>
   <item nodeId="node-125">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Exit Room&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1191,14 +1114,17 @@
     </children>
   </item>
   <item nodeId="node-126">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">You cannot fly in here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go outside</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-127"/>
+    </children>
   </item>
   <item nodeId="node-127">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take torch</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1206,8 +1132,8 @@
     </children>
   </item>
   <item nodeId="node-128">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">(first opening the formidable gate)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">burn vines with torch</command>
+    <result xml:space="preserve">The the man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1215,273 +1141,17 @@
     </children>
   </item>
   <item nodeId="node-129">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a locked chest (closed), an old table (on which are Wall Piece Down, a pair of magic glasses, a rubber band and a lifting potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net and a broken wall here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-223">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-224"/>
-    </children>
-  </item>
-  <item nodeId="node-224">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-225"/>
-    </children>
-  </item>
-  <item nodeId="node-225">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-226"/>
-    </children>
-  </item>
-  <item nodeId="node-226">
-    <command xml:space="preserve">burn vines with torch</command>
-    <result xml:space="preserve">The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-227"/>
-    </children>
-  </item>
-  <item nodeId="node-227">
-    <command xml:space="preserve">fly on brom</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-228"/>
-    </children>
-  </item>
-  <item nodeId="node-228">
     <command xml:space="preserve">fly on broom</command>
     <result xml:space="preserve">Challenge Room 2 North&#x000A;You can see a trench and the yellow pedestal (on which is the yellow gem) here.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-229"/>
+      <child nodeId="node-130"/>
     </children>
-  </item>
-  <item nodeId="node-229">
-    <command xml:space="preserve">look at pedestal</command>
-    <result xml:space="preserve">The pedestal holds the gem that you need from this room. The pedestal looks quite nice as well. You wonder if you could also take the pedestal with you.&#x000A;&#x000A;On the yellow pedestal is the yellow gem.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-230">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You'd rather not join the food chain today.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-231"/>
-      <child nodeId="node-232"/>
-    </children>
-  </item>
-  <item nodeId="node-231">
-    <command xml:space="preserve">look at trench</command>
-    <result xml:space="preserve">You see nothing special about the trench.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-232">
-    <command xml:space="preserve">burn vines with torch</command>
-    <result xml:space="preserve">The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-233"/>
-    </children>
-  </item>
-  <item nodeId="node-233">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">There is no feasible way to get across this trench.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-234"/>
-    </children>
-  </item>
-  <item nodeId="node-234">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-235"/>
-    </children>
-  </item>
-  <item nodeId="node-235">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-236"/>
-    </children>
-  </item>
-  <item nodeId="node-236">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-237"/>
-    </children>
-  </item>
-  <item nodeId="node-237">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-238"/>
-    </children>
-  </item>
-  <item nodeId="node-238">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You'd rather not join the food chain today.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-239"/>
-    </children>
-  </item>
-  <item nodeId="node-239">
-    <command xml:space="preserve">take vines</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-240"/>
-    </children>
-  </item>
-  <item nodeId="node-240">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">You'd rather not join the food chain today.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-241"/>
-    </children>
-  </item>
-  <item nodeId="node-241">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  the suspicious broom&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-242">
-    <command xml:space="preserve">burn vines with torch</command>
-    <result xml:space="preserve">The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-243"/>
-    </children>
-  </item>
-  <item nodeId="node-243">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-244"/>
-    </children>
-  </item>
-  <item nodeId="node-244">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-245"/>
-    </children>
-  </item>
-  <item nodeId="node-245">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-246"/>
-    </children>
-  </item>
-  <item nodeId="node-246">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">There is no feasible way to get across this trench.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-247"/>
-    </children>
-  </item>
-  <item nodeId="node-247">
-    <command xml:space="preserve">look at broom</command>
-    <result xml:space="preserve">On the broom is a metal tag. It reads, "Nimbus 2000 (property of Hogwarts)." It's an older model, so nobody will miss it if you take it.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-248"/>
-    </children>
-  </item>
-  <item nodeId="node-248">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">The trench is deep. If only there were a way to get across...&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-249"/>
-    </children>
-  </item>
-  <item nodeId="node-249">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">Challenge Room 2 North&#x000A;The air seems to be fresher here.&#x000A;&#x000A;An expensive-looking pedestal sits in the middle of the room. A yellow gem sits on top of it. To the south is the trench that you flew over, leading to the exit.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-250"/>
-    </children>
-  </item>
-  <item nodeId="node-250">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You walk into a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;You have flown into the south side of the room.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-251"/>
-    </children>
-  </item>
-  <item nodeId="node-251">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-252"/>
-    </children>
-  </item>
-  <item nodeId="node-252">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">Challenge Room 1&#x000A;In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
   </item>
   <item nodeId="node-130">
-    <command xml:space="preserve">mix red vial and blue vial</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take yellow gem</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1489,8 +1159,8 @@
     </children>
   </item>
   <item nodeId="node-131">
-    <command xml:space="preserve">mix</command>
-    <result xml:space="preserve">What do you want to mix?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">(first opening the trench)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1498,8 +1168,8 @@
     </children>
   </item>
   <item nodeId="node-132">
-    <command xml:space="preserve">blend</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench here.&#x000A;&#x000A;You have flown into the south side of the room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1507,8 +1177,8 @@
     </children>
   </item>
   <item nodeId="node-133">
-    <command xml:space="preserve">combine</command>
-    <result xml:space="preserve">What do you want to combine?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1516,8 +1186,8 @@
     </children>
   </item>
   <item nodeId="node-134">
-    <command xml:space="preserve">connect</command>
-    <result xml:space="preserve">What do you want to connect?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Exit Room&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1525,17 +1195,14 @@
     </children>
   </item>
   <item nodeId="node-135">
-    <command xml:space="preserve">take red vial</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">You cannot fly in here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-136"/>
-    </children>
   </item>
   <item nodeId="node-136">
-    <command xml:space="preserve">take blue vial</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1543,8 +1210,8 @@
     </children>
   </item>
   <item nodeId="node-137">
-    <command xml:space="preserve">mix red vial and blue vial</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening the formidable gate)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1552,17 +1219,14 @@
     </children>
   </item>
   <item nodeId="node-138">
-    <command xml:space="preserve">take beaker</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a locked chest (closed), an old table (on which are Wall Piece Down, a pair of magic glasses, a rubber band and a lifting potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net and a broken wall here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-139"/>
-    </children>
   </item>
   <item nodeId="node-139">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a beaker&#x000A;  a blue vial&#x000A;  a red vial&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1570,8 +1234,8 @@
     </children>
   </item>
   <item nodeId="node-140">
-    <command xml:space="preserve">mix red vial and blue vial</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1579,14 +1243,17 @@
     </children>
   </item>
   <item nodeId="node-141">
-    <command xml:space="preserve">brew</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-142"/>
+    </children>
   </item>
   <item nodeId="node-142">
-    <command xml:space="preserve">brew</command>
-    <result xml:space="preserve">What do you want to brew?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">burn vines with torch</command>
+    <result xml:space="preserve">The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1594,8 +1261,8 @@
     </children>
   </item>
   <item nodeId="node-143">
-    <command xml:space="preserve">brew red vial and blue vial</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on brom</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1603,8 +1270,8 @@
     </children>
   </item>
   <item nodeId="node-144">
-    <command xml:space="preserve">brew the red vial and the blue vial</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 North&#x000A;You can see a trench and the yellow pedestal (on which is the yellow gem) here.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1612,64 +1279,66 @@
     </children>
   </item>
   <item nodeId="node-145">
-    <command xml:space="preserve">take red vial</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at pedestal</command>
+    <result xml:space="preserve">The pedestal holds the gem that you need from this room. The pedestal looks quite nice as well. You wonder if you could also take the pedestal with you.&#x000A;&#x000A;On the yellow pedestal is the yellow gem.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-146"/>
-    </children>
   </item>
   <item nodeId="node-146">
-    <command xml:space="preserve">take blue vial</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You'd rather not join the food chain today.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-147"/>
-    </children>
-  </item>
-  <item nodeId="node-147">
-    <command xml:space="preserve">brew red vial and blue vial</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
       <child nodeId="node-148"/>
     </children>
   </item>
-  <item nodeId="node-148">
-    <command xml:space="preserve">brew red vial with blue vial</command>
-    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-147">
+    <command xml:space="preserve">look at trench</command>
+    <result xml:space="preserve">You see nothing special about the trench.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-148">
+    <command xml:space="preserve">burn vines with torch</command>
+    <result xml:space="preserve">The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-149"/>
+    </children>
+  </item>
   <item nodeId="node-149">
-    <command xml:space="preserve">brew red vial with blue vial</command>
-    <result xml:space="preserve">You now have a purple potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">There is no feasible way to get across this trench.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-150"/>
-      <child nodeId="node-151"/>
-      <child nodeId="node-152"/>
     </children>
   </item>
   <item nodeId="node-150">
-    <command xml:space="preserve">dump</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-151"/>
+    </children>
   </item>
   <item nodeId="node-151">
-    <command xml:space="preserve">dump purple potion</command>
-    <result xml:space="preserve">The the purple potion fizzled away.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-152"/>
+    </children>
   </item>
   <item nodeId="node-152">
-    <command xml:space="preserve">use purple potion on stone encasing</command>
-    <result xml:space="preserve">The stone encasing fizzled away. A red gem is left in its place.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1677,8 +1346,8 @@
     </children>
   </item>
   <item nodeId="node-153">
-    <command xml:space="preserve">take red gem</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1686,14 +1355,17 @@
     </children>
   </item>
   <item nodeId="node-154">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a red gem&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You'd rather not join the food chain today.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-155"/>
+    </children>
   </item>
   <item nodeId="node-155">
-    <command xml:space="preserve">brew red vial and blue vial</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take vines</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1701,30 +1373,32 @@
     </children>
   </item>
   <item nodeId="node-156">
-    <command xml:space="preserve">brew red vial with blue vial</command>
-    <result xml:space="preserve">You now have a purple potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You'd rather not join the food chain today.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-157"/>
-      <child nodeId="node-158"/>
     </children>
   </item>
   <item nodeId="node-157">
-    <command xml:space="preserve">brew white vial with black vial</command>
-    <result xml:space="preserve">(first taking the white vial)&#x000A;(first taking the black vial)&#x000A;You can't mix the white vial and the black vial into anything useful.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  the suspicious broom&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-158">
-    <command xml:space="preserve">dump purple potion</command>
-    <result xml:space="preserve">the purple potion fizzled away.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">burn vines with torch</command>
+    <result xml:space="preserve">The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-159"/>
+    </children>
   </item>
   <item nodeId="node-159">
-    <command xml:space="preserve">brew red vial and red vial</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1732,8 +1406,8 @@
     </children>
   </item>
   <item nodeId="node-160">
-    <command xml:space="preserve">brew red vial with red vial</command>
-    <result xml:space="preserve">(first taking the red vial)&#x000A;You now have a suspicious potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1741,14 +1415,17 @@
     </children>
   </item>
   <item nodeId="node-161">
-    <command xml:space="preserve">brew red vial with blue vial</command>
-    <result xml:space="preserve">(first taking the blue vial)&#x000A;There is no space in the beaker for a new potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-162"/>
+    </children>
   </item>
   <item nodeId="node-162">
-    <command xml:space="preserve">dump purple potion</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">There is no feasible way to get across this trench.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1756,8 +1433,8 @@
     </children>
   </item>
   <item nodeId="node-163">
-    <command xml:space="preserve">brew red vial with blue vial</command>
-    <result xml:space="preserve">You now have a purple potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at broom</command>
+    <result xml:space="preserve">On the broom is a metal tag. It reads, "Nimbus 2000 (property of Hogwarts)." It's an older model, so nobody will miss it if you take it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1765,8 +1442,8 @@
     </children>
   </item>
   <item nodeId="node-164">
-    <command xml:space="preserve">dump purple potion</command>
-    <result xml:space="preserve">The purple potion fizzled away.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">The trench is deep. If only there were a way to get across...&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1774,20 +1451,26 @@
     </children>
   </item>
   <item nodeId="node-165">
-    <command xml:space="preserve">use</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 North&#x000A;The air seems to be fresher here.&#x000A;&#x000A;An expensive-looking pedestal sits in the middle of the room. A yellow gem sits on top of it. To the south is the trench that you flew over, leading to the exit.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-166"/>
+    </children>
   </item>
   <item nodeId="node-166">
-    <command xml:space="preserve">fly</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You walk into a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;You have flown into the south side of the room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-167"/>
+    </children>
   </item>
   <item nodeId="node-167">
-    <command xml:space="preserve">brew red and blue</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1795,17 +1478,14 @@
     </children>
   </item>
   <item nodeId="node-168">
-    <command xml:space="preserve">brew red with blue</command>
-    <result xml:space="preserve">You now have a purple potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Challenge Room 1&#x000A;In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-169"/>
-    </children>
   </item>
   <item nodeId="node-169">
-    <command xml:space="preserve">use potion on stone encasing</command>
-    <result xml:space="preserve">Which do you mean, the potion tray or the purple potion?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">mix red vial and blue vial</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1813,8 +1493,8 @@
     </children>
   </item>
   <item nodeId="node-170">
-    <command xml:space="preserve">use purple potion on stone encasing</command>
-    <result xml:space="preserve">The stone encasing fizzled away. A red gem is left in its place.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">mix</command>
+    <result xml:space="preserve">What do you want to mix?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1822,8 +1502,8 @@
     </children>
   </item>
   <item nodeId="node-171">
-    <command xml:space="preserve">take red gem</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">blend</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1831,8 +1511,8 @@
     </children>
   </item>
   <item nodeId="node-172">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">combine</command>
+    <result xml:space="preserve">What do you want to combine?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1840,8 +1520,8 @@
     </children>
   </item>
   <item nodeId="node-173">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a locked chest (closed), an old table (on which are Wall Piece Down, an invisible key, a magic glasses, a rubber band and a lifting potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net and a broken wall here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">connect</command>
+    <result xml:space="preserve">What do you want to connect?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1849,8 +1529,8 @@
     </children>
   </item>
   <item nodeId="node-174">
-    <command xml:space="preserve">take down</command>
-    <result xml:space="preserve">(Wall Piece Down)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take red vial</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1858,7 +1538,7 @@
     </children>
   </item>
   <item nodeId="node-175">
-    <command xml:space="preserve">take key</command>
+    <command xml:space="preserve">take blue vial</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
@@ -1867,8 +1547,8 @@
     </children>
   </item>
   <item nodeId="node-176">
-    <command xml:space="preserve">unlock chest with key</command>
-    <result xml:space="preserve">You unlock the locked chest.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">mix red vial and blue vial</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1876,8 +1556,8 @@
     </children>
   </item>
   <item nodeId="node-177">
-    <command xml:space="preserve">open chest</command>
-    <result xml:space="preserve">You open the locked chest, revealing Wall Piece Left.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take beaker</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1885,8 +1565,8 @@
     </children>
   </item>
   <item nodeId="node-178">
-    <command xml:space="preserve">take left</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a beaker&#x000A;  a blue vial&#x000A;  a red vial&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1894,8 +1574,8 @@
     </children>
   </item>
   <item nodeId="node-179">
-    <command xml:space="preserve">craft stick with band</command>
-    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">mix red vial and blue vial</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1903,17 +1583,14 @@
     </children>
   </item>
   <item nodeId="node-180">
-    <command xml:space="preserve">shoot net with slingshot</command>
-    <result xml:space="preserve">You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with Wall Piece Right.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-181"/>
-    </children>
   </item>
   <item nodeId="node-181">
-    <command xml:space="preserve">take right</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew</command>
+    <result xml:space="preserve">What do you want to brew?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1921,8 +1598,8 @@
     </children>
   </item>
   <item nodeId="node-182">
-    <command xml:space="preserve">take staff</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial and blue vial</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1930,8 +1607,8 @@
     </children>
   </item>
   <item nodeId="node-183">
-    <command xml:space="preserve">drink potion</command>
-    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew the red vial and the blue vial</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1939,8 +1616,8 @@
     </children>
   </item>
   <item nodeId="node-184">
-    <command xml:space="preserve">lift boulders with staff</command>
-    <result xml:space="preserve">You channeled your newfound aura into the staff. To your surprise, the stack of boulders began to float in the air. Behind the stack of boulders was Wall Piece Up. You moved the stack of boulders to the side, allowing access to Wall Piece Up.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take red vial</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1948,8 +1625,8 @@
     </children>
   </item>
   <item nodeId="node-185">
-    <command xml:space="preserve">take up</command>
-    <result xml:space="preserve">(Wall Piece Up)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take blue vial</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1957,8 +1634,8 @@
     </children>
   </item>
   <item nodeId="node-186">
-    <command xml:space="preserve">place up in broken wall</command>
-    <result xml:space="preserve">Wall Piece Up seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial and blue vial</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1966,44 +1643,37 @@
     </children>
   </item>
   <item nodeId="node-187">
-    <command xml:space="preserve">place down in broken wall</command>
-    <result xml:space="preserve">Wall Piece Down seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial with blue vial</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-188"/>
-    </children>
   </item>
   <item nodeId="node-188">
-    <command xml:space="preserve">place left in broken wall</command>
-    <result xml:space="preserve">Wall Piece Left seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial with blue vial</command>
+    <result xml:space="preserve">You now have a purple potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-189"/>
-    </children>
-  </item>
-  <item nodeId="node-189">
-    <command xml:space="preserve">place right in broken wall</command>
-    <result xml:space="preserve">Wall Piece Right seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
       <child nodeId="node-190"/>
-    </children>
-  </item>
-  <item nodeId="node-190">
-    <command xml:space="preserve">take gem</command>
-    <result xml:space="preserve">(the blue gem)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
       <child nodeId="node-191"/>
     </children>
   </item>
+  <item nodeId="node-189">
+    <command xml:space="preserve">dump</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-190">
+    <command xml:space="preserve">dump purple potion</command>
+    <result xml:space="preserve">The the purple potion fizzled away.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-191">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a blue gem&#x000A;  a magical staff&#x000A;  a slingshot&#x000A;  an invisible key&#x000A;  a red gem&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">use purple potion on stone encasing</command>
+    <result xml:space="preserve">The stone encasing fizzled away. A red gem is left in its place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2011,8 +1681,8 @@
     </children>
   </item>
   <item nodeId="node-192">
-    <command xml:space="preserve">where are exits</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take red gem</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2020,17 +1690,14 @@
     </children>
   </item>
   <item nodeId="node-193">
-    <command xml:space="preserve">go</command>
-    <result xml:space="preserve">You'll have to say which compass direction to go in.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a red gem&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-194"/>
-    </children>
   </item>
   <item nodeId="node-194">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial and blue vial</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2038,35 +1705,30 @@
     </children>
   </item>
   <item nodeId="node-195">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial with blue vial</command>
+    <result xml:space="preserve">You now have a purple potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-196"/>
-    </children>
-  </item>
-  <item nodeId="node-196">
-    <command xml:space="preserve">burn vines with torch</command>
-    <result xml:space="preserve">The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
       <child nodeId="node-197"/>
     </children>
   </item>
-  <item nodeId="node-197">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-196">
+    <command xml:space="preserve">brew white vial with black vial</command>
+    <result xml:space="preserve">(first taking the white vial)&#x000A;(first taking the black vial)&#x000A;You can't mix the white vial and the black vial into anything useful.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-198"/>
-    </children>
+  </item>
+  <item nodeId="node-197">
+    <command xml:space="preserve">dump purple potion</command>
+    <result xml:space="preserve">the purple potion fizzled away.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-198">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial and red vial</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2074,8 +1736,8 @@
     </children>
   </item>
   <item nodeId="node-199">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench and a wall torch here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial with red vial</command>
+    <result xml:space="preserve">(first taking the red vial)&#x000A;You now have a suspicious potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2083,17 +1745,14 @@
     </children>
   </item>
   <item nodeId="node-200">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">Challenge Room 2 North&#x000A;You can see a trench and the yellow pedestal (on which is the yellow gem) here.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial with blue vial</command>
+    <result xml:space="preserve">(first taking the blue vial)&#x000A;There is no space in the beaker for a new potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-201"/>
-    </children>
   </item>
   <item nodeId="node-201">
-    <command xml:space="preserve">take gem</command>
-    <result xml:space="preserve">(the yellow gem)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">dump purple potion</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2101,8 +1760,8 @@
     </children>
   </item>
   <item nodeId="node-202">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench and a wall torch here.&#x000A;&#x000A;You have flown into the south side of the room.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red vial with blue vial</command>
+    <result xml:space="preserve">You now have a purple potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2110,8 +1769,8 @@
     </children>
   </item>
   <item nodeId="node-203">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">dump purple potion</command>
+    <result xml:space="preserve">The purple potion fizzled away.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2119,32 +1778,29 @@
     </children>
   </item>
   <item nodeId="node-204">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">(first opening the formidable gate)&#x000A;&#x000A;Last Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&#x000A;&#x000A;    *** The End ***&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <command xml:space="preserve">use</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-205"/>
-    </children>
   </item>
   <item nodeId="node-205">
-    <command xml:space="preserve">quit</command>
-    <result xml:space="preserve"></result>
+    <command xml:space="preserve">fly</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-206">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 1&#x000A;You find yourself in a strange room.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red and blue</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-207"/>
     </children>
   </item>
   <item nodeId="node-207">
-    <command xml:space="preserve">look at table</command>
-    <result xml:space="preserve">this is a table&#x000A;&#x000A;On the experimentation table are the potion tray (in which are a red vial, a yellow vial, a blue vial, a white vial, a black vial and a clear vial), the recipe book and a beaker (empty).&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">brew red with blue</command>
+    <result xml:space="preserve">You now have a purple potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2152,8 +1808,8 @@
     </children>
   </item>
   <item nodeId="node-208">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">use potion on stone encasing</command>
+    <result xml:space="preserve">Which do you mean, the potion tray or the purple potion?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2161,14 +1817,17 @@
     </children>
   </item>
   <item nodeId="node-209">
-    <command xml:space="preserve">go south</command>
-    <result xml:space="preserve">Challenge Room 1&#x000A;You can see the experimentation table (on which are the potion tray (in which are a red vial, a yellow vial, a blue vial, a white vial, a black vial and a clear vial), the recipe book and a beaker (empty)), the broken vial and the stone encasing here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">use purple potion on stone encasing</command>
+    <result xml:space="preserve">The stone encasing fizzled away. A red gem is left in its place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-210"/>
+    </children>
   </item>
   <item nodeId="node-210">
-    <command xml:space="preserve">look table</command>
-    <result xml:space="preserve">On the experimentation table are the potion tray (in which are a red vial, a yellow vial, a blue vial, a white vial, a black vial and a clear vial), the recipe book and a beaker (empty).&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take red gem</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2176,21 +1835,807 @@
     </children>
   </item>
   <item nodeId="node-211">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-212"/>
+    </children>
+  </item>
+  <item nodeId="node-212">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You can see a locked chest (closed), an old table (on which are Wall Piece Down, an invisible key, a magic glasses, a rubber band and a lifting potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net and a broken wall here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-213"/>
+    </children>
+  </item>
+  <item nodeId="node-213">
+    <command xml:space="preserve">take down</command>
+    <result xml:space="preserve">(Wall Piece Down)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-214"/>
+    </children>
+  </item>
+  <item nodeId="node-214">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-215"/>
+    </children>
+  </item>
+  <item nodeId="node-215">
+    <command xml:space="preserve">unlock chest with key</command>
+    <result xml:space="preserve">You unlock the locked chest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-216"/>
+    </children>
+  </item>
+  <item nodeId="node-216">
+    <command xml:space="preserve">open chest</command>
+    <result xml:space="preserve">You open the locked chest, revealing Wall Piece Left.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-217"/>
+    </children>
+  </item>
+  <item nodeId="node-217">
+    <command xml:space="preserve">take left</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-218"/>
+    </children>
+  </item>
+  <item nodeId="node-218">
+    <command xml:space="preserve">craft stick with band</command>
+    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-219"/>
+    </children>
+  </item>
+  <item nodeId="node-219">
+    <command xml:space="preserve">shoot net with slingshot</command>
+    <result xml:space="preserve">You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with Wall Piece Right.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-220"/>
+    </children>
+  </item>
+  <item nodeId="node-220">
+    <command xml:space="preserve">take right</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-221"/>
+    </children>
+  </item>
+  <item nodeId="node-221">
+    <command xml:space="preserve">take staff</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-222"/>
+    </children>
+  </item>
+  <item nodeId="node-222">
+    <command xml:space="preserve">drink potion</command>
+    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-223"/>
+    </children>
+  </item>
+  <item nodeId="node-223">
+    <command xml:space="preserve">lift boulders with staff</command>
+    <result xml:space="preserve">You channeled your newfound aura into the staff. To your surprise, the stack of boulders began to float in the air. Behind the stack of boulders was Wall Piece Up. You moved the stack of boulders to the side, allowing access to Wall Piece Up.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-224"/>
+    </children>
+  </item>
+  <item nodeId="node-224">
+    <command xml:space="preserve">take up</command>
+    <result xml:space="preserve">(Wall Piece Up)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-225"/>
+    </children>
+  </item>
+  <item nodeId="node-225">
+    <command xml:space="preserve">place up in broken wall</command>
+    <result xml:space="preserve">Wall Piece Up seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-226"/>
+    </children>
+  </item>
+  <item nodeId="node-226">
+    <command xml:space="preserve">place down in broken wall</command>
+    <result xml:space="preserve">Wall Piece Down seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-227"/>
+    </children>
+  </item>
+  <item nodeId="node-227">
+    <command xml:space="preserve">place left in broken wall</command>
+    <result xml:space="preserve">Wall Piece Left seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-228"/>
+    </children>
+  </item>
+  <item nodeId="node-228">
+    <command xml:space="preserve">place right in broken wall</command>
+    <result xml:space="preserve">Wall Piece Right seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-229"/>
+    </children>
+  </item>
+  <item nodeId="node-229">
+    <command xml:space="preserve">take gem</command>
+    <result xml:space="preserve">(the blue gem)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-230"/>
+    </children>
+  </item>
+  <item nodeId="node-230">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a blue gem&#x000A;  a magical staff&#x000A;  a slingshot&#x000A;  an invisible key&#x000A;  a red gem&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-231"/>
+    </children>
+  </item>
+  <item nodeId="node-231">
+    <command xml:space="preserve">where are exits</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-232"/>
+    </children>
+  </item>
+  <item nodeId="node-232">
+    <command xml:space="preserve">go</command>
+    <result xml:space="preserve">You'll have to say which compass direction to go in.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-233"/>
+    </children>
+  </item>
+  <item nodeId="node-233">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-234"/>
+    </children>
+  </item>
+  <item nodeId="node-234">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench, a wall torch and a man-eating vines here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-235"/>
+    </children>
+  </item>
+  <item nodeId="node-235">
+    <command xml:space="preserve">burn vines with torch</command>
+    <result xml:space="preserve">The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-236"/>
+    </children>
+  </item>
+  <item nodeId="node-236">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-237"/>
+    </children>
+  </item>
+  <item nodeId="node-237">
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-238"/>
+    </children>
+  </item>
+  <item nodeId="node-238">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench and a wall torch here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-239"/>
+    </children>
+  </item>
+  <item nodeId="node-239">
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 North&#x000A;You can see a trench and the yellow pedestal (on which is the yellow gem) here.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-240"/>
+    </children>
+  </item>
+  <item nodeId="node-240">
+    <command xml:space="preserve">take gem</command>
+    <result xml:space="preserve">(the yellow gem)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-241"/>
+    </children>
+  </item>
+  <item nodeId="node-241">
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You can see a trench and a wall torch here.&#x000A;&#x000A;You have flown into the south side of the room.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-242"/>
+    </children>
+  </item>
+  <item nodeId="node-242">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-243"/>
+    </children>
+  </item>
+  <item nodeId="node-243">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">(first opening the formidable gate)&#x000A;&#x000A;Last Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&#x000A;&#x000A;    *** The End ***&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-244"/>
+    </children>
+  </item>
+  <item nodeId="node-244">
+    <command xml:space="preserve">quit</command>
+    <result xml:space="preserve"></result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-245">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 1&#x000A;You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area.&#x000A;&#x000A;In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-246"/>
+      <child nodeId="node-253"/>
+    </children>
+  </item>
+  <item nodeId="node-246">
+    <command xml:space="preserve">look at table</command>
+    <result xml:space="preserve">this is a table&#x000A;&#x000A;On the experimentation table are the potion tray (in which are a red vial, a yellow vial, a blue vial, a white vial, a black vial and a clear vial), the recipe book and a beaker (empty).&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-247"/>
+    </children>
+  </item>
+  <item nodeId="node-247">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Exit Room&#x000A;You can see a formidable gate here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-248"/>
+    </children>
+  </item>
+  <item nodeId="node-248">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Challenge Room 1&#x000A;You can see the experimentation table (on which are the potion tray (in which are a red vial, a yellow vial, a blue vial, a white vial, a black vial and a clear vial), the recipe book and a beaker (empty)), the broken vial and the stone encasing here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-253">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-254"/>
+    </children>
+  </item>
+  <item nodeId="node-254">
+    <command xml:space="preserve">enter archway</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-255"/>
+    </children>
+  </item>
+  <item nodeId="node-255">
+    <command xml:space="preserve">enter open area</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-256"/>
+    </children>
+  </item>
+  <item nodeId="node-256">
+    <command xml:space="preserve">enter Exit Room</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-257"/>
+    </children>
+  </item>
+  <item nodeId="node-257">
+    <command xml:space="preserve">Exit Room</command>
+    <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-258"/>
+    </children>
+  </item>
+  <item nodeId="node-258">
+    <command xml:space="preserve">go Exit room</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-249">
+    <command xml:space="preserve">look table</command>
+    <result xml:space="preserve">On the experimentation table are the potion tray (in which are a red vial, a yellow vial, a blue vial, a white vial, a black vial and a clear vial), the recipe book and a beaker (empty).&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-250"/>
+    </children>
+  </item>
+  <item nodeId="node-250">
     <command xml:space="preserve">look red vial</command>
     <result xml:space="preserve">You see nothing special about the red vial.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-212">
+  <item nodeId="node-251">
     <command xml:space="preserve">look tray</command>
     <result xml:space="preserve">Some vials containing unknown liquids in a tray. Reminds you of potions class and how you almost failed because the teacher was a complete--&#x000A;&#x000A;In the potion tray are a red vial, a yellow vial, a blue vial, a white vial, a black vial and a clear vial.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-213">
+  <item nodeId="node-252">
     <command xml:space="preserve">look recipe book</command>
     <result xml:space="preserve">The recipe book contains several recipes scribbled into it. &#x000A; Cure grey hair = black + white &#x000A; Madness potion = red + black &#x000A; Cure stone encasing = blue + red &#x000A; Become invisible = yellow + blue &#x000A; ??? = clear + anything &#x000A; Injury cure = black + blue&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
+  </item>
+  <item nodeId="node-259">
+    <command xml:space="preserve">talk to npc_2</command>
+    <result xml:space="preserve">NPC_2: Hey, how are you? You shouldn't be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don't burn yourself in the process, okay?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-260"/>
+      <child nodeId="node-270"/>
+      <child nodeId="node-285"/>
+    </children>
+  </item>
+  <item nodeId="node-260">
+    <command xml:space="preserve">pick up wall torch</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-261"/>
+    </children>
+  </item>
+  <item nodeId="node-261">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a wall torch&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-262"/>
+    </children>
+  </item>
+  <item nodeId="node-262">
+    <command xml:space="preserve">talk to npc_2</command>
+    <result xml:space="preserve">a&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-263"/>
+    </children>
+  </item>
+  <item nodeId="node-263">
+    <command xml:space="preserve">use wall torch on vines</command>
+    <result xml:space="preserve">You cannot use wall torch on man-eating vines.&#x000A;&#x000A;Nothing happened.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-264"/>
+    </children>
+  </item>
+  <item nodeId="node-264">
+    <command xml:space="preserve">ignite man-eating vines</command>
+    <result xml:space="preserve">(with the wall torch)&#x000A;The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-265"/>
+    </children>
+  </item>
+  <item nodeId="node-265">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-270">
+    <command xml:space="preserve">enter supply closet</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-271"/>
+    </children>
+  </item>
+  <item nodeId="node-271">
+    <command xml:space="preserve">go to supply closet</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-272"/>
+    </children>
+  </item>
+  <item nodeId="node-272">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-273"/>
+    </children>
+  </item>
+  <item nodeId="node-273">
+    <command xml:space="preserve">enter west door</command>
+    <result xml:space="preserve">I only understood you as far as wanting to enter west.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-274"/>
+    </children>
+  </item>
+  <item nodeId="node-274">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-275"/>
+    </children>
+  </item>
+  <item nodeId="node-275">
+    <command xml:space="preserve">enter west</command>
+    <result xml:space="preserve">You must name something more substantial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-276"/>
+    </children>
+  </item>
+  <item nodeId="node-276">
+    <command xml:space="preserve">enter supply closet</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-277"/>
+    </children>
+  </item>
+  <item nodeId="node-277">
+    <command xml:space="preserve">visit supply closet</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-278"/>
+    </children>
+  </item>
+  <item nodeId="node-278">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-279"/>
+    </children>
+  </item>
+  <item nodeId="node-279">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-280"/>
+    </children>
+  </item>
+  <item nodeId="node-280">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-281"/>
+    </children>
+  </item>
+  <item nodeId="node-281">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-282"/>
+    </children>
+  </item>
+  <item nodeId="node-282">
+    <command xml:space="preserve">talk to npc_2</command>
+    <result xml:space="preserve">d&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-285">
+    <command xml:space="preserve">talk to npc_2</command>
+    <result xml:space="preserve">NPC_2: Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don't burn yourself in the process, okay?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-286"/>
+    </children>
+  </item>
+  <item nodeId="node-286">
+    <command xml:space="preserve">grab wall torch</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-287"/>
+    </children>
+  </item>
+  <item nodeId="node-287">
+    <command xml:space="preserve">pick up wall torch</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-288"/>
+    </children>
+  </item>
+  <item nodeId="node-288">
+    <command xml:space="preserve">talk to npc</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-289"/>
+    </children>
+  </item>
+  <item nodeId="node-289">
+    <command xml:space="preserve">talk to npc_2</command>
+    <result xml:space="preserve">NPC_2: Be careful around them with that torch you're holding; they're really flammable, you see. One wrong move and you could burn them down along with yourself.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-290"/>
+    </children>
+  </item>
+  <item nodeId="node-290">
+    <command xml:space="preserve">ignite man-eating vines</command>
+    <result xml:space="preserve">(with the wall torch)&#x000A;NPC_2: Hey, what are you doing?! Get out of there before you get burned as well!&#x000A;The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-291"/>
+    </children>
+  </item>
+  <item nodeId="node-291">
+    <command xml:space="preserve">talk to npc_2</command>
+    <result xml:space="preserve">NPC_2: Well, the vines are dead, but I don't see a way across. Maybe check in the closet?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-292"/>
+    </children>
+  </item>
+  <item nodeId="node-292">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-293"/>
+    </children>
+  </item>
+  <item nodeId="node-293">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-294"/>
+    </children>
+  </item>
+  <item nodeId="node-294">
+    <command xml:space="preserve">talk to npc_2</command>
+    <result xml:space="preserve">NPC_2: Well, the vines are dead, but I don't see a way across. Did you find anything in the closet that would be helpful?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-295"/>
+    </children>
+  </item>
+  <item nodeId="node-295">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-296"/>
+    </children>
+  </item>
+  <item nodeId="node-296">
+    <command xml:space="preserve">pick up suspicious broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-297"/>
+    </children>
+  </item>
+  <item nodeId="node-297">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-298"/>
+    </children>
+  </item>
+  <item nodeId="node-298">
+    <command xml:space="preserve">talk to npc_2</command>
+    <result xml:space="preserve">NPC_2: That's a Nimbus 2000 (property of Hogwarts) you found! You should be able fly across the gap no problem now that the vines are gone&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-299"/>
+    </children>
+  </item>
+  <item nodeId="node-299">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-300"/>
+    </children>
+  </item>
+  <item nodeId="node-300">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">There is no feasible way to get across this trench.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-301"/>
+    </children>
+  </item>
+  <item nodeId="node-301">
+    <command xml:space="preserve">fly north</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-302"/>
+    </children>
+  </item>
+  <item nodeId="node-302">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  the suspicious broom&#x000A;  a wall torch&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-266">
+    <command xml:space="preserve">pick up wall torch</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-267"/>
+    </children>
+  </item>
+  <item nodeId="node-267">
+    <command xml:space="preserve">ignite man-eating vines</command>
+    <result xml:space="preserve">(with the wall torch)&#x000A;The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-268"/>
+    </children>
+  </item>
+  <item nodeId="node-268">
+    <command xml:space="preserve">talk to npc</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-269"/>
+    </children>
+  </item>
+  <item nodeId="node-269">
+    <command xml:space="preserve">talk to npc_2</command>
+    <result xml:space="preserve">c&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-283">
+    <command xml:space="preserve">talk to NPC_2</command>
+    <result xml:space="preserve">NPC_2: Hey, how are you? You shouldn't be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don't burn yourself in the process, okay?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-284"/>
+    </children>
+  </item>
+  <item nodeId="node-284">
+    <command xml:space="preserve">talk to NPC_2</command>
+    <result xml:space="preserve">NPC_2: Hey, how are you? You shouldn't be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don't burn yourself in the process, okay?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-303">
+    <command xml:space="preserve">talk to janitor</command>
+    <result xml:space="preserve">Janitor: Hey, how are you? You shouldn't be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don't burn yourself in the process, okay?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
 </Skein>
