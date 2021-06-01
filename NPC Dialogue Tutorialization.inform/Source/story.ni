@@ -1,6 +1,6 @@
 "NPC Dialogue Tutorialization" by Alexander Garcia
 
-Section 1 - Gameplay Modifications
+Part 1 - Gameplay Modifications
 
 [ Gameplay ]
 
@@ -28,7 +28,9 @@ Carry out examining a thing:
 
 Release along with an interpreter.
 
-Section 2 - Challenge Room 1
+Part 2 - Challenge Room 1
+
+Section 1 - Items and Descriptions
 
 Challenge Room 1 is a room. NPC is a man in Challenge Room 1. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingRedGem.
 
@@ -66,7 +68,7 @@ The description of the red gem is "The gem that you need to obtain from this roo
 
 North of Challenge Room 1 is a room called Exit Room.
 
-[ Challenge Room 1 NPC ]
+Section 2 - NPC
 
 Instead of talking to NPC:
 	if player has red gem:
@@ -95,7 +97,9 @@ Instead of talking to NPC:
 			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make a purple potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how.";
 	now NPC is talked to;
 
-Section 3 - Challenge Room 2
+Part 3 - Challenge Room 2
+
+Section 1 - Items and Descriptions
 
 West of the Exit Room is a room called Challenge Room 2 South.  Janitor is a man in Challenge Room 2 South. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingYellowGem.
 
@@ -160,7 +164,7 @@ Instead of going to Challenge Room 2 North from Challenge Room 2 South:
 	otherwise:
 		say "You'd rather not join the food chain today.";
 
-[ Challenge Room 2 NPC ]
+Section 2 - NPC
 
 Instead of talking to Janitor:
 	if player has red gem:
@@ -197,7 +201,9 @@ Instead of talking to Janitor:
 			say “Janitor: Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don’t burn yourself in the process, okay?”;
 	now Janitor is talked to;
 
-Section 4 - Challenge Room 3
+Part 4 - Challenge Room 3
+
+Section 1 - Items and Descriptions
 
 Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The old chest is a container. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. Wall Piece Right is nowhere. Wall Piece Up is nowhere. The suspended net is a thing. The torn net is a thing. The torn net is nowhere. The broken wall is a thing. The blue pedestal is a thing. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal.
 
@@ -253,6 +259,8 @@ The description of the slingshot is "A slingshot that you created. You can fire 
 
 The description of the torn net is "A torn net. You wonder how the wall piece didn't just break through this flimsy net on its own."
 
+Section 2 - NPC
+
 LastInteracted is a kind of value. The LastInteracteds are left1, left2, left3, left4, down1, misc1, right1, right2, right3, right4, right5, right6, up1, up2, up3, up4, misc2, misc3.
 
 A person has a LastInteracted. The LastInteracted of a player is misc1.
@@ -289,15 +297,15 @@ Carry out taking a thing:
 	otherwise if the noun is listed in the list of MiscItems:
 		now the LastInteracted of the player is misc1;
 
-Section 5 - Endgame
+Part 5 - Endgame
 
 The formidable gate is north of the Exit Room. The formidable gate is a door. The formidable gate is lockable and locked.
 
 North of the formidable gate is a room called Last Room.
 
-Section 6 - Custom Actions
+Part 6 - Custom Actions
 
-[ ignition implementation ]
+Section 1 - Ignition Implementation
 
 Understand "ignite [something] with [something preferably held]" as igniting it with. Igniting it with is an action applying to two things. 
 Understand the command "burn" as something new. Understand "burn [something] with [something preferably held]" as igniting it with.
@@ -315,7 +323,7 @@ Check igniting it with:
 	if the noun is not the man-eating vines:
 		say "[noun] is not flammable.";
 		
-[crafting implementation ]
+Section 2 - Crafting Implementation
 
 Understand "combine [something] with [something]" as combining it with. Combining it with is an action applying to two carried things. Understand the command "connect" as "combine".
 
@@ -345,7 +353,7 @@ Carry out combining it with:
 Report combining it with:
 	say "You now have [an item built]."
 	
-[ brewing implementation ]
+Section 3 - Brewing Implementation
 
 Understand the command "brew" as something new. Understand "brew [something] with [something]" as brewing it with. Brewing it with is an action applying to two things.
 
@@ -380,7 +388,7 @@ Carry out brewing it with:
 Report brewing it with:
 	say "You now have [a potion]."
 
-[ dumping implementation ]
+Section 4 - Dumping Implementation
 
 Understand the command "dump" as something new. Understand "dump [something]" as dumping it. Dumping it is an action applying to a thing.
 
@@ -400,7 +408,7 @@ Carry out dumping it:
 Report dumping it:
 	say "The [noun] fizzled away."
 
-[ potion use implementation ]
+Section 5 - Potion Use Implementation
 
 Understand the command "use" as something new. Understand "use [something] on [something]" as using it on. Using it on is an action applying to two things.
 
@@ -432,7 +440,7 @@ Report using it on:
 	otherwise:
 		say "Nothing happened.";
 		
-[ broom flying implementation ]
+Section 6 - Broom Flying Implementation
 
 Understand the command "fly" as something new. Understand "fly on [something]" as flying on. Flying on is an action applying to one thing.
 
@@ -460,7 +468,7 @@ Report flying on:
 	otherwise:
 		say "You cannot fly in here.";
 		
-[ slingshot implementation ]
+Section 7 - Slingshot Implementation
 
 Understand the command "shoot" as something new. Understand "shoot [something] with [something preferably held]" as shooting it with. Shooting it with is an action applying to two things.
 
@@ -480,7 +488,7 @@ Report shooting it with:
 	otherwise:
 		say "You picked up a nearby rock and shot [the noun]. [The noun] does not appear to be damaged.";
 		
-[ lift potion implementation ]
+Section 8 - Lift Potion Implementation
 
 Lift status is a kind of value. The lift statuses are normal and capable.
 
@@ -499,7 +507,7 @@ Carry out drinking it:
 Report drinking it:
 	say "You are now exuding a strange magical aura. It feels as if you can now lift things with ease."
 
-[ lifting implementation ]
+Section 9 - Lifting Implementation
 
 Rock status is a kind of value. The rock statuses are none, first, multiple.
 
@@ -568,7 +576,7 @@ Report lifting it with:
 	otherwise:
 		say "Nothing happened.";
 		
-[ wall pieces construction implementation ]
+Section 10 - Wall Construction Implementation
 
 An up wall status is a kind of value. The up wall statuses are upPresent and upAbsent.
 
@@ -616,7 +624,7 @@ Report placing it in:
 	if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
 		say "With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.";
 		
-[ invisible key and magic glasses]
+Section 11 - Magic Glasses and Invisible Key
 
 KeyVisibility is a kind of value. The KeyVisibilities are keyVisible and keyInvisible.
 
@@ -641,17 +649,8 @@ After taking off the pair of magic glasses:
 	if the player is in Challenge Room 3:
 		if the player does not have the invisible key:
 			say "The key seems to have disappeared from sight."
-	
 
-[ misc ]
-
-[
-After unlocking the old chest:
-	if the old chest is closed:
-		now the old chest is open;
-]
-
-[ end game? ]
+Section 12 - End Game Status Checking
 
 Every turn:
 	if the player is in the Last Room:
