@@ -443,7 +443,7 @@ Report using it on:
 			if the noun is the purple potion:
 				say "The purple potion turns the NPC's stone-encased body back to normal.[line break]NPC: AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
 			otherwise:
-				say "The suspicious potion had no effect.[line break]NPC: AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour a purple potion on me to release me. The recipe book on the table there should point you in the right direction.";
+				say "The suspicious potion had no effect.[line break]NPC: AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.";
 	otherwise:
 		say "Nothing happened.";
 		
