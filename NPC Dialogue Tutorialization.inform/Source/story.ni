@@ -45,6 +45,8 @@ In Challenge Room 1 is a supporter called the experimentation table. On the expe
 
 The red vial is a thing. The yellow vial is a thing. The blue vial is a thing. The white vial is a thing. The black vial is a thing. The clear vial is a thing.
 
+Understand "red potion" as red vial. Understand "yellow potion" as yellow vial. Understand "blue potion" as blue vial. Understand "white portion" as white vial. Understand "black potion" as black vial. Understand "clear potion" as clear vial.
+
 In the potion tray is the red vial, the yellow vial, the blue vial, the white vial, the black vial, the clear vial. 
 
 The purple potion is a thing. The purple potion is nowhere. The suspicious potion is a thing. The suspicious potion is nowhere. The red gem is a thing. The red gem is nowhere.
@@ -95,14 +97,16 @@ Instead of talking to NPC:
 			say "NPC: Didn't you hear me clearly? Look over there at the table. Do you see those vials? Mix the correct ones together into a purple potion and pour it over me!";
 	otherwise:
 		if suspicious potion is in beaker:
-			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. Looks like you've already mixed some of the vials together to make a potion. If you can make a purple potion and pour it on me, it should turn me back to normal! The recipe book right there should tell you how!";
+			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. Looks like you've already mixed some of the vials together to make a potion. If you can make the correct potion and pour it on me, it should turn me back to normal! The recipe book right there should tell you how!";
 		otherwise if purple potion is in beaker:
-			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone… Wait, you've got the purple potion! Quick -- pour it on me!";
+			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone… Wait, you've got the right potion! Quick -- pour it on me!";
 		otherwise if the book is seen:
-			say "Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make a purple potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how. I'd reckon you've already read the book so hurry up!";
+			say "Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how. I'd reckon you've already read the book so hurry up!";
 		otherwise:
-			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make a purple potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how.";
+			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how.";
 	now NPC is talked to;
+
+Understand "talk to stone encasing" as talking.
 
 Part 3 - Challenge Room 2
 
@@ -835,6 +839,9 @@ Carry out brewing it with:
 
 Report brewing it with:
 	say "You now have [a potion]."
+	
+Understand the command "mix" as something new. Understand "mix [something] with [something]" as brewing it with.
+
 
 Section 4 - Dumping Implementation
 
@@ -877,17 +884,19 @@ Report using it on:
 	if the second noun is the stone encasing:
 		if the NPC is talked to:
 			if the noun is the purple potion:
-				say "NPC: That seems to have done the trick. Thank you for helping me out! It looks like the gem you need fell out of the rock, here you go.";
+				say "The purple potion turns the NPC's stone-encased body back to normal.[line break]NPC: That seems to have done the trick. Thank you for helping me out! It looks like the gem you need fell out of the rock, here you go. [line break]You received the red gem.";
 			otherwise:
-				say "NPC: *sputters* Ah! It didn't work!";
+				say "The suspicious potion had no effect.[line break]NPC: *sputters* Ah! It didn't work!";
 		otherwise:
 			if the noun is the purple potion:
-				say "NPC: AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.";
+				say "The purple potion turns the NPC's stone-encased body back to normal.[line break]NPC: AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
 			otherwise:
-				say "NPC: AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour a purple potion on me to release me. The recipe book on the table there should point you in the right direction.";
+				say "The suspicious potion had no effect.[line break]NPC: AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.";
 	otherwise:
 		say "Nothing happened.";
 		
+Understand the command "pour" as something new. Understand "pour [something] on [something]" as using it on.
+
 Section 6 - Broom Flying Implementation
 
 Understand the command "fly" as something new. Understand "fly on [something]" as flying on. Flying on is an action applying to one thing.
