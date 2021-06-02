@@ -41,7 +41,7 @@ Challenge Room 1 is a room.
 
 The description of Challenge Room 1 is "You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area."
 
-In Challenge Room 1 is a supporter called the experimentation table. On the experimentation table is a container called the potion tray. On the experimentation table is a thing called the recipe book. On the experimentation table is a container called a beaker. The carrying capacity of the beaker is 1. In Challenge Room 1 is a thing called the broken vial. In Challenge Room 1 is a thing called the stone encasing.
+In Challenge Room 1 is a supporter called the experimentation table. On the experimentation table is a container called the potion tray. On the experimentation table is a thing called the recipe book. On the experimentation table is a container called a beaker. The carrying capacity of the beaker is 1. In Challenge Room 1 is a thing called the broken vial.
 
 The red vial is a thing. The yellow vial is a thing. The blue vial is a thing. The white vial is a thing. The black vial is a thing. The clear vial is a thing.
 
@@ -67,48 +67,50 @@ Injury cure = black + blue";
 
 The description of the beaker is "A glass beaker used to safely mix potions. Magically enhanced to withstand whatever dangerous substances you may pour into it."
 
-The description of the stone encasing is "There is a red gem embedded in the stone. Wait, there’s a sleeping head coming out of the stone."
-
 The description of the red gem is "The gem that you need to obtain from this room."
 
-North of Challenge Room 1 is a room called Exit Room.
+North of Challenge Room 1 is a room called Central Room.
 
 Section 2 - NPC
 
 NPC is a man in Challenge Room 1. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingRedGem.
 
+Understand "stone encasing" as NPC.
+
+The description of the NPC is "[if the red gem is nowhere and the NPC is not talked to]There is a red gem embedded in the stone. Wait, there’s a sleeping head coming out of the stone.[otherwise if the red gem is nowhere and the NPC is talked to]It seems to be a man encased in stone. You can see a shiny red gem around where his belly-button would be.[otherwise]With the stone encasing removed, the man seems to be surprisingly well built. Perhaps he didn't get hungry while trapped in the stone."
+
 Instead of talking to NPC:
 	if player has red gem:
 		if timesTalkedToAfterGettingRedGem of NPC is 0:
-			say "NPC: Thanks again for freeing me... Go get the rest of the gems so you can get out of here!";
+			say "Stone-Encased Man: Thanks again for freeing me... Go get the rest of the gems so you can get out of here!";
 		otherwise:
-			say "NPC: Why are you still here? There's nothing left to do here now that you've got the gem.";
+			say "Stone-Encased Man: Why are you still here? There's nothing left to do here now that you've got the gem.";
 		increment timesTalkedToAfterGettingRedGem of NPC;
 	otherwise if NPC is talked to:
 		if suspicious potion is in beaker:
-			say "NPC: No, no, no! It's not the correct potion! The right one has a… smell to it.";
+			say "Stone-Encased Man: No, no, no! It's not the correct potion! The right one has a… smell to it.";
 		otherwise if purple potion is in beaker:
-			say "NPC: I think you've done it! That potion smells awful… Now hurry up and pour it on me so I can be free!";
+			say "Stone-Encased Man: I think you've done it! That potion smells awful… Now hurry up and pour it on me so I can be free!";
 		otherwise if the book is seen:
-			say "Well, did you find the correct recipe?";
+			say "Stone-Encased Man: Well, did you find the correct recipe?";
 		otherwise:
-			say "NPC: Didn't you hear me clearly? Look over there at the table. Do you see those vials? Mix the correct ones together into a purple potion and pour it over me!";
+			say "Stone-Encased Man: Didn't you hear me clearly? Look over there at the table. Do you see those vials? Mix the correct ones together into a purple potion and pour it over me!";
 	otherwise:
 		if suspicious potion is in beaker:
-			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. Looks like you've already mixed some of the vials together to make a potion. If you can make a purple potion and pour it on me, it should turn me back to normal! The recipe book right there should tell you how!";
+			say "Stone-Encased Man: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. Looks like you've already mixed some of the vials together to make a potion. If you can make the correct potion and pour it on me, it should turn me back to normal! The recipe book right there should tell you how!";
 		otherwise if purple potion is in beaker:
-			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone… Wait, you've got the purple potion! Quick -- pour it on me!";
+			say "Stone-Encased Man: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone… Wait, you've got the right potion! Quick -- pour it on me!";
 		otherwise if the book is seen:
-			say "Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make a purple potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how. I'd reckon you've already read the book so hurry up!";
+			say "Stone-Encased Man: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how. I'd reckon you've already read the book so hurry up!";
 		otherwise:
-			say "NPC: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make a purple potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how.";
+			say "Stone-Encased Man: Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how.";
 	now NPC is talked to;
 
 Part 3 - Challenge Room 2
 
 Section 1 - Items and Descriptions
 
-West of the Exit Room is a room called Challenge Room 2 South. 
+West of the Central Room is a room called Challenge Room 2 South. 
 
 North of Challenge Room 2 South is a room called Challenge Room 2 North.
 
@@ -117,8 +119,6 @@ The northern trench is a thing. The northern trench is in Challenge Room 2 North
 The southern trench is a thing. The southern trench is in Challenge Room 2 South.
 
 In Challenge Room 2 North is a supporter called the yellow pedestal. On the yellow pedestal is a thing called the yellow gem.
-
-East of the Exit Room is a room called Challenge Room 3.
 
 West of Challenge Room 2 South is a room called Supply Closet.
 
@@ -144,7 +144,7 @@ Carry out examining a thing:
 		
 Understand "Nimbus 2000" as suspicious broom.
 
-The description of Challenge Room 2 South is "You enter a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet."
+The description of Challenge Room 2 South is "You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet."
 
 Rule for printing the locale description of Challenge Room 2 South:
 	if the man-eating vines are in Challenge Room 2 South:
@@ -180,7 +180,7 @@ Janitor is a man in Challenge Room 2 South. A person can be talked to or not tal
 The description of Janitor is "You see a man holding a variety of cleaning equipment. There seems to be a raw chicken wing hanging from his back pocket. The thought of his possible diet concerns you.".
 
 Instead of talking to Janitor:
-	if player has red gem:
+	if player has yellow gem:
 		if timesTalkedToAfterGettingYellowGem of Janitor is 0:
 			say "Janitor: What are you still doing here? The vines are gone and you got your gem! Get out of here and get on to the next room!”;
 		otherwise:
@@ -191,6 +191,7 @@ Instead of talking to Janitor:
 			if Supply Closet is visited:
 				if player has the suspicious broom:
 					say "Janitor: That’s a Nimbus 2000 (property of Hogwarts) you found! You should be able fly across the gap no problem now that the vines are gone!”;
+					now the printed name of the suspicious broom is "Nimbus 2000";
 				otherwise:
 					say "Janitor: Well, the vines are dead, but I don’t see a way across. Did you find anything in the closet that would be helpful?”;
 			otherwise:
@@ -217,6 +218,8 @@ Instead of talking to Janitor:
 Part 4 - Challenge Room 3
 
 Section 1 - Items and Descriptions
+
+East of the Central Room is a room called Challenge Room 3.
 
 Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The old chest is a container. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. Wall Piece Right is nowhere. Wall Piece Up is nowhere. The suspended net is a thing. The torn net is a thing. The torn net is nowhere. The broken wall is a thing. The blue pedestal is a thing. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal.
 
@@ -747,9 +750,60 @@ Instead of talking to Ghost:
 
 Part 5 - Endgame
 
-The formidable gate is north of the Exit Room. The formidable gate is a door. The formidable gate is lockable and locked.
+Section 1 - Items and Description
 
-North of the formidable gate is a room called Last Room.
+North of the Central Room is a room called The Exit.
+
+The description of the Central Room is "A rather barren room. You see a wizard at the north end next to what appears to be an exit.";
+
+Instead of going to The Exit from the Central Room:
+	if the player has the red gem and the player has the blue gem and the player has the yellow gem:
+		end the story;
+	otherwise:
+		say "You feel a strong force repel you away from the exit.";
+		
+Every turn:
+	if the player is in The Exit:
+		end the story;
+
+Rule for printing the locale description of the Central Room:
+	do nothing;
+
+Section 2 - NPC
+
+The Wizard is a man in the Central Room. A person has a number called timesTalkedToWizard. 
+
+The description of the Wizard is "A typical wizard you would see in a typical RPG. You wonder if the long grey hair coming out of his pointy hat is real.".
+
+Instead of talking to the Wizard:
+	if timesTalkedToWizard of the Wizard is 0:
+		if the player has the red gem and the player has the blue gem and the player has the yellow gem:
+			say “Wizard: 'Welcome to my magnificent escape room! You… already have all the gems. Well, how rude. You could have at least let me say my introduction. I worked very hard on it, you know!'”;
+		otherwise if the player has the red gem or the player has the blue gem or the player has the yellow gem:
+			say “Wizard: 'Welcome to my magnificent escape room! You have been randomly chosen from an infinite number of universes, lucky you! To escape-- oh, looks like you already have a gem! Each room contains a gem that you need in order to escape. Get all three and you’ll be free! Also, there may be people inside the rooms. Talk to them and they might say something useful!'”;
+		otherwise:
+			say “Wizard: 'Welcome to my magnificent escape room! You have been randomly chosen from an infinite number of universes, lucky you! To escape, you must go into the rooms to your south, east, and west. In each of those rooms is a gem that you must obtain. But, it’s not that simple; the gems can only be acquired through a series of puzzles. Good luck! Oh, there are also some people inside the rooms. Maybe they’ll say something useful if you talk to them.'”;
+	otherwise:
+		if the player has the red gem and the player has the blue gem and the player has the yellow gem:
+			say "Wizard: 'Congratulations, you were able to solve the escape room! You could walk out the door and go back to your mundane life, but do you really want to?'";
+		otherwise if the player has the red gem or the player has the blue gem or the player has the yellow gem:
+			if the player has the red gem:
+				if the player has the blue gem:
+					say “Wizard: 'Great, all you need is one more gem! Get the yellow gem from Challenge Room 2 and then you can be free!'”;
+				otherwise if the player has the yellow gem:
+					say “Wizard: 'Great, all you need is one more gem! Get the blue gem from Challenge Room 3 and then you can be free!'”;
+				otherwise:
+					say “Wizard: 'Great, all you need are two more gems! Get the yellow and blue gems from Challenge Room 2 and Challenge Room 3 and then you can be free!'”;
+			otherwise if the player has the blue gem:
+				 if the player has the yellow gem:
+					say “Wizard: 'Great, all you need is one more gem! Get the red gem from Challenge Room 1 and then you can be free!'”;
+				otherwise:
+					say “Wizard: 'Great, all you need are two more gems! Get the red and yellow gems from Challenge Room 1 and Challenge Room 2 and then you can be free!'”;
+			otherwise:
+				say “Wizard: 'Great, all you need are two more gems! Get the red and blue gems from Challenge Room 1 and Challenge Room 3 and then you can be free!'”;
+		otherwise:
+			say “Wizard: 'Did you not hear me the first time? Go into the rooms and get the gems. There are also people inside the rooms you can talk to.'”;
+	increment timesTalkedToWizard of the Wizard;
 
 Part 6 - Custom Actions
 
@@ -867,14 +921,13 @@ Check using it on:
 Carry out using it on:
 	if the noun is the purple potion:
 		now the purple potion is nowhere;
-		if the second noun is the stone encasing:
-			now the stone encasing is nowhere;
+		if the second noun is NPC:
 			move the red gem to the player;
 	otherwise if the noun is the suspicious potion:
 		now the suspicious potion is nowhere;
 
 Report using it on:
-	if the second noun is the stone encasing:
+	if the second noun is the NPC:
 		if the NPC is talked to:
 			if the noun is the purple potion:
 				say "NPC: That seems to have done the trick. Thank you for helping me out! It looks like the gem you need fell out of the rock, here you go.";
@@ -932,7 +985,7 @@ Carry out shooting it with:
 	
 Report shooting it with:
 	if the noun is the suspended net:
-		say "You picked up a nearby rock and shot [the noun]. [The noun] plummeted to the ground, along with Wall Piece Right.";
+		say "You picked up a nearby rock and shot [the noun]. [The noun] plummeted to the ground, along with a stone slab.";
 	otherwise:
 		say "You picked up a nearby rock and shot [the noun]. [The noun] does not appear to be damaged.";
 		
@@ -1011,12 +1064,12 @@ Report lifting it with:
 	if the lift status of the player is capable:
 		if the rock staff status of the player is tried:
 			if the noun is the stack of boulders:
-				say "You channeled your newfound aura into the staff. To your surprise, the [noun] began to float in the air. Behind the [noun] was Wall Piece Up. You moved the [noun] to the side, allowing access to Wall Piece Up.";
+				say "You channeled your newfound aura into the staff. To your surprise, the [noun] began to float in the air. Behind the [noun] was a stone shard. You moved the [noun] to the side, allowing access to the stone shard.";
 			otherwise:
 				say "You channeled your newfound aura into the staff. To your surprise, the [noun] began to float in the air. However you found nothing interesting. You decided to put the [noun] back down.";
 		otherwise if the rock staff status of the player is tried again:
 			if the noun is the stack of boulders:
-				say "The [noun] began to float in the air. Behind the [noun] was Wall Piece Up. You moved the [noun] to the side, allowing access to Wall Piece Up.";
+				say "The [noun] began to float in the air. Behind the [noun] was a stone shard. You moved the [noun] to the side, allowing access to the stone shard.";
 			otherwise:
 				say "After lifting the [noun] with the [second noun], you found nothing interesting. You decided to put the [noun] back down.";
 		otherwise:
@@ -1105,12 +1158,3 @@ After taking off the pair of magic glasses:
 		if the player does not have the invisible key:
 			say "The key seems to have disappeared from sight."
 
-Section 12 - End Game Status Checking
-
-Every turn:
-	if the player is in the Last Room:
-		end the story;
-	if the player has the red gem and the player has the blue gem and the player has the yellow gem:
-		now the formidable gate is unlocked;
-	otherwise:
-		now the formidable gate is locked;
