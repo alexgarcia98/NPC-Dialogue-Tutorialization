@@ -460,88 +460,64 @@ Instead of talking to Ghost:
 			if suspended net in Challenge Room 3:
 				if slingshot is not obtained:
 					if rubber band is obtained:
-						if the player has the rubber band:
+						if the player has the rubber band: [has rubber band]
 							if the Y-shaped stick is obtained:
 								if the player has the Y-shaped stick:
 									say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
 								otherwise:
-									say "a"; [prompt to pick stick back up and craft]
+									say "Why'd you drop that Y-shaped stick? You could definitely craft a slingshot if you picked it back up and combined it with that rubber band you have.";
 							otherwise if the Y-shaped stick is seen:
-								say "a"; [prompt to pick up stick and craft]
+								say "You saw the Y-shaped stick, right? You could definitely craft a slingshot if you picked it up and combined it with that rubber band you have."; 
 							otherwise:
-								say "a"; [look around for stick]
-						otherwise:
+								say "There should be a stick somewhere around here... You could definitely craft a slingshot if you found it and combined it with that rubber band you have.";
+						otherwise: [rubber band dropped]
 							if the Y-shaped stick is obtained:
 								if the player has the Y-shaped stick:
-									say “a"; [pick rubber band back up and craft]
+									say "Why'd you drop that rubber band? You could definitely craft a slingshot if you picked it back up and combined it with that Y-shaped stick you have.";
 								otherwise:
-									say "a"; [pick both rubber band and stick back up and craft]
+									say "Why'd you drop that Y-shaped stick and rubber band? You could definitely craft a slingshot if you picked them back up.";
 							otherwise if the Y-shaped stick is seen:
-								say "a"; [pick up both and craft]
+								say "You saw that Y-shaped stick, right? You could definitely craft a slingshot if you combined it with that rubber band you dropped.";
 							otherwise:
-								say "a"; [pick rubber band back up]
-					otherwise if rubber band is seen:
+								say "Why'd you drop that rubber band? I'm sure it will be useful for something...";
+					otherwise if rubber band is seen: [rubber band seen]
 						if the Y-shaped stick is obtained:
 							if the player has the Y-shaped stick:
-								say "a"; [pick up rubber band]
+								say "You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and combined it with that Y-shaped stick you have."; 
 							otherwise:
-								say "a"; [pick up rubber band, pick stick back up]
+								say "You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and combined it with that Y-shaped stick you dropped."; 
 						otherwise if the Y-shaped stick is seen:
-							say "a"; [pick up both]
+							say "You saw that Y-shaped stick and rubber band, right? You could definitely craft a slingshot if you picked them up.";
 						otherwise:
-							say "a"; [pick up band]
+							say "You saw that rubber band, right? I'm sure it will be useful for something...";
 					otherwise if the Y-shaped stick is obtained:
 						if the player has the Y-shaped stick:
-							if rubber band is obtained:
-								if the player has the rubber band:
-									say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
-								otherwise:
-									say "a"; [prompt to pick band back up and craft]
-							otherwise if the rubber band is seen:
-								say "a"; [prompt to pick up band and craft]
-							otherwise:
-								say "a"; [look around for band]
+							say "There should be a rubber band somewhere around here... You could definitely craft a slingshot if you picked it up and combined it with that Y-shaped stick you have.";
 						otherwise:
-							if the rubber band is obtained:
-								if the player has the rubber band:
-									say “a"; [pick stick back up and craft]
-								otherwise:
-									say "a"; [pick both rubber band and stick back up and craft]
-							otherwise if the rubber band is seen:
-								say "a"; [pick up both and craft]
-							otherwise:
-								say "a"; [pick stick back up]
+							say "Why'd you drop that Y-shaped stick? I'm sure it will be useful for something...";
 					otherwise if the Y-shaped stick is seen:
-						if the rubber band is obtained:
-							if the player has the rubber band:
-								say "a"; [pick up Y-shaped stick]
-							otherwise:
-								say "a"; [pick up stick, pick band back up]
-						otherwise if the rubber band is seen:
-							say "a"; [pick up both]
-						otherwise:
-							say "a"; [pick up stick]
+							say "You saw that Y-shaped stick, right? I'm sure it will be useful for something...";
 					otherwise:
 						say "Maybe something on that table can help you out.";
 				otherwise: [player has obtained slingshot]
 					if player has slingshot:
 						if suspended net is seen:
-							say "a"; [prompt to shoot at net]
+							say "You saw that suspended net, right? It looks really weak! I'm sure you could shoot it down using your slingshot.";
 						otherwise:
-							say "a"; [prompt to look for something to shoot at]
+							say "Great work crafting that slingshot! You should be able to shoot down something in here... Look around!";
 					otherwise:
-						say "a"; [prompt to get slingshot back]
+						say "Why'd you go through all the trouble of crafting that slingshot if you're just going to drop it?!";
 			otherwise: [net was shot down]
 				if broken wall is seen:
 					if wall piece right is obtained:
 						if player has wall piece right:
-							say "a"; [prompt to put in wall]
+							say "Maybe this oddly shaped stone will fit into the broken wall from earlier...";
 						otherwise:
-							say "a"; [prompt to pick back up and put in wall]
+							say "Why'd you drop the oddly shaped stone? It looks like it might fit in the broken wall from earlier...";
 					otherwise:
-						say "a"; [prompt to pick up and put in wall]
+						say "Looks like something fell out of the net... Go check it out, it might fit in the broken wall from earlier...";
 				otherwise:
-					say "a"; [stone looks sus, look for where it fits]
+					say "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere...";
 		otherwise:
 			if rightComplete of Challenge Room 3 is rightNotDone:
 				say “Great, that fit perfectly!”;
@@ -567,50 +543,52 @@ Instead of talking to Ghost:
 	otherwise if LastInteracted of the player is up1:
 		if up wall status of the broken wall is upAbsent:
 			if wall piece up is not in Challenge Room 3:
-				if the lift status of the player is normal:
+				if the lift status of the player is normal: [player has not drank lift potion]
 					if the lifting potion is obtained:
 						if the player has the lifting potion:
-							say "a"; [prompt to drink]
+							say "That lifting potion you have seems like it could help you with those heavy rocks... you should drink it!";
 						otherwise:
-							say "a"; [prompt to get potion back]
+							say "That lifting potion you had seems like it could help you with those heavy rocks... you should get it back and then drink it!";
 					otherwise if the magical staff is obtained:
 						if the player has the magical staff:
 							if the lifting potion is seen:
-								say "a"; [get the potion]
+								say "That staff won't be enough on it's own... Maybe that lifting potion will help...";
 							otherwise:
-								say "a"; [prompt to find 'something to assist magical powers' aka potion]
+								say "That staff won't be enough on it's own... You'll need something to assist your magical powers...";
 						otherwise:
-							say "a"; [get staff back]
+							say "WHAT?! Why would you drop the staff? You'll need it if you want any hope of lifting the rocks!";
 					otherwise:
 						if the rock status of the player is none:
 							if the stack of boulders is seen:
-								say "a"; [boulders look sus, might be something behind them]
+								say "There's definitely something behind those boulders...";
 							otherwise:
 								say "Maybe something on that table can help you out.";
+						otherwise:
+							say "There's definitely something behind those boulders... but you'll need magic to move them.";
 				otherwise: [player drank lift potion]
 					if the magical staff is obtained:
 						if the player has the magical staff:
-							if the rock staff status is no attempt:
-								say "a"; [staff lifting tutorial]
+							if the rock staff status is none:
+								say "You have the staff and you drank the potion, right? Looks like you should be able to lift the rocks now!";
 							otherwise:
-								say "a"; [prompt to lift with staff]
+								say "WOW! I can feel the magical energy coming off of you. With that staff and that power, you should have a better time lifting the rocks.";
 						otherwise:
-							say "a"; [take back staff]
+							say "WHAT?! Why would you drop the staff? Pick that back up and you should be able to lift the rocks!";
 					otherwise if the magical staff is seen:
-						say "a"; [take staff]
+						say "Okay, you have the magical powers... But now you need a staff to channel those powers. You saw one, right?";
 					otherwise:
-						say "a"; [find staff]
+						say "Okay, you have the magical powers... But now you need a staff to channel those powers. I swear there was one lying around here somewhere...";
 			otherwise:
 				if broken wall is seen:
 					if wall piece up is obtained:
 						if player has wall piece up:
-							say "a"; [put it in wall]
+							say "Maybe this oddly shaped stone will fit into the broken wall from earlier...";
 						otherwise:
-							say "a"; [pick it back up, put in wall]
+							say "Why'd you drop the oddly shaped stone? It looks like it might fit in the broken wall from earlier...";
 					otherwise:
-						say "a"; [pick it up, put in wall]
+						say "Looks like there was something behind the boulders... Go check it out, it might fit in the broken wall from earlier...";
 				otherwise:
-					say "a"; [look for where it goes]
+					say "Looks like there was something behind the boulders... Go check it out, I'm sure it will be useful somewhere...";
 		otherwise:
 			if upComplete of Challenge Room 3 is upNotDone:
 				say “Great, that fit perfectly!”;
@@ -653,9 +631,9 @@ Instead of talking to Ghost:
 					say "Check out that jagged stone you saw earlier. It looked peculiar.";
 			otherwise:
 				if broken wall is seen:
-					say "a"; [look for a stone that fits]
+					say "The broken wall was missing some big pieces... I wonder if we can find them!"; [look for a stone that fits]
 				otherwise:
-					say "a"; [direct player to the broken wall]
+					say "That broken wall looks interesting..."; [direct player to the broken wall]
 		otherwise:
 			if downComplete of Challenge Room 3 is downNotDone:
 				say “Great, that fit perfectly!”;
@@ -687,9 +665,9 @@ Instead of talking to Ghost:
 					say "Well, if you want to stay here, then be my guest. Hmm, let's share stories. There was this one time where… ";
 				increment timesTalkedToAfterGettingBlueGem of Ghost;
 			otherwise:
-				say "a"; [prompt to pick the blue gem back up]
+				say "You solved the puzzle... and then DROPPED the gem?! Pick it up and get out of here!!";
 		otherwise:
-			say "a"; [prompt to pick up the blue gem]
+			say "You solved the puzzle!! Go pick up the gem already...";
 	[otherwise if LastInteracted of the player is misc1:
 		if blue pedestal is in Challenge Room 3:
 			say "a";
