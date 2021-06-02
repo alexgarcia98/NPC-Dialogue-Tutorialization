@@ -449,73 +449,114 @@ Instead of talking to Ghost:
 				otherwise:
 					now the LastInteracted of the player is endInteract;
 	otherwise if LastInteracted of the player is right1:
-		if player does not have slingshot:
-			if rubber band is obtained:
-				if the player has the rubber band:
-					if the Y-shaped stick is obtained:
-						if the player has the Y-shaped stick:
-							say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
-						otherwise:
-							say "a"; [prompt to pick stick back up and craft]
-					otherwise if the Y-shaped stick is seen:
-						say "a"; [prompt to pick up stick and craft]
-					otherwise:
-						say "a"; [look around for stick]
-				otherwise:
-					if the Y-shaped stick is obtained:
-						if the player has the Y-shaped stick:
-							say “a"; [pick rubber band back up and craft]
-						otherwise:
-							say "a"; [pick both rubber band and stick back up and craft]
-					otherwise if the Y-shaped stick is seen:
-						say "a"; [pick up both and craft]
-					otherwise:
-						say "a"; [pick rubber band back up]
-			otherwise if rubber band is seen:
-				if the Y-shaped stick is obtained:
-					if the player has the Y-shaped stick:
-						say "a"; [pick up rubber band]
-					otherwise:
-						say "a"; [pick up rubber band, pick stick back up]
-				otherwise if the Y-shaped stick is seen:
-					say "a"; [pick up both]
-				otherwise:
-					say "a"; [pick up band]
-			otherwise if the Y-shaped stick is obtained:
-				if the player has the Y-shaped stick:
+		if right wall status of broken wall is rightAbsent:
+			if suspended net in Challenge Room 3:
+				if slingshot is not obtained:
 					if rubber band is obtained:
 						if the player has the rubber band:
-							say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
+							if the Y-shaped stick is obtained:
+								if the player has the Y-shaped stick:
+									say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
+								otherwise:
+									say "a"; [prompt to pick stick back up and craft]
+							otherwise if the Y-shaped stick is seen:
+								say "a"; [prompt to pick up stick and craft]
+							otherwise:
+								say "a"; [look around for stick]
 						otherwise:
-							say "a"; [prompt to pick band back up and craft]
-					otherwise if the rubber band is seen:
-						say "a"; [prompt to pick up band and craft]
-					otherwise:
-						say "a"; [look around for band]
-				otherwise:
-					if the rubber band is obtained:
-						if the player has the rubber band:
-							say “a"; [pick stick back up and craft]
+							if the Y-shaped stick is obtained:
+								if the player has the Y-shaped stick:
+									say “a"; [pick rubber band back up and craft]
+								otherwise:
+									say "a"; [pick both rubber band and stick back up and craft]
+							otherwise if the Y-shaped stick is seen:
+								say "a"; [pick up both and craft]
+							otherwise:
+								say "a"; [pick rubber band back up]
+					otherwise if rubber band is seen:
+						if the Y-shaped stick is obtained:
+							if the player has the Y-shaped stick:
+								say "a"; [pick up rubber band]
+							otherwise:
+								say "a"; [pick up rubber band, pick stick back up]
+						otherwise if the Y-shaped stick is seen:
+							say "a"; [pick up both]
 						otherwise:
-							say "a"; [pick both rubber band and stick back up and craft]
-					otherwise if the rubber band is seen:
-						say "a"; [pick up both and craft]
+							say "a"; [pick up band]
+					otherwise if the Y-shaped stick is obtained:
+						if the player has the Y-shaped stick:
+							if rubber band is obtained:
+								if the player has the rubber band:
+									say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
+								otherwise:
+									say "a"; [prompt to pick band back up and craft]
+							otherwise if the rubber band is seen:
+								say "a"; [prompt to pick up band and craft]
+							otherwise:
+								say "a"; [look around for band]
+						otherwise:
+							if the rubber band is obtained:
+								if the player has the rubber band:
+									say “a"; [pick stick back up and craft]
+								otherwise:
+									say "a"; [pick both rubber band and stick back up and craft]
+							otherwise if the rubber band is seen:
+								say "a"; [pick up both and craft]
+							otherwise:
+								say "a"; [pick stick back up]
+					otherwise if the Y-shaped stick is seen:
+						if the rubber band is obtained:
+							if the player has the rubber band:
+								say "a"; [pick up Y-shaped stick]
+							otherwise:
+								say "a"; [pick up stick, pick band back up]
+						otherwise if the rubber band is seen:
+							say "a"; [pick up both]
+						otherwise:
+							say "a"; [pick up stick]
 					otherwise:
-						say "a"; [pick stick back up]
-			otherwise if the Y-shaped stick is seen:
-				if the rubber band is obtained:
-					if the player has the rubber band:
-						say "a"; [pick up Y-shaped stick]
+						say "Maybe something on that table can help you out.";
+				otherwise: [player has obtained slingshot]
+					if player has slingshot:
+						if suspended net is seen:
+							say "a"; [prompt to shoot at net]
+						otherwise:
+							say "a"; [prompt to look for something to shoot at]
 					otherwise:
-						say "a"; [pick up stick, pick band back up]
-				otherwise if the rubber band is seen:
-					say "a"; [pick up both]
+						say "a"; [prompt to get slingshot back]
+			otherwise: [net was shot down]
+				if broken wall is seen:
+					if wall piece right is obtained:
+						if player has wall piece right:
+							say "a"; [prompt to put in wall]
+						otherwise:
+							say "a"; [prompt to pick back up and put in wall]
+					otherwise:
+						say "a"; [prompt to pick up and put in wall]
 				otherwise:
-					say "a"; [pick up stick]
+					say "a"; [stone looks sus, look for where it fits]
+		otherwise:
+			if rightComplete of Challenge Room 3 is rightNotDone:
+				say “Great, that fit perfectly!”;
+				if leftComplete of Challenge Room 3 is leftNotDone:
+					now the LastInteracted of the player is left1;
+				otherwise if upComplete of Challenge Room 3 is upNotDone:
+					now the LastInteracted of the player is up1;
+				otherwise if downComplete of Challenge Room 3 is downNotDone:
+					now the LastInteracted of the player is down1;
+				otherwise:
+					now the LastInteracted of the player is endInteract;
+				now the rightComplete of Challenge Room 3 is rightDone;
 			otherwise:
-				say "Maybe something on that table can help you out.";
-		otherwise: [player has slingshot]
-			say "a"; [wip, will add more states here]
+				say "a"; [should never reach this state]
+				if leftComplete of Challenge Room 3 is leftNotDone:
+					now the LastInteracted of the player is left1;
+				otherwise if upComplete of Challenge Room 3 is upNotDone:
+					now the LastInteracted of the player is up1;
+				otherwise if downComplete of Challenge Room 3 is downNotDone:
+					now the LastInteracted of the player is down1;
+				otherwise:
+					now the LastInteracted of the player is endInteract;	
 	otherwise if LastInteracted of the player is up1:
 		if the rock status of the player is not none:
 			say "a";
