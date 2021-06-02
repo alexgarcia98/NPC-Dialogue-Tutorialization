@@ -289,9 +289,9 @@ Ghost is a man in Challenge Room 3. A person can be talked to or not talked to. 
 
 The description of Ghost is "[if the BeenWorn of the player is hasBeenWorn]You see a cloud-like entity. Looks friendly.[otherwise]You are not sure what you should be looking at, but that booming voice from earlier tells you otherwise.".
 
-LastInteracted is a kind of value. The LastInteracteds are left1, left2, left3, left4, down1, misc1, right1, right2, right3, right4, right5, right6, up1, up2, up3, up4, misc2, misc3, startInteract.
+LastInteracted is a kind of value. The LastInteracteds are left1, left2, left3, left4, down1, misc1, right1, right2, right3, right4, right5, right6, up1, up2, up3, up4, misc2, misc3, startInteract, endInteract.
 
-A person has a LastInteracted. The LastInteracted of a player is left1.
+A person has a LastInteracted. The LastInteracted of a player is startInteract.
 
 The list of LeftItems is a list of objects that varies.
 
@@ -313,30 +313,50 @@ The list of MiscItems is a list of objects that varies.
 
 The list of MiscItems is {blue gem, blue pedestal, old table}
 
+A leftComplete is a kind of Value. The leftCompletes are leftDone and leftNotDone.
+
+Challenge Room 3 has a leftComplete. The leftComplete of Challenge Room 3 is leftNotDone.
+
+A rightComplete is a kind of Value. The rightCompletes are rightDone and rightNotDone.
+
+Challenge Room 3 has a rightComplete. The rightComplete of Challenge Room 3 is rightNotDone.
+
+A upComplete is a kind of Value. The upCompletes are upDone and upNotDone.
+
+Challenge Room 3 has a upComplete. The upComplete of Challenge Room 3 is upNotDone.
+
+A downComplete is a kind of Value. The downCompletes are downDone and downNotDone.
+
+Challenge Room 3 has a downComplete. The downComplete of Challenge Room 3 is downNotDone.
+
 Carry out taking a thing:
 	if the noun is listed in the list of LeftItems:
-		now the LastInteracted of the player is left1;
+		if the leftComplete of Challenge Room 3 is leftNotDone:
+			now the LastInteracted of the player is left1;
 	otherwise if the noun is listed in the list of RightItems:
-		now the LastInteracted of the player is right1;
+		if the rightComplete of Challenge Room 3 is rightNotDone:
+			now the LastInteracted of the player is right1;
 	otherwise if the noun is listed in the list of UpItems:
-		now the LastInteracted of the player is up1;
+		if the upComplete of Challenge Room 3 is upNotDone:
+			now the LastInteracted of the player is up1;
 	otherwise if the noun is listed in the list of DownItems:
-		now the LastInteracted of the player is down1;
-	otherwise if the noun is listed in the list of MiscItems:
-		now the LastInteracted of the player is misc1;
+		if the downComplete of Challenge Room 3 is downNotDone:
+			now the LastInteracted of the player is down1;
 		
 Carry out examining a thing:
 	if the noun is listed in the list of LeftItems:
-		now the LastInteracted of the player is left1;
+		if the leftComplete of Challenge Room 3 is leftNotDone:
+			now the LastInteracted of the player is left1;
 	otherwise if the noun is listed in the list of RightItems:
-		now the LastInteracted of the player is right1;
+		if the rightComplete of Challenge Room 3 is rightNotDone:
+			now the LastInteracted of the player is right1;
 	otherwise if the noun is listed in the list of UpItems:
-		now the LastInteracted of the player is up1;
+		if the upComplete of Challenge Room 3 is upNotDone:
+			now the LastInteracted of the player is up1;
 	otherwise if the noun is listed in the list of DownItems:
-		now the LastInteracted of the player is down1;
-	otherwise if the noun is listed in the list of MiscItems:
-		now the LastInteracted of the player is misc1;
-
+		if the downComplete of Challenge Room 3 is downNotDone:
+			now the LastInteracted of the player is down1;
+			
 A lockTry is a kind of Value. The lockTries are lockAttempt and lockNoAttempt.
 
 The old chest has a lockTry. The lockTry of the old chest is lockNoAttempt.
@@ -347,26 +367,8 @@ Carry out opening a container:
 		now the LastInteracted of the player is left1;
 
 Instead of talking to Ghost:
-	if player has blue gem:
-		if timesTalkedToAfterGettingBlueGem of Ghost is 0:
-			say "What are you still doing here, you already have the gem! Oh, are you worried that I'll be lonely here? Don't worry, I've been alone for years now. I'll eventually find something to do.";
-		otherwise:
-			say "Well, if you want to stay here, then be my guest. Hmm, let's share stories. There was this one time where… ";
-		increment timesTalkedToAfterGettingBlueGem of Ghost;
-	otherwise if LastInteracted of the player is misc1:
-		[if blue pedestal is in Challenge Room 3:
-			say "a"
-		otherwise:
-			if wall piece down is obtained:
-			otherwise:
-				if pair of magic glasses is obtained:
-				otherwise:
-					if rubber band is obtained:
-					otherwise:
-						if lifing potion is obtained:
-						otherwise:
-							say "Maybe something on that table can help you out.";]
-		say "a";
+	if LastInteracted of the player is startInteract:
+		say "Maybe something on that table can help you out.";
 	otherwise if LastInteracted of the player is left1:
 		if left wall status of broken wall is leftAbsent:
 			if wall piece left is not obtained:
@@ -425,24 +427,215 @@ Instead of talking to Ghost:
 					otherwise:
 						say "There wouldn't be a useless rock inside a locked chest for no reason. Try looking around to see if you can find a use for it.";
 		otherwise:
-			say “Great, one down, more to go!”;
+			if leftComplete of Challenge Room 3 is leftNotDone:
+				say “Great, that fit perfectly!”;
+				if rightComplete of Challenge Room 3 is rightNotDone:
+					now the LastInteracted of the player is right1;
+				otherwise if upComplete of Challenge Room 3 is upNotDone:
+					now the LastInteracted of the player is up1;
+				otherwise if downComplete of Challenge Room 3 is downNotDone:
+					now the LastInteracted of the player is down1;
+				otherwise:
+					now the LastInteracted of the player is endInteract;
+				now the leftComplete of Challenge Room 3 is leftDone;
+			otherwise:
+				say "a"; [should never reach this state]
+				if rightComplete of Challenge Room 3 is rightNotDone:
+					now the LastInteracted of the player is right1;
+				otherwise if upComplete of Challenge Room 3 is upNotDone:
+					now the LastInteracted of the player is up1;
+				otherwise if downComplete of Challenge Room 3 is downNotDone:
+					now the LastInteracted of the player is down1;
+				otherwise:
+					now the LastInteracted of the player is endInteract;
 	otherwise if LastInteracted of the player is right1:
-		say "a";
+		if player does not have slingshot:
+			if rubber band is obtained:
+				if the player has the rubber band:
+					if the Y-shaped stick is obtained:
+						if the player has the Y-shaped stick:
+							say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
+						otherwise:
+							say "a"; [prompt to pick stick back up and craft]
+					otherwise if the Y-shaped stick is seen:
+						say "a"; [prompt to pick up stick and craft]
+					otherwise:
+						say "a"; [look around for stick]
+				otherwise:
+					if the Y-shaped stick is obtained:
+						if the player has the Y-shaped stick:
+							say “a"; [pick rubber band back up and craft]
+						otherwise:
+							say "a"; [pick both rubber band and stick back up and craft]
+					otherwise if the Y-shaped stick is seen:
+						say "a"; [pick up both and craft]
+					otherwise:
+						say "a"; [pick rubber band back up]
+			otherwise if rubber band is seen:
+				if the Y-shaped stick is obtained:
+					if the player has the Y-shaped stick:
+						say "a"; [pick up rubber band]
+					otherwise:
+						say "a"; [pick up rubber band, pick stick back up]
+				otherwise if the Y-shaped stick is seen:
+					say "a"; [pick up both]
+				otherwise:
+					say "a"; [pick up band]
+			otherwise if the Y-shaped stick is obtained:
+				if the player has the Y-shaped stick:
+					if rubber band is obtained:
+						if the player has the rubber band:
+							say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
+						otherwise:
+							say "a"; [prompt to pick band back up and craft]
+					otherwise if the rubber band is seen:
+						say "a"; [prompt to pick up band and craft]
+					otherwise:
+						say "a"; [look around for band]
+				otherwise:
+					if the rubber band is obtained:
+						if the player has the rubber band:
+							say “a"; [pick stick back up and craft]
+						otherwise:
+							say "a"; [pick both rubber band and stick back up and craft]
+					otherwise if the rubber band is seen:
+						say "a"; [pick up both and craft]
+					otherwise:
+						say "a"; [pick stick back up]
+			otherwise if the Y-shaped stick is seen:
+				if the rubber band is obtained:
+					if the player has the rubber band:
+						say "a"; [pick up Y-shaped stick]
+					otherwise:
+						say "a"; [pick up stick, pick band back up]
+				otherwise if the rubber band is seen:
+					say "a"; [pick up both]
+				otherwise:
+					say "a"; [pick up stick]
+			otherwise:
+				say "Maybe something on that table can help you out.";
+		otherwise: [player has slingshot]
+			say "a"; [wip, will add more states here]
 	otherwise if LastInteracted of the player is up1:
 		if the rock status of the player is not none:
 			say "a";
 	otherwise if LastInteracted of the player is down1:
-		if the broken wall is seen:
-			if player has Wall Piece Down:
-				say "Why are you asking me what to do? Place it in the wall, dummy!";
-			otherwise if down wall status of broken wall is downPresent:
-				say "Sweet, you figured out the easiest one. Now, do the rest.";
+		if down wall status of broken wall is downAbsent:
+			if wall piece down is obtained:
+				if player has wall piece down:
+					if broken wall is seen:
+						say "That stone might fit into that broken wall you saw earlier. You should try to place it into it!";
+					otherwise:
+						say "I wonder what you're planning on doing with that jagged stone. It's definitely shaped pretty weirdly though, like it broke off from somewhere.";
+				otherwise:
+					if broken wall is seen:
+						say "That jagged stone you had earlier might fit into that broken wall you saw earlier. You should get it back and try to place it into the wall!";
+					otherwise:
+						say "What happened to that jagged stone you picked up earlier? It looked peculiar.";
+			otherwise if wall piece down is seen:
+				if broken wall is seen:
+					say "That jagged stone over there might fit into that broken wall you saw earlier. You should try to place it into the wall!";
+				otherwise:
+					say "Check out that jagged stone you saw earlier. It looked peculiar.";
 			otherwise:
-				say "What'd you do with that jagged stone? Find it again and put it in the wall!!";
+				if broken wall is seen:
+					say "a"; [look for a stone that fits]
+				otherwise:
+					say "a"; [direct player to the broken wall]
 		otherwise:
+			if downComplete of Challenge Room 3 is downNotDone:
+				say “Great, that fit perfectly!”;
+				if rightComplete of Challenge Room 3 is rightNotDone:
+					now the LastInteracted of the player is right1;
+				otherwise if upComplete of Challenge Room 3 is upNotDone:
+					now the LastInteracted of the player is up1;
+				otherwise if leftComplete of Challenge Room 3 is leftNotDone:
+					now the LastInteracted of the player is left1;
+				otherwise:
+					now the LastInteracted of the player is endInteract;
+				now the downComplete of Challenge Room 3 is downDone;
+			otherwise:
+				say "a"; [should never reach this state]
+				if rightComplete of Challenge Room 3 is rightNotDone:
+					now the LastInteracted of the player is right1;
+				otherwise if upComplete of Challenge Room 3 is upNotDone:
+					now the LastInteracted of the player is up1;
+				otherwise if leftComplete of Challenge Room 3 is leftNotDone:
+					now the LastInteracted of the player is left1;
+				otherwise:
+					now the LastInteracted of the player is endInteract;
+	otherwise if LastInteracted of the player is endInteract:
+		if blue gem is obtained:
+			if player has blue gem:
+				if timesTalkedToAfterGettingBlueGem of Ghost is 0:
+					say "What are you still doing here, you already have the gem! Oh, are you worried that I'll be lonely here? Don't worry, I've been alone for years now. I'll eventually find something to do.";
+				otherwise:
+					say "Well, if you want to stay here, then be my guest. Hmm, let's share stories. There was this one time where… ";
+				increment timesTalkedToAfterGettingBlueGem of Ghost;
+			otherwise:
+				say "a"; [prompt to pick the blue gem back up]
+		otherwise:
+			say "a"; [prompt to pick up the blue gem]
+	[otherwise if LastInteracted of the player is misc1:
+		if blue pedestal is in Challenge Room 3:
 			say "a";
-	otherwise if Ghost is talked to:
-		say "What are you doing just standing around? Look over at that wall. Do you see how there are four missing pieces? You have to find them and put them back!";
+		otherwise:
+			if wall piece down is obtained and the downComplete of Challenge Room 3 is downNotDone:
+				now the LastInteracted of the player is down1;
+				if player has wall piece down:
+					if broken wall is seen:
+						say "That stone might fit into that broken wall you saw earlier. You should try to place it into it!";
+					otherwise:
+						say "I wonder what you're planning on doing with that jagged stone. It's definitely shaped pretty weirdly though, like it broke off from somewhere.";
+				otherwise:
+					if broken wall is seen:
+						say "That jagged stone you had earlier might fit into that broken wall you saw earlier. You should get it back and try to place it into the wall!";
+					otherwise:
+						say "What happened to that jagged stone you picked up earlier? It looked peculiar.";
+			otherwise if wall piece down is seen and the downComplete of Challenge Room 3 is downNotDone:
+				now the LastInteracted of the player is down1;
+				if broken wall is seen:
+					say "That jagged stone over there might fit into that broken wall you saw earlier. You should try to place it into the wall!";
+				otherwise:
+					say "Check out that jagged stone you saw earlier. It looked peculiar.";
+			otherwise:
+				if the pair of magic glasses is obtained and the leftComplete of Challenge Room 3 is leftNotDone:
+					now the LastInteracted of the player is left1;
+					if the player has the pair of magic glasses:
+						if the player is wearing the pair of magic glasses:
+							say "Hey does that help your vision at all? Are you able to see anything new?";
+						otherwise:
+							say "Fancy glasses you've got there! You should wear them! I think you'd look great in it.";
+					otherwise:
+						say "Where did you put those glasses from earlier? I want to see you wear them! I think you'd look great in it.";
+				otherwise if the pair of magic glasses is seen and the leftComplete of Challenge Room 3 is leftNotDone:
+					now the LastInteracted of the player is left1;
+					say "Hey those are some fancy glasses over there. I want to see you wear them! I think you'd look great in it.";
+				otherwise:
+					if rubber band is obtained and the rightComplete of Challenge Room 3 is rightNotDone:
+						now the LastInteracted of the player is right1;
+						if the player has the rubber band:
+							if the Y-shaped stick is obtained:
+								if the player has the Y-shaped stick:
+									say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
+								otherwise:
+							otherwise if the Y-shaped stick is seen:
+							otherwise:
+						otherwise:
+					otherwise if rubber band is seen and the rightComplete of Challenge Room 3 is rightNotDone:
+						now the LastInteracted of the player is right1;
+						if the Y-shaped stick is obtained:
+							if the player has the Y-shaped stick:
+							otherwise:
+						otherwise if the Y-shaped stick is seen:
+						otherwise:
+					otherwise:
+						if lifting potion is obtained and the upComplete of Challenge Room 3 is upNotDone:
+							now the LastInteracted of the player is up1;
+						otherwise if lifting potion is seen and the upComplete of Challenge Room 3 is upNotDone:
+							now the LastInteracted of the player is up1;
+						otherwise:
+							say "Maybe something on that table can help you out.";]
 	now Ghost is talked to;
 
 Part 5 - Endgame
