@@ -558,8 +558,74 @@ Instead of talking to Ghost:
 				otherwise:
 					now the LastInteracted of the player is endInteract;	
 	otherwise if LastInteracted of the player is up1:
-		if the rock status of the player is not none:
-			say "a";
+		if up wall status of the broken wall is upAbsent:
+			if wall piece up is not in Challenge Room 3:
+				if the lift status of the player is normal:
+					if the lifting potion is obtained:
+						if the player has the lifting potion:
+							say "a"; [prompt to drink]
+						otherwise:
+							say "a"; [prompt to get potion back]
+					otherwise if the magical staff is obtained:
+						if the player has the magical staff:
+							if the lifting potion is seen:
+								say "a"; [get the potion]
+							otherwise:
+								say "a"; [prompt to find 'something to assist magical powers' aka potion]
+						otherwise:
+							say "a"; [get staff back]
+					otherwise:
+						if the rock status of the player is none:
+							if the stack of boulders is seen:
+								say "a"; [boulders look sus, might be something behind them]
+							otherwise:
+								say "Maybe something on that table can help you out.";
+				otherwise: [player drank lift potion]
+					if the magical staff is obtained:
+						if the player has the magical staff:
+							if the rock staff status is no attempt:
+								say "a"; [staff lifting tutorial]
+							otherwise:
+								say "a"; [prompt to lift with staff]
+						otherwise:
+							say "a"; [take back staff]
+					otherwise if the magical staff is seen:
+						say "a"; [take staff]
+					otherwise:
+						say "a"; [find staff]
+			otherwise:
+				if broken wall is seen:
+					if wall piece up is obtained:
+						if player has wall piece up:
+							say "a"; [put it in wall]
+						otherwise:
+							say "a"; [pick it back up, put in wall]
+					otherwise:
+						say "a"; [pick it up, put in wall]
+				otherwise:
+					say "a"; [look for where it goes]
+		otherwise:
+			if upComplete of Challenge Room 3 is upNotDone:
+				say “Great, that fit perfectly!”;
+				if leftComplete of Challenge Room 3 is leftNotDone:
+					now the LastInteracted of the player is left1;
+				otherwise if rightComplete of Challenge Room 3 is rightNotDone:
+					now the LastInteracted of the player is right1;
+				otherwise if downComplete of Challenge Room 3 is downNotDone:
+					now the LastInteracted of the player is down1;
+				otherwise:
+					now the LastInteracted of the player is endInteract;
+				now the upComplete of Challenge Room 3 is upDone;
+			otherwise:
+				say "a"; [should never reach this state]
+				if leftComplete of Challenge Room 3 is leftNotDone:
+					now the LastInteracted of the player is left1;
+				otherwise if rightComplete of Challenge Room 3 is rightNotDone:
+					now the LastInteracted of the player is right1;
+				otherwise if downComplete of Challenge Room 3 is downNotDone:
+					now the LastInteracted of the player is down1;
+				otherwise:
+					now the LastInteracted of the player is endInteract;	
 	otherwise if LastInteracted of the player is down1:
 		if down wall status of broken wall is downAbsent:
 			if wall piece down is obtained:
