@@ -25,6 +25,11 @@ A thing can be seen or unseen.
 
 Carry out examining a thing:
 	now the noun is seen.
+	
+A thing can be obtained or unobtained. A thing is usually unobtained.
+
+Carry out taking a thing:
+	now the noun is obtained.
 
 Release along with an interpreter.
 
@@ -217,7 +222,14 @@ Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thin
 
 In Challenge Room 3 is the old table, the old chest, stack of boulders, Y-shaped wooden stick, net, magical staff, broken wall.
 
-The description of Challenge Room 3 is "You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?[paragraph break]Voice: 'Here there! You probably can’t see me as I’m a ghost, but my name’s Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!'"
+FirstEntered is a kind of Value. The FirstEntereds are trueEntered and falseEntered. A room has a FirstEntered. The FirstEntered of a room is falseEntered.
+
+The description of Challenge Room 3 is "[if the FirstEntered of Challenge Room 3 is falseEntered]You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?[otherwise]The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?"
+
+After printing the locale description of Challenge Room 3:
+	if the FirstEntered of Challenge Room 3 is falseEntered:
+		say "Voice: 'Here there! You probably can’t see me as I’m a ghost, but my name’s Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!'";
+		now the FirstEntered of Challenge Room 3 is trueEntered;
 
 The printed name of Wall Piece Left is "broken stone". The printed name of Wall Piece Right is "stone slab". The printed name of Wall Piece Up is "stone shard".  The printed name of Wall Piece Down is "jagged stone".
 
@@ -279,7 +291,7 @@ The description of Ghost is "[if the BeenWorn of the player is hasBeenWorn]You s
 
 LastInteracted is a kind of value. The LastInteracteds are left1, left2, left3, left4, down1, misc1, right1, right2, right3, right4, right5, right6, up1, up2, up3, up4, misc2, misc3, startInteract.
 
-A person has a LastInteracted. The LastInteracted of a player is startInteract.
+A person has a LastInteracted. The LastInteracted of a player is left1.
 
 The list of LeftItems is a list of objects that varies.
 
@@ -312,6 +324,27 @@ Carry out taking a thing:
 		now the LastInteracted of the player is down1;
 	otherwise if the noun is listed in the list of MiscItems:
 		now the LastInteracted of the player is misc1;
+		
+Carry out examining a thing:
+	if the noun is listed in the list of LeftItems:
+		now the LastInteracted of the player is left1;
+	otherwise if the noun is listed in the list of RightItems:
+		now the LastInteracted of the player is right1;
+	otherwise if the noun is listed in the list of UpItems:
+		now the LastInteracted of the player is up1;
+	otherwise if the noun is listed in the list of DownItems:
+		now the LastInteracted of the player is down1;
+	otherwise if the noun is listed in the list of MiscItems:
+		now the LastInteracted of the player is misc1;
+
+A lockTry is a kind of Value. The lockTries are lockAttempt and lockNoAttempt.
+
+The old chest has a lockTry. The lockTry of the old chest is lockNoAttempt.
+
+Carry out opening a container:
+	if the container is the old chest:
+		now the lockTry of the old chest is lockAttempt;
+		now the LastInteracted of the player is left1;
 
 Instead of talking to Ghost:
 	if player has blue gem:
@@ -321,20 +354,93 @@ Instead of talking to Ghost:
 			say "Well, if you want to stay here, then be my guest. Hmm, let's share stories. There was this one time where… ";
 		increment timesTalkedToAfterGettingBlueGem of Ghost;
 	otherwise if LastInteracted of the player is misc1:
+		[if blue pedestal is in Challenge Room 3:
+			say "a"
+		otherwise:
+			if wall piece down is obtained:
+			otherwise:
+				if pair of magic glasses is obtained:
+				otherwise:
+					if rubber band is obtained:
+					otherwise:
+						if lifing potion is obtained:
+						otherwise:
+							say "Maybe something on that table can help you out.";]
 		say "a";
 	otherwise if LastInteracted of the player is left1:
-		say "a";
+		if left wall status of broken wall is leftAbsent:
+			if wall piece left is not obtained:
+				if the old chest is locked:
+					if the lockTry of the old chest is lockAttempt:
+						if invisible key is obtained:
+							if player has invisible key:
+								say “Looks like you’ve got the key now. Wonder if it’ll still work on the lock you smacked around.”;
+							otherwise:
+								say “Didn't you come across a key already? Where did you put it?”;
+						otherwise:
+							if invisible key is seen:
+								say “Didn't you come across a key already? Could you use that key on the lock from earlier?”;
+							otherwise:
+								say “Of course you can’t just open a locked chest, you need to find the key!”;
+					otherwise:
+						if invisible key is obtained:
+							if player has invisible key:
+								say “Fancy key you found, looks like it’s made out of pure gold. Maybe it unlocks a fancy chest!”;
+							otherwise:
+								say “Didn't you come across a key already? Where did you put it? Maybe it could unlock a fancy chest!”;
+						otherwise:
+							if invisible key is seen:
+								say “Didn't you come across a key earlier? Maybe it could unlock a fancy chest!”;
+							otherwise:
+								if the pair of magic glasses is obtained:
+									if the player has the pair of magic glasses:
+										if the player is wearing the pair of magic glasses:
+											say "Hey does that help your vision at all? Are you able to see anything new?";
+										otherwise:
+											say "Fancy glasses you've got there! You should wear them! I think you'd look great in it.";
+									otherwise:
+										say "Where did you put those glasses from earlier? I want to see you wear them! I think you'd look great in it.";
+								otherwise:
+									if the pair of magic glasses is seen:
+										say "Hey those are some fancy glasses over there. I want to see you wear them! I think you'd look great in it.";
+									otherwise:
+										say "Maybe something on that table can help you out.";
+				otherwise:
+					if the old chest is closed:
+						say "Well that chest isn't going to open itself. Let's see what's inside!";
+					otherwise:
+						say "Was there nothing but a rock inside that chest all along? What a shame.";
+			otherwise:
+				if player has wall piece left:
+					if the broken wall is seen:
+						say "Maybe that useless rock fits into that broken wall from earlier.";
+					otherwise:
+						say "There wouldn't be a useless rock inside a locked chest for no reason. Try looking around to see if you can find a use for it.";
+				otherwise:
+					if the broken wall is seen:
+						if wall piece left is obtained:
+							say "Maybe that useless rock you took from the chest fits into that broken wall from earlier. Try to place the rock into it.";
+						otherwise:
+							say "Maybe that useless rock in the chest fits into that broken wall from earlier. Try to place the rock into it.";
+					otherwise:
+						say "There wouldn't be a useless rock inside a locked chest for no reason. Try looking around to see if you can find a use for it.";
+		otherwise:
+			say “Great, one down, more to go!”;
 	otherwise if LastInteracted of the player is right1:
 		say "a";
 	otherwise if LastInteracted of the player is up1:
-		say "a";
+		if the rock status of the player is not none:
+			say "a";
 	otherwise if LastInteracted of the player is down1:
-		if player has Wall Piece Down:
-			say "Why are you asking me what to do? Place it in the wall, dummy!";
-		otherwise if down wall status of broken wall is downPresent:
-			say "Sweet, you figured out the easiest one. Now, do the rest.";
+		if the broken wall is seen:
+			if player has Wall Piece Down:
+				say "Why are you asking me what to do? Place it in the wall, dummy!";
+			otherwise if down wall status of broken wall is downPresent:
+				say "Sweet, you figured out the easiest one. Now, do the rest.";
+			otherwise:
+				say "What'd you do with that jagged stone? Find it again and put it in the wall!!";
 		otherwise:
-			say "What'd you do with that jagged stone? Find it again and put it in the wall!!";
+			say "a";
 	otherwise if Ghost is talked to:
 		say "What are you doing just standing around? Look over at that wall. Do you see how there are four missing pieces? You have to find them and put them back!";
 	now Ghost is talked to;
