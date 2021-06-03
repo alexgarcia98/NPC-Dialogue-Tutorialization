@@ -496,7 +496,7 @@ Instead of talking to Ghost:
 						otherwise:
 							say "Why'd you drop that Y-shaped stick? I'm sure it will be useful for something...";
 					otherwise if the Y-shaped stick is seen:
-							say "You saw that Y-shaped stick, right? I'm sure it will be useful for something...";
+						say "You saw that Y-shaped stick, right? I'm sure it will be useful for something...";
 					otherwise:
 						say "Maybe something on that table can help you out.";
 				otherwise: [player has obtained slingshot]
@@ -568,7 +568,7 @@ Instead of talking to Ghost:
 				otherwise: [player drank lift potion]
 					if the magical staff is obtained:
 						if the player has the magical staff:
-							if the rock staff status is none:
+							if the rock staff status is no attempt:
 								say "You have the staff and you drank the potion, right? Looks like you should be able to lift the rocks now!";
 							otherwise:
 								say "WOW! I can feel the magical energy coming off of you. With that staff and that power, you should have a better time lifting the rocks.";
