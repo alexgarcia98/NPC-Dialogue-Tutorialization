@@ -10,7 +10,7 @@ release to "C:\Users\alexgarcia98\Desktop\CSC582\FinalProject\NPC-Dialogue-Tutor
 
 ! Blorb instructions
 
-storyfile leafname "NPC Dialogue Tutorialization.gblorb"
+storyfile leafname "Dungeon Quest.gblorb"
 storyfile "C:\Users\alexgarcia98\Desktop\CSC582\FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Build\output.ulx" include
 ifiction "C:\Users\alexgarcia98\Desktop\CSC582\FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
@@ -23,7 +23,7 @@ release file "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Small Cover.jp
 placeholder [IFID] = "BFC646C1-20E5-4B58-B580-98DC38B1457C"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2021"
-placeholder [TITLE] = "NPC Dialogue Tutorialization"
+placeholder [TITLE] = "Dungeon Quest"
 placeholder [AUTHOR] = "Alexander Garcia"
 placeholder [BLURB] = "A work of interactive fiction."
 
@@ -32,13 +32,13 @@ placeholder [BLURB] = "A work of interactive fiction."
 
 ! Website instructions
 
-placeholder [ENCODEDSTORYFILE] = "NPC Dialogue Tutorialization.gblorb.js"
+placeholder [ENCODEDSTORYFILE] = "Dungeon Quest.gblorb.js"
 template path "C:\Users\alexgarcia98\Desktop\CSC582\FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.materials\Templates"
 template path "C:\Users\alexgarcia98\Documents\Inform\Templates"
 template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
 placeholder [INTERPRETERSCRIPTS] = " "
 interpreter "Quixe" "g"
-base64 "C:\Users\alexgarcia98\Desktop\CSC582\FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Build\output.ulx" to "C:\Users\alexgarcia98\Desktop\CSC582\FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.materials\Release\interpreter\NPC Dialogue Tutorialization.gblorb.js"
+base64 "C:\Users\alexgarcia98\Desktop\CSC582\FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.inform\Build\output.ulx" to "C:\Users\alexgarcia98\Desktop\CSC582\FinalProject\NPC-Dialogue-Tutorialization\NPC Dialogue Tutorialization.materials\Release\interpreter\Dungeon Quest.gblorb.js"
 
 ! Website instructions
 
