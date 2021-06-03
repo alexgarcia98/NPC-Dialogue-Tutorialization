@@ -24,7 +24,7 @@ placeholder [IFID] = "BFC646C1-20E5-4B58-B580-98DC38B1457C"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2021"
 placeholder [TITLE] = "Dungeon Quest"
-placeholder [AUTHOR] = "Alexander Garcia"
+placeholder [AUTHOR] = "Alexander Garcia, Christopher Peterson, and Ziwei Wu"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release

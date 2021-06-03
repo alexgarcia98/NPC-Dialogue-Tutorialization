@@ -1,4 +1,4 @@
-"Dungeon Quest" by Alexander Garcia
+"Dungeon Quest" by Alexander Garcia, Christopher Peterson, and Ziwei Wu
 
 Part 1 - Gameplay Modifications
 
