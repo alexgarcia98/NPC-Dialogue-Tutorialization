@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-254"/>
+  <activeNode nodeId="node-341"/>
   <item nodeId="node-1">
     <command xml:space="preserve">NPC Dialogue Tutorialization</command>
-    <result xml:space="preserve">Hello, and welcome to Dungeon Quest!&#x000A;&#x000A;Here are some commands to get you started.&#x000A;go [cardinal direction] - Allows you to travel to a room in the specified cardinal direction.&#x000A;look at [something] - Allows you to examine something more closely.&#x000A;take [something] - Allows you to put an item into your inventory.&#x000A;inventory - Allows you to view the items in your possession.&#x000A;talk to [someone] - Allows you to speak with a non-playable character.&#x000A;&#x000A;There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type help.&#x000A;&#x000A;Dungeon Quest&#x000A;An Interactive Fiction by Alexander Garcia&#x000A;Release 1 / Serial number 210603 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Central Room&#x000A;A rather barren room. You see a wizard at the north end next to what appears to be an exit. There are archways to your south, east, and west that seem to lead to rooms.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Hello, and welcome to Dungeon Quest!&#x000A;&#x000A;Here are some commands to get you started.&#x000A;go [cardinal direction] - Allows you to travel to a room in the specified cardinal direction.&#x000A;look - Allows you to obtain a description of the room.&#x000A;look at [something] - Allows you to examine something more closely.&#x000A;take [something] - Allows you to put an item into your inventory.&#x000A;inventory - Allows you to view the items in your possession.&#x000A;talk to [someone] - Allows you to speak with a non-playable character.&#x000A;&#x000A;There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type help.&#x000A;&#x000A;Dungeon Quest&#x000A;An Interactive Fiction by Alexander Garcia&#x000A;Release 1 / Serial number 210603 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Central Room&#x000A;A rather barren room. You see a wizard at the north end next to what appears to be an exit. There are archways to your south, east, and west that seem to lead to rooms.&#x000A;&#x000A;You can see a Wizard here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -12,11 +12,11 @@
       <child nodeId="node-5"/>
       <child nodeId="node-13"/>
       <child nodeId="node-18"/>
-      <child nodeId="node-65"/>
-      <child nodeId="node-184"/>
-      <child nodeId="node-204"/>
-      <child nodeId="node-209"/>
-      <child nodeId="node-211"/>
+      <child nodeId="node-91"/>
+      <child nodeId="node-219"/>
+      <child nodeId="node-239"/>
+      <child nodeId="node-244"/>
+      <child nodeId="node-246"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -156,7 +156,7 @@
     <command xml:space="preserve">go south</command>
     <result xml:space="preserve">Challenge Room 1&#x000A;You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area.&#x000A;&#x000A;In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it. There seems to be a human head popping out of the stone...&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-19"/>
       <child nodeId="node-28"/>
@@ -165,8 +165,12 @@
       <child nodeId="node-53"/>
       <child nodeId="node-58"/>
       <child nodeId="node-63"/>
-      <child nodeId="node-220"/>
-      <child nodeId="node-233"/>
+      <child nodeId="node-65"/>
+      <child nodeId="node-78"/>
+      <child nodeId="node-255"/>
+      <child nodeId="node-258"/>
+      <child nodeId="node-264"/>
+      <child nodeId="node-265"/>
     </children>
   </item>
   <item nodeId="node-19">
@@ -558,256 +562,18 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-220">
-    <command xml:space="preserve">read book</command>
-    <result xml:space="preserve">The recipe book contains several recipes scribbled into it. &#x000A;&#x000A;Cure grey hair: mix black vial with white vial&#x000A;Madness potion: mix red vial with black &#x000A;Dissolve stone: mix blue vial with red vial&#x000A;Become invisible: mix yellow vial with blue vial&#x000A;Colored water: mix clear vial with any vial &#x000A;Injury cure: mix black vial with blue vial&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-221"/>
-    </children>
-  </item>
-  <item nodeId="node-221">
-    <command xml:space="preserve">fly</command>
-    <result xml:space="preserve">What do you want to fly on?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-222"/>
-    </children>
-  </item>
-  <item nodeId="node-222">
-    <command xml:space="preserve">broom</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-223"/>
-    </children>
-  </item>
-  <item nodeId="node-223">
-    <command xml:space="preserve">fly north</command>
-    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-224"/>
-    </children>
-  </item>
-  <item nodeId="node-224">
-    <command xml:space="preserve">go north</command>
-    <result xml:space="preserve">Central Room&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-225"/>
-    </children>
-  </item>
-  <item nodeId="node-225">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-226"/>
-    </children>
-  </item>
-  <item nodeId="node-226">
-    <command xml:space="preserve">craft</command>
-    <result xml:space="preserve">What do you want to craft?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-227"/>
-    </children>
-  </item>
-  <item nodeId="node-227">
-    <command xml:space="preserve">stick</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-228"/>
-    </children>
-  </item>
-  <item nodeId="node-228">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Central Room&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-229"/>
-    </children>
-  </item>
-  <item nodeId="node-229">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net, a broken wall (empty) and Ghost here.&#x000A;&#x000A;Voice: "Here there! You probably can't see me as I'm a ghost, but my name's Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!"&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-230"/>
-    </children>
-  </item>
-  <item nodeId="node-230">
-    <command xml:space="preserve">craft</command>
-    <result xml:space="preserve">What do you want to craft?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-231"/>
-    </children>
-  </item>
-  <item nodeId="node-231">
-    <command xml:space="preserve">stick</command>
-    <result xml:space="preserve">What do you want to craft the Y-shaped wooden stick with?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-232"/>
-    </children>
-  </item>
-  <item nodeId="node-232">
-    <command xml:space="preserve">band</command>
-    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-233">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 1&#x000A;You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area.&#x000A;&#x000A;In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it. There seems to be a human head popping out of the stone...&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-234"/>
-    </children>
-  </item>
-  <item nodeId="node-234">
-    <command xml:space="preserve">talk</command>
-    <result xml:space="preserve">(to Stone-Encased Man)&#x000A;Stone-Encased Man: "Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how."&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-235"/>
-    </children>
-  </item>
-  <item nodeId="node-235">
-    <command xml:space="preserve">talk</command>
-    <result xml:space="preserve">(to Stone-Encased Man)&#x000A;Stone-Encased Man: "Didn't you hear me clearly? Look over there at the table. Do you see those vials? You should mix the correct ones together into a stone-dissolving potion and pour it over me!"&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-236"/>
-    </children>
-  </item>
-  <item nodeId="node-236">
-    <command xml:space="preserve">mix</command>
-    <result xml:space="preserve">What do you want to mix?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-237"/>
-    </children>
-  </item>
-  <item nodeId="node-237">
-    <command xml:space="preserve">red and blue</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-238"/>
-    </children>
-  </item>
-  <item nodeId="node-238">
-    <command xml:space="preserve">talk</command>
-    <result xml:space="preserve">(to Stone-Encased Man)&#x000A;Stone-Encased Man: "Didn't you hear me clearly? Look over there at the table. Do you see those vials? You should mix the correct ones together into a stone-dissolving potion and pour it over me!"&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-239"/>
-    </children>
-  </item>
-  <item nodeId="node-239">
-    <command xml:space="preserve">read book</command>
-    <result xml:space="preserve">The recipe book contains several recipes scribbled into it. &#x000A;&#x000A;Cure grey hair: mix black vial with white vial&#x000A;Madness potion: mix red vial with black &#x000A;Dissolve stone: mix blue vial with red vial&#x000A;Become invisible: mix yellow vial with blue vial&#x000A;Colored water: mix clear vial with any vial &#x000A;Injury cure: mix black vial with blue vial&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-240"/>
-    </children>
-  </item>
-  <item nodeId="node-240">
-    <command xml:space="preserve">mix red vial with blue vial</command>
-    <result xml:space="preserve">There is now a stone-dissolving potion sitting in the beaker.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-241"/>
-    </children>
-  </item>
-  <item nodeId="node-241">
-    <command xml:space="preserve">talk</command>
-    <result xml:space="preserve">(to Stone-Encased Man)&#x000A;Stone-Encased Man: "I think you've done it! That potion smells awful&#x2026; Now hurry up and pour it on me so I can be free!"&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-242"/>
-    </children>
-  </item>
-  <item nodeId="node-242">
-    <command xml:space="preserve">pour</command>
-    <result xml:space="preserve">What do you want to pour?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-243"/>
-    </children>
-  </item>
-  <item nodeId="node-243">
-    <command xml:space="preserve">potion</command>
-    <result xml:space="preserve">Which do you mean, the potion tray or the stone-dissolving potion?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-244"/>
-    </children>
-  </item>
-  <item nodeId="node-244">
-    <command xml:space="preserve">stone-dissolving potion</command>
-    <result xml:space="preserve">What do you want to pour the stone-dissolving potion on?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-245"/>
-    </children>
-  </item>
-  <item nodeId="node-245">
-    <command xml:space="preserve">stone-encased man</command>
-    <result xml:space="preserve">The stone-dissolving potion turns the Stone-Encased Man's body back to normal.&#x000A;Stone-Encased Man: "That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go."&#x000A;You received the red gem.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
   <item nodeId="node-65">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net, a broken wall (empty) and Ghost here.&#x000A;&#x000A;Voice: "Here there! You probably can't see me as I'm a ghost, but my name's Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">The recipe book contains several recipes scribbled into it. &#x000A;&#x000A;Cure grey hair: mix black vial with white vial&#x000A;Madness potion: mix red vial with black &#x000A;Dissolve stone: mix blue vial with red vial&#x000A;Become invisible: mix yellow vial with blue vial&#x000A;Colored water: mix clear vial with any vial &#x000A;Injury cure: mix black vial with blue vial&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-66"/>
-      <child nodeId="node-72"/>
-      <child nodeId="node-74"/>
-      <child nodeId="node-82"/>
-      <child nodeId="node-92"/>
-      <child nodeId="node-98"/>
-      <child nodeId="node-102"/>
-      <child nodeId="node-103"/>
-      <child nodeId="node-106"/>
-      <child nodeId="node-112"/>
-      <child nodeId="node-114"/>
     </children>
   </item>
   <item nodeId="node-66">
-    <command xml:space="preserve">wear glasses</command>
-    <result xml:space="preserve">(first taking the suspicious pair of glasses)&#x000A;There now appears to be a key on the old table.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly</command>
+    <result xml:space="preserve">What do you want to fly on?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -815,8 +581,8 @@
     </children>
   </item>
   <item nodeId="node-67">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">broom</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -824,8 +590,8 @@
     </children>
   </item>
   <item nodeId="node-68">
-    <command xml:space="preserve">unlock chest with key</command>
-    <result xml:space="preserve">In the old chest is a broken stone.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly north</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -833,8 +599,8 @@
     </children>
   </item>
   <item nodeId="node-69">
-    <command xml:space="preserve">take jagged stone</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Central Room&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -842,8 +608,8 @@
     </children>
   </item>
   <item nodeId="node-70">
-    <command xml:space="preserve">place jagged stone into broken wall</command>
-    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -851,14 +617,17 @@
     </children>
   </item>
   <item nodeId="node-71">
-    <command xml:space="preserve">place wall piece down into broken wall</command>
-    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft</command>
+    <result xml:space="preserve">What do you want to craft?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-72"/>
+    </children>
   </item>
   <item nodeId="node-72">
-    <command xml:space="preserve">take jagged stone</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">stick</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -866,14 +635,17 @@
     </children>
   </item>
   <item nodeId="node-73">
-    <command xml:space="preserve">place jagged stone into broken wall</command>
-    <result xml:space="preserve">The jagged stone seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Central Room&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-74"/>
+    </children>
   </item>
   <item nodeId="node-74">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Central Room&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net, a broken wall (empty) and Ghost here.&#x000A;&#x000A;Voice: "Here there! You probably can't see me as I'm a ghost, but my name's Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -881,8 +653,8 @@
     </children>
   </item>
   <item nodeId="node-75">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft</command>
+    <result xml:space="preserve">What do you want to craft?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -890,8 +662,8 @@
     </children>
   </item>
   <item nodeId="node-76">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">stick</command>
+    <result xml:space="preserve">What do you want to craft the Y-shaped wooden stick with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -899,17 +671,14 @@
     </children>
   </item>
   <item nodeId="node-77">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">You cannot fly in here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">band</command>
+    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-78"/>
-    </children>
   </item>
   <item nodeId="node-78">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 1&#x000A;You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area.&#x000A;&#x000A;In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it. There seems to be a human head popping out of the stone...&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -917,8 +686,8 @@
     </children>
   </item>
   <item nodeId="node-79">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk</command>
+    <result xml:space="preserve">(to Stone-Encased Man)&#x000A;Stone-Encased Man: "Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -926,8 +695,8 @@
     </children>
   </item>
   <item nodeId="node-80">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">You have flown into the south side of the room.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk</command>
+    <result xml:space="preserve">(to Stone-Encased Man)&#x000A;Stone-Encased Man: "Didn't you hear me clearly? Look over there at the table. Do you see those vials? You should mix the correct ones together into a stone-dissolving potion and pour it over me!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -935,25 +704,26 @@
     </children>
   </item>
   <item nodeId="node-81">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">mix</command>
+    <result xml:space="preserve">What do you want to mix?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-82"/>
+    </children>
   </item>
   <item nodeId="node-82">
-    <command xml:space="preserve">take stick</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">red and blue</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-83"/>
-      <child nodeId="node-85"/>
-      <child nodeId="node-90"/>
     </children>
   </item>
   <item nodeId="node-83">
-    <command xml:space="preserve">take band</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk</command>
+    <result xml:space="preserve">(to Stone-Encased Man)&#x000A;Stone-Encased Man: "Didn't you hear me clearly? Look over there at the table. Do you see those vials? You should mix the correct ones together into a stone-dissolving potion and pour it over me!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -961,24 +731,26 @@
     </children>
   </item>
   <item nodeId="node-84">
-    <command xml:space="preserve">craft stick and band</command>
-    <result xml:space="preserve">You must supply a second noun.&#x000A;You must supply a second noun.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">The recipe book contains several recipes scribbled into it. &#x000A;&#x000A;Cure grey hair: mix black vial with white vial&#x000A;Madness potion: mix red vial with black &#x000A;Dissolve stone: mix blue vial with red vial&#x000A;Become invisible: mix yellow vial with blue vial&#x000A;Colored water: mix clear vial with any vial &#x000A;Injury cure: mix black vial with blue vial&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-85"/>
+    </children>
   </item>
   <item nodeId="node-85">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "There should be a rubber band somewhere around here... You could definitely craft a slingshot if you picked it up and combined it with that Y-shaped stick you have."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">mix red vial with blue vial</command>
+    <result xml:space="preserve">There is now a stone-dissolving potion sitting in the beaker.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-86"/>
-      <child nodeId="node-246"/>
     </children>
   </item>
   <item nodeId="node-86">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk</command>
+    <result xml:space="preserve">(to Stone-Encased Man)&#x000A;Stone-Encased Man: "I think you've done it! That potion smells awful&#x2026; Now hurry up and pour it on me so I can be free!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -986,8 +758,8 @@
     </children>
   </item>
   <item nodeId="node-87">
-    <command xml:space="preserve">take suspended net</command>
-    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">pour</command>
+    <result xml:space="preserve">What do you want to pour?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -995,8 +767,8 @@
     </children>
   </item>
   <item nodeId="node-88">
-    <command xml:space="preserve">look at suspended net</command>
-    <result xml:space="preserve">An unreachable net that holds a wall piece. The net is hanging from a rotting wooden hook.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">potion</command>
+    <result xml:space="preserve">Which do you mean, the potion tray or the stone-dissolving potion?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1004,117 +776,766 @@
     </children>
   </item>
   <item nodeId="node-89">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-246">
-    <command xml:space="preserve">combine stick with band</command>
-    <result xml:space="preserve">(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">stone-dissolving potion</command>
+    <result xml:space="preserve">What do you want to pour the stone-dissolving potion on?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-247"/>
+      <child nodeId="node-90"/>
     </children>
   </item>
-  <item nodeId="node-247">
+  <item nodeId="node-90">
+    <command xml:space="preserve">stone-encased man</command>
+    <result xml:space="preserve">The stone-dissolving potion turns the Stone-Encased Man's body back to normal.&#x000A;Stone-Encased Man: "That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go."&#x000A;You received the red gem.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-255">
+    <command xml:space="preserve">mix red and blue</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-256"/>
+    </children>
+  </item>
+  <item nodeId="node-256">
+    <command xml:space="preserve">mix red with blue</command>
+    <result xml:space="preserve">There is now a stone-dissolving potion sitting in the beaker.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-257"/>
+    </children>
+  </item>
+  <item nodeId="node-257">
+    <command xml:space="preserve">pour beaker on man</command>
+    <result xml:space="preserve">The stone-dissolving potion turns the Stone-Encased Man's body back to normal.&#x000A;Stone-Encased Man: "AH! What are you doing?! Wait&#x2026; I'm free! Thank you! But I would've preferred if you had given me a warning first."&#x000A;The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-258">
+    <command xml:space="preserve">dump beaker</command>
+    <result xml:space="preserve">The beaker is already empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-259"/>
+    </children>
+  </item>
+  <item nodeId="node-259">
+    <command xml:space="preserve">mix red and red</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-260"/>
+    </children>
+  </item>
+  <item nodeId="node-260">
+    <command xml:space="preserve">mix red with red</command>
+    <result xml:space="preserve">There is now a suspicious potion sitting in the beaker.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-261"/>
+    </children>
+  </item>
+  <item nodeId="node-261">
+    <command xml:space="preserve">dump beaker</command>
+    <result xml:space="preserve">The potion fizzled away.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-264">
+    <command xml:space="preserve">talk to stone</command>
+    <result xml:space="preserve">Stone Encased Man: "Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-265">
+    <command xml:space="preserve">mix red with blue</command>
+    <result xml:space="preserve">There is now a stone-dissolving potion sitting in the beaker.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-266"/>
+      <child nodeId="node-268"/>
+      <child nodeId="node-283"/>
+    </children>
+  </item>
+  <item nodeId="node-266">
+    <command xml:space="preserve">pour potion on stone</command>
+    <result xml:space="preserve">Which do you mean, the potion tray or the stone-dissolving potion?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-267"/>
+    </children>
+  </item>
+  <item nodeId="node-267">
+    <command xml:space="preserve">stone-dissolving potion</command>
+    <result xml:space="preserve">The stone-dissolving potion turns the Stone Encased Man's body back to normal.&#x000A;Stone Freed Man: "AH! What are you doing?! Wait&#x2026; I'm free! Thank you! But I would've preferred if you had given me a warning first."&#x000A;The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-268">
+    <command xml:space="preserve">pour purple on stone</command>
+    <result xml:space="preserve">The stone-dissolving potion turns the Stone Encased Man's body back to normal.&#x000A;Stone Freed Man: "AH! What are you doing?! Wait&#x2026; I'm free! Thank you! But I would've preferred if you had given me a warning first."&#x000A;The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-269"/>
+    </children>
+  </item>
+  <item nodeId="node-269">
+    <command xml:space="preserve">drop red gem</command>
+    <result xml:space="preserve">This gem looks valuable. I should probably hold on to it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-270"/>
+    </children>
+  </item>
+  <item nodeId="node-270">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Central Room&#x000A;A rather barren room. You see a wizard at the north end next to what appears to be an exit. There are archways to your south, east, and west that seem to lead to rooms.&#x000A;&#x000A;You can see a Wizard here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-271"/>
+    </children>
+  </item>
+  <item nodeId="node-271">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open archway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-272"/>
+    </children>
+  </item>
+  <item nodeId="node-272">
+    <command xml:space="preserve">burn vines with torch</command>
+    <result xml:space="preserve">Janitor: Hey, what are you doing?! Get out of there before you get burned as well!&#x000A;The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-273"/>
+    </children>
+  </item>
+  <item nodeId="node-273">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;There are a variety of cleaning supplies in this room. To the east is a door leading back to the musty room.&#x000A;&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-274"/>
+    </children>
+  </item>
+  <item nodeId="node-274">
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-275"/>
+    </children>
+  </item>
+  <item nodeId="node-275">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open archway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-276"/>
+    </children>
+  </item>
+  <item nodeId="node-276">
+    <command xml:space="preserve">talk to janitor</command>
+    <result xml:space="preserve">Janitor: "Hey, how are you? You shouldn't be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there's a trench between us and that orb over there. Maybe you can use that broom to fly over it."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-277"/>
+    </children>
+  </item>
+  <item nodeId="node-277">
+    <command xml:space="preserve">fly</command>
+    <result xml:space="preserve">What do you want to fly on?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-278"/>
+    </children>
+  </item>
+  <item nodeId="node-278">
+    <command xml:space="preserve">broom</command>
+    <result xml:space="preserve">Challenge Room 2 North&#x000A;The air seems to be fresher here.&#x000A;&#x000A;An expensive-looking pedestal sits in the middle of the room. A yellow gem sits on top of it. To the south is the trench that you flew over, leading to the exit.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-279"/>
+    </children>
+  </item>
+  <item nodeId="node-279">
+    <command xml:space="preserve">take yellow</command>
+    <result xml:space="preserve">(the yellow pedestal)&#x000A;That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-280"/>
+    </children>
+  </item>
+  <item nodeId="node-280">
+    <command xml:space="preserve">take yellow gem</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-281"/>
+    </children>
+  </item>
+  <item nodeId="node-281">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open archway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-282"/>
+    </children>
+  </item>
+  <item nodeId="node-282">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">There is no feasible way to get across this trench.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-283">
+    <command xml:space="preserve">use purple on stone</command>
+    <result xml:space="preserve">The stone-dissolving potion turns the Stone Encased Man's body back to normal.&#x000A;Stone Freed Man: "AH! What are you doing?! Wait&#x2026; I'm free! Thank you! But I would've preferred if you had given me a warning first."&#x000A;The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-284"/>
+    </children>
+  </item>
+  <item nodeId="node-284">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">Central Room&#x000A;A rather barren room. You see a wizard at the north end next to what appears to be an exit. There are archways to your south, east, and west that seem to lead to rooms.&#x000A;&#x000A;You can see a Wizard here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-285"/>
+    </children>
+  </item>
+  <item nodeId="node-285">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open archway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-286"/>
+    </children>
+  </item>
+  <item nodeId="node-286">
+    <command xml:space="preserve">burn vines with torch</command>
+    <result xml:space="preserve">Janitor: Hey, what are you doing?! Get out of there before you get burned as well!&#x000A;The man-eating vines has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-287"/>
+    </children>
+  </item>
+  <item nodeId="node-287">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;There are a variety of cleaning supplies in this room. To the east is a door leading back to the musty room.&#x000A;&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-288"/>
+    </children>
+  </item>
+  <item nodeId="node-288">
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-289"/>
+    </children>
+  </item>
+  <item nodeId="node-289">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open archway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-290"/>
+    </children>
+  </item>
+  <item nodeId="node-290">
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 North&#x000A;The air seems to be fresher here.&#x000A;&#x000A;An expensive-looking pedestal sits in the middle of the room. A yellow gem sits on top of it. To the south is the trench that you flew over, leading to the exit.&#x000A;&#x000A;You have flown into the north side of the room.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-291"/>
+    </children>
+  </item>
+  <item nodeId="node-291">
+    <command xml:space="preserve">take gem</command>
+    <result xml:space="preserve">(the yellow gem)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-292"/>
+    </children>
+  </item>
+  <item nodeId="node-292">
+    <command xml:space="preserve">go south</command>
+    <result xml:space="preserve">The trench is deep. It would be best to fly on the broom to get across.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-293"/>
+    </children>
+  </item>
+  <item nodeId="node-293">
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open archway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.&#x000A;&#x000A;You have flown into the south side of the room.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-294"/>
+    </children>
+  </item>
+  <item nodeId="node-294">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Central Room&#x000A;A rather barren room. You see a wizard at the north end next to what appears to be an exit. There are archways to your south, east, and west that seem to lead to rooms.&#x000A;&#x000A;You can see a Wizard here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-295"/>
+    </children>
+  </item>
+  <item nodeId="node-295">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start? To the west is an open archway that leads to an open area.&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net, broken wall and Ghost here.&#x000A;&#x000A;Voice: "Here there! You probably can't see me as I'm a ghost, but my name's Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-296"/>
+    </children>
+  </item>
+  <item nodeId="node-296">
+    <command xml:space="preserve">take jagged stone</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-297"/>
+    </children>
+  </item>
+  <item nodeId="node-297">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "I wonder what you're planning on doing with that jagged stone. It's definitely shaped pretty weirdly though, like it broke off from somewhere."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-298"/>
+    </children>
+  </item>
+  <item nodeId="node-298">
+    <command xml:space="preserve">look at broken wall</command>
+    <result xml:space="preserve">A wall that appears to have several holes in it. It looks like there are four places that something may fit into.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-299"/>
+    </children>
+  </item>
+  <item nodeId="node-299">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "That stone might fit into that broken wall you saw earlier. You should try to place it into the wall!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-300"/>
+    </children>
+  </item>
+  <item nodeId="node-300">
+    <command xml:space="preserve">place </command>
+    <result xml:space="preserve">What do you want to place?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-301"/>
+    </children>
+  </item>
+  <item nodeId="node-301">
+    <command xml:space="preserve">jagged stone</command>
+    <result xml:space="preserve">What do you want to place jagged stone in?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-302"/>
+    </children>
+  </item>
+  <item nodeId="node-302">
+    <command xml:space="preserve">broken wall</command>
+    <result xml:space="preserve">The jagged stone seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-303"/>
+    </children>
+  </item>
+  <item nodeId="node-303">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-304"/>
+    </children>
+  </item>
+  <item nodeId="node-304">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-305"/>
+    </children>
+  </item>
+  <item nodeId="node-305">
+    <command xml:space="preserve">look at table</command>
+    <result xml:space="preserve">A nice, sturdy table made of wood. You knock on it for good luck.&#x000A;&#x000A;On the old table are a suspicious pair of glasses, a rubber band and a strange potion.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-306"/>
+    </children>
+  </item>
+  <item nodeId="node-306">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">(first taking the suspicious pair of glasses)&#x000A;There is a strange aura coming from these glasses. When you put them on, a key appears on the old table.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-307"/>
+    </children>
+  </item>
+  <item nodeId="node-307">
+    <command xml:space="preserve">take band</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-308"/>
+    </children>
+  </item>
+  <item nodeId="node-308">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-309"/>
+    </children>
+  </item>
+  <item nodeId="node-309">
+    <command xml:space="preserve">drink potion</command>
+    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-310"/>
+    </children>
+  </item>
+  <item nodeId="node-310">
+    <command xml:space="preserve">combine band with stick</command>
+    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-311"/>
+    </children>
+  </item>
+  <item nodeId="node-311">
     <command xml:space="preserve">talk to casper</command>
     <result xml:space="preserve">Casper: "Great work crafting that slingshot! You should be able to shoot down something in here... Look around!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-248"/>
+      <child nodeId="node-312"/>
     </children>
   </item>
-  <item nodeId="node-248">
+  <item nodeId="node-312">
     <command xml:space="preserve">look at net</command>
     <result xml:space="preserve">An unreachable net that holds a stone slab. The net is hanging from a rotting wooden hook.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-249"/>
+      <child nodeId="node-313"/>
     </children>
   </item>
-  <item nodeId="node-249">
+  <item nodeId="node-313">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "You saw that suspended net, right? It looks really weak! I'm sure you could shoot it down using your slingshot."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-314"/>
+    </children>
+  </item>
+  <item nodeId="node-314">
     <command xml:space="preserve">shoot net</command>
-    <result xml:space="preserve">(with the slingshot)&#x000A;You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with a stone slab.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">What do you want to shoot the suspended net with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-250"/>
+      <child nodeId="node-315"/>
     </children>
   </item>
-  <item nodeId="node-250">
-    <command xml:space="preserve">take slap</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-315">
+    <command xml:space="preserve">slingshot</command>
+    <result xml:space="preserve">You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with a stone slab.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-251"/>
+      <child nodeId="node-316"/>
     </children>
   </item>
-  <item nodeId="node-251">
+  <item nodeId="node-316">
     <command xml:space="preserve">take stone slab</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-252"/>
+      <child nodeId="node-317"/>
     </children>
   </item>
-  <item nodeId="node-252">
+  <item nodeId="node-317">
+    <command xml:space="preserve">unlock chest with key</command>
+    <result xml:space="preserve">In the old chest is a broken stone.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-318"/>
+    </children>
+  </item>
+  <item nodeId="node-318">
+    <command xml:space="preserve">take broken stone</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-319"/>
+    </children>
+  </item>
+  <item nodeId="node-319">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start? To the west is an open archway that leads to an open area.&#x000A;&#x000A;You can see a torn net, an old chest (empty), an old table (on which is a lifting potion), a stack of boulders, a magical staff, broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-320"/>
+    </children>
+  </item>
+  <item nodeId="node-320">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Maybe you can place that useless rock into that broken wall from earlier."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-253"/>
+      <child nodeId="node-321"/>
     </children>
   </item>
-  <item nodeId="node-253">
-    <command xml:space="preserve">look at stone slab</command>
-    <result xml:space="preserve">A piece of stone that appears to have broken off from somewhere.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-321">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  broken stone&#x000A;  stone slab&#x000A;  a slingshot&#x000A;  an invisible key&#x000A;  a suspicious pair of glasses (being worn)&#x000A;  the yellow gem&#x000A;  the suspicious broom&#x000A;  a red gem&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-254"/>
+      <child nodeId="node-322"/>
     </children>
   </item>
-  <item nodeId="node-254">
+  <item nodeId="node-322">
+    <command xml:space="preserve">place broken stone in wall</command>
+    <result xml:space="preserve">Which do you mean, broken wall, broken stone or stone slab?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-323"/>
+    </children>
+  </item>
+  <item nodeId="node-323">
+    <command xml:space="preserve">place broken stone in broken wall</command>
+    <result xml:space="preserve">The broken stone seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-324"/>
+    </children>
+  </item>
+  <item nodeId="node-324">
+    <command xml:space="preserve">place stone slab in broken wall</command>
+    <result xml:space="preserve">The stone slab seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-325"/>
+    </children>
+  </item>
+  <item nodeId="node-325">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-90">
-    <command xml:space="preserve">put stick in broken wall</command>
-    <result xml:space="preserve">There is no more room in the broken wall.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-91"/>
+      <child nodeId="node-326"/>
     </children>
+  </item>
+  <item nodeId="node-326">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-327"/>
+    </children>
+  </item>
+  <item nodeId="node-327">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Okay, you have the magical powers... But now you need a staff to channel those powers. I swear there was one lying around here somewhere..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-328"/>
+    </children>
+  </item>
+  <item nodeId="node-328">
+    <command xml:space="preserve">take staff</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-329"/>
+    </children>
+  </item>
+  <item nodeId="node-329">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "You have the staff and you drank the potion, right? Looks like you should be able to lift the boulders now! Try to lift it with the staff."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-330"/>
+    </children>
+  </item>
+  <item nodeId="node-330">
+    <command xml:space="preserve">lift boulders with staff</command>
+    <result xml:space="preserve">You channeled your newfound aura into the staff. To your surprise, the stack of boulders began to float in the air. Behind the stack of boulders was a stone shard. You moved the stack of boulders to the side, allowing access to the stone shard.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-331"/>
+    </children>
+  </item>
+  <item nodeId="node-331">
+    <command xml:space="preserve">take stone shard</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-332"/>
+    </children>
+  </item>
+  <item nodeId="node-332">
+    <command xml:space="preserve">place stone shard in broken wall</command>
+    <result xml:space="preserve">The stone shard seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-333"/>
+    </children>
+  </item>
+  <item nodeId="node-333">
+    <command xml:space="preserve">take blue gem</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-334"/>
+    </children>
+  </item>
+  <item nodeId="node-334">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-335"/>
+    </children>
+  </item>
+  <item nodeId="node-335">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Central Room&#x000A;A rather barren room. You see a wizard at the north end next to what appears to be an exit. There are archways to your south, east, and west that seem to lead to rooms.&#x000A;&#x000A;You can see a Wizard here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-336"/>
+    </children>
+  </item>
+  <item nodeId="node-336">
+    <command xml:space="preserve">talk to wizard</command>
+    <result xml:space="preserve">Wizard: "Welcome to my magnificent escape room! You&#x2026; already have all the gems. Well, how rude. You could have at least let me say my introduction. I worked very hard on it, you know!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-337"/>
+    </children>
+  </item>
+  <item nodeId="node-337">
+    <command xml:space="preserve">talk to wizard</command>
+    <result xml:space="preserve">Wizard: "Go through the exit already! I promise you have more important things to get to right now."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-91">
-    <command xml:space="preserve">put</command>
-    <result xml:space="preserve">(on the Y-shaped wooden stick)&#x000A;You can't wear that!&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-92">
-    <command xml:space="preserve">craft band and stick</command>
-    <result xml:space="preserve">check1&#x000A;rubber band: (first taking the rubber band)&#x000A;check2&#x000A;check3&#x000A;check4check1a1&#x000A;Y-shaped wooden stick: That isn't available.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start? To the west is an open archway that leads to an open area.&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are a jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;Voice: "Here there! You probably can't see me as I'm a ghost, but my name's Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
+      <child nodeId="node-92"/>
+      <child nodeId="node-98"/>
+      <child nodeId="node-100"/>
+      <child nodeId="node-108"/>
+      <child nodeId="node-127"/>
+      <child nodeId="node-133"/>
+      <child nodeId="node-137"/>
+      <child nodeId="node-138"/>
+      <child nodeId="node-141"/>
+      <child nodeId="node-147"/>
+      <child nodeId="node-149"/>
+      <child nodeId="node-338"/>
+      <child nodeId="node-339"/>
+    </children>
+  </item>
+  <item nodeId="node-92">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">(first taking the suspicious pair of glasses)&#x000A;There now appears to be a key on the old table.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
       <child nodeId="node-93"/>
-      <child nodeId="node-96"/>
     </children>
   </item>
   <item nodeId="node-93">
-    <command xml:space="preserve">craft band, stick</command>
-    <result xml:space="preserve">You must supply a second noun.&#x000A;You must supply a second noun.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1122,8 +1543,8 @@
     </children>
   </item>
   <item nodeId="node-94">
-    <command xml:space="preserve">craft</command>
-    <result xml:space="preserve">What do you want to craft?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">unlock chest with key</command>
+    <result xml:space="preserve">In the old chest is a broken stone.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1131,14 +1552,17 @@
     </children>
   </item>
   <item nodeId="node-95">
-    <command xml:space="preserve">rubber band and y-shaped stick</command>
-    <result xml:space="preserve">You must supply a second noun.&#x000A;You must supply a second noun.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take jagged stone</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-96"/>
+    </children>
   </item>
   <item nodeId="node-96">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses and a strange potion), a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place jagged stone into broken wall</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1146,51 +1570,56 @@
     </children>
   </item>
   <item nodeId="node-97">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place wall piece down into broken wall</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
   <item nodeId="node-98">
-    <command xml:space="preserve">craft stick and band</command>
-    <result xml:space="preserve">check1&#x000A;Y-shaped wooden stick: (first taking the Y-shaped wooden stick)&#x000A;check2&#x000A;check3&#x000A;check4check1a1&#x000A;rubber band: That isn't available.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take jagged stone</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-99"/>
-      <child nodeId="node-101"/>
     </children>
   </item>
   <item nodeId="node-99">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses and a strange potion), a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place jagged stone into broken wall</command>
+    <result xml:space="preserve">The jagged stone seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-100">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Central Room&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-100"/>
+      <child nodeId="node-101"/>
     </children>
   </item>
-  <item nodeId="node-100">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
   <item nodeId="node-101">
-    <command xml:space="preserve">craft</command>
-    <result xml:space="preserve">(the slingshot)&#x000A;*** Couldn't read from entry 1 of a list which is empty ***&#x000A;&#x000A;*** Run-time problem P50: Attempt to use list item which does not exist.&#x000A;&#x000A;*** Couldn't read from entry 1 of a list which is empty ***&#x000A;What do you want to craft with?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-102"/>
+    </children>
   </item>
   <item nodeId="node-102">
-    <command xml:space="preserve">craft band</command>
-    <result xml:space="preserve">*** Couldn't read from entry 1 of a list which is empty ***&#x000A;&#x000A;*** Run-time problem P50: Attempt to use list item which does not exist.&#x000A;&#x000A;*** Couldn't read from entry 1 of a list which is empty ***&#x000A;(first taking the rubber band)&#x000A;You can't craft *** Couldn't read from entry 1 of a list which is empty ***&#x000A;nothing and *** Couldn't read from entry 2 of a list which is empty ***&#x000A;nothing into anything useful.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-103"/>
+    </children>
   </item>
   <item nodeId="node-103">
-    <command xml:space="preserve">craft</command>
-    <result xml:space="preserve">What do you want to craft?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">You cannot fly in here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1198,8 +1627,8 @@
     </children>
   </item>
   <item nodeId="node-104">
-    <command xml:space="preserve">craft stick</command>
-    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;What do you want to craft with?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1207,14 +1636,17 @@
     </children>
   </item>
   <item nodeId="node-105">
-    <command xml:space="preserve">craft stick, band</command>
-    <result xml:space="preserve">Y-shaped wooden stick: You now have a slingshot.&#x000A;rubber band: That isn't available.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-106"/>
+    </children>
   </item>
   <item nodeId="node-106">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">You have flown into the south side of the room.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1222,26 +1654,25 @@
     </children>
   </item>
   <item nodeId="node-107">
-    <command xml:space="preserve">look at table</command>
-    <result xml:space="preserve">A nice, sturdy table made of wood. You knock on it for good luck.&#x000A;&#x000A;On the old table are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-108"/>
-    </children>
   </item>
   <item nodeId="node-108">
-    <command xml:space="preserve">take rubber band</command>
+    <command xml:space="preserve">take stick</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-109"/>
+      <child nodeId="node-111"/>
+      <child nodeId="node-125"/>
     </children>
   </item>
   <item nodeId="node-109">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take band</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1249,23 +1680,24 @@
     </children>
   </item>
   <item nodeId="node-110">
-    <command xml:space="preserve">take jagged stone</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft stick and band</command>
+    <result xml:space="preserve">You must supply a second noun.&#x000A;You must supply a second noun.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-111"/>
-    </children>
   </item>
   <item nodeId="node-111">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "I wonder what you're planning on doing with that jagged stone. It's definitely shaped pretty weirdly though, like it broke off from somewhere."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "There should be a rubber band somewhere around here... You could definitely craft a slingshot if you picked it up and combined it with that Y-shaped stick you have."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-112"/>
+      <child nodeId="node-116"/>
+    </children>
   </item>
   <item nodeId="node-112">
-    <command xml:space="preserve">take band</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1273,14 +1705,17 @@
     </children>
   </item>
   <item nodeId="node-113">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "There should be a stick somewhere around here... You could definitely craft a slingshot if you found it and combined it with that rubber band you have."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take suspended net</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-114"/>
+    </children>
   </item>
   <item nodeId="node-114">
-    <command xml:space="preserve">craft stick with band</command>
-    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at suspended net</command>
+    <result xml:space="preserve">An unreachable net that holds a wall piece. The net is hanging from a rotting wooden hook.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1289,16 +1724,13 @@
   </item>
   <item nodeId="node-115">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Great work crafting that slingshot! You should be able to shoot down something in here... Look around!"&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-116"/>
-    </children>
   </item>
   <item nodeId="node-116">
-    <command xml:space="preserve">shoot suspended net</command>
-    <result xml:space="preserve">(with the slingshot)&#x000A;You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with a stone slab.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">combine stick with band</command>
+    <result xml:space="preserve">(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1307,7 +1739,7 @@
   </item>
   <item nodeId="node-117">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Great work crafting that slingshot! You should be able to shoot down something in here... Look around!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1315,8 +1747,8 @@
     </children>
   </item>
   <item nodeId="node-118">
-    <command xml:space="preserve">look at broken wall</command>
-    <result xml:space="preserve">A wall that appears to have several holes in it. It looks like there are four places that something may fit into.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at net</command>
+    <result xml:space="preserve">An unreachable net that holds a stone slab. The net is hanging from a rotting wooden hook.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1324,8 +1756,8 @@
     </children>
   </item>
   <item nodeId="node-119">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, it might fit in the broken wall from earlier..."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">shoot net</command>
+    <result xml:space="preserve">(with the slingshot)&#x000A;You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with a stone slab.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1333,8 +1765,8 @@
     </children>
   </item>
   <item nodeId="node-120">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see stone slab, a torn net, an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses and a strange potion), a stack of boulders, a magical staff, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take slap</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1352,7 +1784,7 @@
   </item>
   <item nodeId="node-122">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Maybe this oddly shaped stone will fit into the broken wall from earlier..."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1360,8 +1792,8 @@
     </children>
   </item>
   <item nodeId="node-123">
-    <command xml:space="preserve">place stone slab in broken wall</command>
-    <result xml:space="preserve">The stone slab seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at stone slab</command>
+    <result xml:space="preserve">A piece of stone that appears to have broken off from somewhere.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1370,16 +1802,13 @@
   </item>
   <item nodeId="node-124">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-125"/>
-    </children>
   </item>
   <item nodeId="node-125">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">put stick in broken wall</command>
+    <result xml:space="preserve">There is no more room in the broken wall.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1387,26 +1816,24 @@
     </children>
   </item>
   <item nodeId="node-126">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">put</command>
+    <result xml:space="preserve">(on the Y-shaped wooden stick)&#x000A;You can't wear that!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-127"/>
-    </children>
   </item>
   <item nodeId="node-127">
-    <command xml:space="preserve">look at table</command>
-    <result xml:space="preserve">A nice, sturdy table made of wood. You knock on it for good luck.&#x000A;&#x000A;On the old table are jagged stone, a suspicious pair of glasses and a strange potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft band and stick</command>
+    <result xml:space="preserve">check1&#x000A;rubber band: (first taking the rubber band)&#x000A;check2&#x000A;check3&#x000A;check4check1a1&#x000A;Y-shaped wooden stick: That isn't available.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-128"/>
+      <child nodeId="node-131"/>
     </children>
   </item>
   <item nodeId="node-128">
-    <command xml:space="preserve">look at chest</command>
-    <result xml:space="preserve">An old chest that looks like it might contain a pirate's treasure.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft band, stick</command>
+    <result xml:space="preserve">You must supply a second noun.&#x000A;You must supply a second noun.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1414,8 +1841,8 @@
     </children>
   </item>
   <item nodeId="node-129">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft</command>
+    <result xml:space="preserve">What do you want to craft?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1423,17 +1850,14 @@
     </children>
   </item>
   <item nodeId="node-130">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see a torn net, an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses and a strange potion), a stack of boulders, a magical staff, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">rubber band and y-shaped stick</command>
+    <result xml:space="preserve">You must supply a second noun.&#x000A;You must supply a second noun.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-131"/>
-    </children>
   </item>
   <item nodeId="node-131">
-    <command xml:space="preserve">take jagged stone</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses and a strange potion), a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1441,26 +1865,24 @@
     </children>
   </item>
   <item nodeId="node-132">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "That stone might fit into that broken wall you saw earlier. You should try to place it into it!"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-133"/>
-    </children>
   </item>
   <item nodeId="node-133">
-    <command xml:space="preserve">place stone in broken wall</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft stick and band</command>
+    <result xml:space="preserve">check1&#x000A;Y-shaped wooden stick: (first taking the Y-shaped wooden stick)&#x000A;check2&#x000A;check3&#x000A;check4check1a1&#x000A;rubber band: That isn't available.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-134"/>
+      <child nodeId="node-136"/>
     </children>
   </item>
   <item nodeId="node-134">
-    <command xml:space="preserve">place jagged stone in broken wall</command>
-    <result xml:space="preserve">The jagged stone seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses and a strange potion), a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1468,35 +1890,26 @@
     </children>
   </item>
   <item nodeId="node-135">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-136"/>
-    </children>
   </item>
   <item nodeId="node-136">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft</command>
+    <result xml:space="preserve">(the slingshot)&#x000A;*** Couldn't read from entry 1 of a list which is empty ***&#x000A;&#x000A;*** Run-time problem P50: Attempt to use list item which does not exist.&#x000A;&#x000A;*** Couldn't read from entry 1 of a list which is empty ***&#x000A;What do you want to craft with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-137"/>
-    </children>
   </item>
   <item nodeId="node-137">
-    <command xml:space="preserve">look at table</command>
-    <result xml:space="preserve">A nice, sturdy table made of wood. You knock on it for good luck.&#x000A;&#x000A;On the old table are a suspicious pair of glasses and a strange potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft band</command>
+    <result xml:space="preserve">*** Couldn't read from entry 1 of a list which is empty ***&#x000A;&#x000A;*** Run-time problem P50: Attempt to use list item which does not exist.&#x000A;&#x000A;*** Couldn't read from entry 1 of a list which is empty ***&#x000A;(first taking the rubber band)&#x000A;You can't craft *** Couldn't read from entry 1 of a list which is empty ***&#x000A;nothing and *** Couldn't read from entry 2 of a list which is empty ***&#x000A;nothing into anything useful.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-138"/>
-    </children>
   </item>
   <item nodeId="node-138">
-    <command xml:space="preserve">take glasses</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft</command>
+    <result xml:space="preserve">What do you want to craft?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1504,8 +1917,8 @@
     </children>
   </item>
   <item nodeId="node-139">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Fancy glasses you've got there! You should wear them! I think you'd look great in it."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft stick</command>
+    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;What do you want to craft with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1513,17 +1926,14 @@
     </children>
   </item>
   <item nodeId="node-140">
-    <command xml:space="preserve">wear glasses</command>
-    <result xml:space="preserve">There now appears to be a key on the old table.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft stick, band</command>
+    <result xml:space="preserve">Y-shaped wooden stick: You now have a slingshot.&#x000A;rubber band: That isn't available.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-141"/>
-    </children>
   </item>
   <item nodeId="node-141">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Hey does that help your vision at all? Are you able to see anything new?"&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1531,8 +1941,8 @@
     </children>
   </item>
   <item nodeId="node-142">
-    <command xml:space="preserve">look at glasses</command>
-    <result xml:space="preserve">A pair of glasses that seems to be exuding a magical aura.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at table</command>
+    <result xml:space="preserve">A nice, sturdy table made of wood. You knock on it for good luck.&#x000A;&#x000A;On the old table are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1540,8 +1950,8 @@
     </children>
   </item>
   <item nodeId="node-143">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Hey does that help your vision at all? Are you able to see anything new?"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take rubber band</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1549,8 +1959,8 @@
     </children>
   </item>
   <item nodeId="node-144">
-    <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1558,8 +1968,8 @@
     </children>
   </item>
   <item nodeId="node-145">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Fancy key you found, looks like it's made out of pure gold. Maybe it unlocks a fancy chest!"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take jagged stone</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1567,17 +1977,14 @@
     </children>
   </item>
   <item nodeId="node-146">
-    <command xml:space="preserve">unlock chest</command>
-    <result xml:space="preserve">What do you want to unlock the old chest with?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "I wonder what you're planning on doing with that jagged stone. It's definitely shaped pretty weirdly though, like it broke off from somewhere."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-147"/>
-    </children>
   </item>
   <item nodeId="node-147">
-    <command xml:space="preserve">key</command>
-    <result xml:space="preserve">In the old chest is a broken stone.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take band</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1586,16 +1993,13 @@
   </item>
   <item nodeId="node-148">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Was there nothing but a rock inside that chest all along? What a shame."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "There should be a stick somewhere around here... You could definitely craft a slingshot if you found it and combined it with that rubber band you have."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-149"/>
-    </children>
   </item>
   <item nodeId="node-149">
-    <command xml:space="preserve">take broken stone</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">craft stick with band</command>
+    <result xml:space="preserve">(first taking the Y-shaped wooden stick)&#x000A;(first taking the rubber band)&#x000A;You now have a slingshot.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1604,7 +2008,7 @@
   </item>
   <item nodeId="node-150">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Maybe that useless rock fits into that broken wall from earlier."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Great work crafting that slingshot! You should be able to shoot down something in here... Look around!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1612,8 +2016,8 @@
     </children>
   </item>
   <item nodeId="node-151">
-    <command xml:space="preserve">place broken stone in broken wall</command>
-    <result xml:space="preserve">The broken stone seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">shoot suspended net</command>
+    <result xml:space="preserve">(with the slingshot)&#x000A;You picked up a nearby rock and shot the suspended net. The suspended net plummeted to the ground, along with a stone slab.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1622,7 +2026,7 @@
   </item>
   <item nodeId="node-152">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1630,8 +2034,8 @@
     </children>
   </item>
   <item nodeId="node-153">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at broken wall</command>
+    <result xml:space="preserve">A wall that appears to have several holes in it. It looks like there are four places that something may fit into.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1639,8 +2043,8 @@
     </children>
   </item>
   <item nodeId="node-154">
-    <command xml:space="preserve">look at table</command>
-    <result xml:space="preserve">A nice, sturdy table made of wood. You knock on it for good luck.&#x000A;&#x000A;On the old table is a strange potion.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, it might fit in the broken wall from earlier..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1648,8 +2052,8 @@
     </children>
   </item>
   <item nodeId="node-155">
-    <command xml:space="preserve">take strange potion</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see stone slab, a torn net, an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses and a strange potion), a stack of boulders, a magical staff, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1657,7 +2061,7 @@
     </children>
   </item>
   <item nodeId="node-156">
-    <command xml:space="preserve">take potion</command>
+    <command xml:space="preserve">take stone slab</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
@@ -1667,7 +2071,7 @@
   </item>
   <item nodeId="node-157">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "That lifting potion you have seems like it could help you with those heavy rocks... you should drink it!"&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Maybe this oddly shaped stone will fit into the broken wall from earlier..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1675,8 +2079,8 @@
     </children>
   </item>
   <item nodeId="node-158">
-    <command xml:space="preserve">look at potion</command>
-    <result xml:space="preserve">The potion looks suspicious, but you've drank swamp water before, so it can't be that bad.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place stone slab in broken wall</command>
+    <result xml:space="preserve">The stone slab seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1684,8 +2088,8 @@
     </children>
   </item>
   <item nodeId="node-159">
-    <command xml:space="preserve">drink potion</command>
-    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1694,7 +2098,7 @@
   </item>
   <item nodeId="node-160">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Okay, you have the magical powers... But now you need a staff to channel those powers. I swear there was one lying around here somewhere..."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1702,8 +2106,8 @@
     </children>
   </item>
   <item nodeId="node-161">
-    <command xml:space="preserve">take staff</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1711,8 +2115,8 @@
     </children>
   </item>
   <item nodeId="node-162">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "You have the staff and you drank the potion, right? Looks like you should be able to lift the rocks now!"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at table</command>
+    <result xml:space="preserve">A nice, sturdy table made of wood. You knock on it for good luck.&#x000A;&#x000A;On the old table are jagged stone, a suspicious pair of glasses and a strange potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1720,8 +2124,8 @@
     </children>
   </item>
   <item nodeId="node-163">
-    <command xml:space="preserve">lift rocks</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at chest</command>
+    <result xml:space="preserve">An old chest that looks like it might contain a pirate's treasure.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1729,8 +2133,8 @@
     </children>
   </item>
   <item nodeId="node-164">
-    <command xml:space="preserve">lift boulders</command>
-    <result xml:space="preserve">Despite consuming the lifting potion, the stack of boulders does not seem like it will move easily.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1738,8 +2142,8 @@
     </children>
   </item>
   <item nodeId="node-165">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "You have the staff and you drank the potion, right? Looks like you should be able to lift the rocks now!"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see a torn net, an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses and a strange potion), a stack of boulders, a magical staff, a broken wall and Ghost here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1747,8 +2151,8 @@
     </children>
   </item>
   <item nodeId="node-166">
-    <command xml:space="preserve">lift boulders with staff</command>
-    <result xml:space="preserve">You channeled your newfound aura into the staff. To your surprise, the stack of boulders began to float in the air. Behind the stack of boulders was a stone shard. You moved the stack of boulders to the side, allowing access to the stone shard.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take jagged stone</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1757,7 +2161,7 @@
   </item>
   <item nodeId="node-167">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Looks like there was something behind the boulders... Go check it out, it might fit in the broken wall from earlier..."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "That stone might fit into that broken wall you saw earlier. You should try to place it into it!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1765,8 +2169,8 @@
     </children>
   </item>
   <item nodeId="node-168">
-    <command xml:space="preserve">take stone shard</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place stone in broken wall</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1774,8 +2178,8 @@
     </children>
   </item>
   <item nodeId="node-169">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Maybe this oddly shaped stone will fit into the broken wall from earlier..."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place jagged stone in broken wall</command>
+    <result xml:space="preserve">The jagged stone seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1783,8 +2187,8 @@
     </children>
   </item>
   <item nodeId="node-170">
-    <command xml:space="preserve">place stone shard in broken wall</command>
-    <result xml:space="preserve">The stone shard seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1793,7 +2197,7 @@
   </item>
   <item nodeId="node-171">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1801,8 +2205,8 @@
     </children>
   </item>
   <item nodeId="node-172">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "You solved the puzzle!! Go pick up the gem already..."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at table</command>
+    <result xml:space="preserve">A nice, sturdy table made of wood. You knock on it for good luck.&#x000A;&#x000A;On the old table are a suspicious pair of glasses and a strange potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1810,7 +2214,7 @@
     </children>
   </item>
   <item nodeId="node-173">
-    <command xml:space="preserve">take blue gem</command>
+    <command xml:space="preserve">take glasses</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
@@ -1820,7 +2224,7 @@
   </item>
   <item nodeId="node-174">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "What are you still doing here, you already have the gem! Oh, are you worried that I'll be lonely here? Don't worry, I've been alone for years now. I'll eventually find something to do."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Fancy glasses you've got there! You should wear them! I think you'd look great in it."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1828,8 +2232,8 @@
     </children>
   </item>
   <item nodeId="node-175">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Well, if you want to stay here, then be my guest. Hmm, let's share stories. There was this one time where&#x2026;"&#x000A;&gt;</result>
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">There now appears to be a key on the old table.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1838,7 +2242,7 @@
   </item>
   <item nodeId="node-176">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Well, if you want to stay here, then be my guest. Hmm, let's share stories. There was this one time where&#x2026;"&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "Hey does that help your vision at all? Are you able to see anything new?"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1846,8 +2250,8 @@
     </children>
   </item>
   <item nodeId="node-177">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a blue gem&#x000A;  a magical staff&#x000A;  a lifting potion&#x000A;  an invisible key&#x000A;  a pair of magic glasses (being worn)&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at glasses</command>
+    <result xml:space="preserve">A pair of glasses that seems to be exuding a magical aura.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1855,8 +2259,8 @@
     </children>
   </item>
   <item nodeId="node-178">
-    <command xml:space="preserve">put slingshot</command>
-    <result xml:space="preserve">What do you want to put the slingshot in?&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Hey does that help your vision at all? Are you able to see anything new?"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1864,8 +2268,8 @@
     </children>
   </item>
   <item nodeId="node-179">
-    <command xml:space="preserve">room</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1873,8 +2277,8 @@
     </children>
   </item>
   <item nodeId="node-180">
-    <command xml:space="preserve">put slingshot in wall</command>
-    <result xml:space="preserve">That can't contain things.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Fancy key you found, looks like it's made out of pure gold. Maybe it unlocks a fancy chest!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1882,8 +2286,8 @@
     </children>
   </item>
   <item nodeId="node-181">
-    <command xml:space="preserve">put slingshot in challenge room 3</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">unlock chest</command>
+    <result xml:space="preserve">What do you want to unlock the old chest with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1891,8 +2295,8 @@
     </children>
   </item>
   <item nodeId="node-182">
-    <command xml:space="preserve">put slingshot on the ground</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">key</command>
+    <result xml:space="preserve">In the old chest is a broken stone.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1900,24 +2304,26 @@
     </children>
   </item>
   <item nodeId="node-183">
-    <command xml:space="preserve">drop slingshot</command>
-    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Was there nothing but a rock inside that chest all along? What a shame."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-184"/>
+    </children>
   </item>
   <item nodeId="node-184">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take broken stone</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-185"/>
-      <child nodeId="node-193"/>
     </children>
   </item>
   <item nodeId="node-185">
-    <command xml:space="preserve">grab torch</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Maybe that useless rock fits into that broken wall from earlier."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1925,8 +2331,8 @@
     </children>
   </item>
   <item nodeId="node-186">
-    <command xml:space="preserve">use</command>
-    <result xml:space="preserve">(the wall torch on the wall torch)&#x000A;You cannot use wall torch on wall torch.&#x000A;&#x000A;Nothing happened.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place broken stone in broken wall</command>
+    <result xml:space="preserve">The broken stone seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1934,8 +2340,8 @@
     </children>
   </item>
   <item nodeId="node-187">
-    <command xml:space="preserve">use torch on vines</command>
-    <result xml:space="preserve">You cannot use wall torch on man-eating vines.&#x000A;&#x000A;Nothing happened.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1943,8 +2349,8 @@
     </children>
   </item>
   <item nodeId="node-188">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Maybe something on that table can help you out."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1952,8 +2358,8 @@
     </children>
   </item>
   <item nodeId="node-189">
-    <command xml:space="preserve">take torch</command>
-    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at table</command>
+    <result xml:space="preserve">A nice, sturdy table made of wood. You knock on it for good luck.&#x000A;&#x000A;On the old table is a strange potion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1961,8 +2367,8 @@
     </children>
   </item>
   <item nodeId="node-190">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take strange potion</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1970,8 +2376,8 @@
     </children>
   </item>
   <item nodeId="node-191">
-    <command xml:space="preserve">ignite broom with torch</command>
-    <result xml:space="preserve">suspicious broom is not flammable.&#x000A;&#x000A;Janitor: Hey, what are you doing?! Get out of there before you get burned as well!&#x000A;The suspicious broom has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take potion</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -1979,24 +2385,26 @@
     </children>
   </item>
   <item nodeId="node-192">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Supply Closet&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "That lifting potion you have seems like it could help you with those heavy rocks... you should drink it!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-193"/>
+    </children>
   </item>
   <item nodeId="node-193">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">look at potion</command>
+    <result xml:space="preserve">The potion looks suspicious, but you've drank swamp water before, so it can't be that bad.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-194"/>
-      <child nodeId="node-199"/>
     </children>
   </item>
   <item nodeId="node-194">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">drink potion</command>
+    <result xml:space="preserve">You are now exuding a strange magical aura. It feels as if you can now lift things with ease.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2004,8 +2412,8 @@
     </children>
   </item>
   <item nodeId="node-195">
-    <command xml:space="preserve">take torch</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Okay, you have the magical powers... But now you need a staff to channel those powers. I swear there was one lying around here somewhere..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2013,8 +2421,8 @@
     </children>
   </item>
   <item nodeId="node-196">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take staff</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2022,8 +2430,8 @@
     </children>
   </item>
   <item nodeId="node-197">
-    <command xml:space="preserve">ignite broom with torch</command>
-    <result xml:space="preserve">suspicious broom is not flammable.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "You have the staff and you drank the potion, right? Looks like you should be able to lift the rocks now!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2031,14 +2439,17 @@
     </children>
   </item>
   <item nodeId="node-198">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift rocks</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-199"/>
+    </children>
   </item>
   <item nodeId="node-199">
-    <command xml:space="preserve">take broom</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift boulders</command>
+    <result xml:space="preserve">Despite consuming the lifting potion, the stack of boulders does not seem like it will move easily.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2046,8 +2457,8 @@
     </children>
   </item>
   <item nodeId="node-200">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "You have the staff and you drank the potion, right? Looks like you should be able to lift the rocks now!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2055,8 +2466,8 @@
     </children>
   </item>
   <item nodeId="node-201">
-    <command xml:space="preserve">fly on broom</command>
-    <result xml:space="preserve">As you approach the man-eating vines, a shiver goes down your entire body. You decide against flying across.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">lift boulders with staff</command>
+    <result xml:space="preserve">You channeled your newfound aura into the staff. To your surprise, the stack of boulders began to float in the air. Behind the stack of boulders was a stone shard. You moved the stack of boulders to the side, allowing access to the stone shard.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2064,8 +2475,8 @@
     </children>
   </item>
   <item nodeId="node-202">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Looks like there was something behind the boulders... Go check it out, it might fit in the broken wall from earlier..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2073,23 +2484,26 @@
     </children>
   </item>
   <item nodeId="node-203">
-    <command xml:space="preserve">use torch and torch</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take stone shard</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-204"/>
+    </children>
   </item>
   <item nodeId="node-204">
-    <command xml:space="preserve">help</command>
-    <result xml:space="preserve">Here are some commands to get you started.&#x000A;go [cardinal direction] - Allows you to travel to a room in the specified cardinal direction.&#x000A;look at [something] - Allows you to examine something more closely.&#x000A;take [something] - Allows you to put an item into your inventory.&#x000A;inventory - Allows you to view the items in your possession.&#x000A;talk to [someone] - Allows you to speak with a non-playable character.&#x000A;&#x000A;There are other supported actions that you will come across during the game. To bring this message back up in the future, type help.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Maybe this oddly shaped stone will fit into the broken wall from earlier..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-205"/>
     </children>
   </item>
   <item nodeId="node-205">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;Voice: "Here there! You probably can't see me as I'm a ghost, but my name's Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">place stone shard in broken wall</command>
+    <result xml:space="preserve">The stone shard seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2097,8 +2511,8 @@
     </children>
   </item>
   <item nodeId="node-206">
-    <command xml:space="preserve">take stick</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2107,7 +2521,7 @@
   </item>
   <item nodeId="node-207">
     <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Casper: "You solved the puzzle!! Go pick up the gem already..."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2115,14 +2529,17 @@
     </children>
   </item>
   <item nodeId="node-208">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a Y-shaped wooden stick&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">take blue gem</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-209"/>
+    </children>
   </item>
   <item nodeId="node-209">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "What are you still doing here, you already have the gem! Oh, are you worried that I'll be lonely here? Don't worry, I've been alone for years now. I'll eventually find something to do."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2130,14 +2547,17 @@
     </children>
   </item>
   <item nodeId="node-210">
-    <command xml:space="preserve">talk to wizard</command>
-    <result xml:space="preserve">Wizard: "Welcome to my magnificent escape room! You have been randomly chosen from an infinite number of universes, lucky you! To escape, you must go into the rooms to your south, east, and west. In each of those rooms is a gem that you must obtain. But, it's not that simple; the gems can only be acquired through a series of puzzles. Good luck! Oh, there are also some people inside the rooms. Maybe they'll say something useful if you talk to them."&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Well, if you want to stay here, then be my guest. Hmm, let's share stories. There was this one time where&#x2026;"&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-211"/>
+    </children>
   </item>
   <item nodeId="node-211">
-    <command xml:space="preserve">take stick</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Well, if you want to stay here, then be my guest. Hmm, let's share stories. There was this one time where&#x2026;"&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2145,8 +2565,8 @@
     </children>
   </item>
   <item nodeId="node-212">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;Voice: "Here there! You probably can't see me as I'm a ghost, but my name's Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a blue gem&#x000A;  a magical staff&#x000A;  a lifting potion&#x000A;  an invisible key&#x000A;  a pair of magic glasses (being worn)&#x000A;  a slingshot&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2154,8 +2574,8 @@
     </children>
   </item>
   <item nodeId="node-213">
-    <command xml:space="preserve">take stick</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">put slingshot</command>
+    <result xml:space="preserve">What do you want to put the slingshot in?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2163,8 +2583,8 @@
     </children>
   </item>
   <item nodeId="node-214">
-    <command xml:space="preserve">take rubber</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">room</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2172,8 +2592,8 @@
     </children>
   </item>
   <item nodeId="node-215">
-    <command xml:space="preserve">craft slingshot</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">put slingshot in wall</command>
+    <result xml:space="preserve">That can't contain things.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2181,8 +2601,8 @@
     </children>
   </item>
   <item nodeId="node-216">
-    <command xml:space="preserve">craft stick and rubber</command>
-    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">put slingshot in challenge room 3</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2190,8 +2610,8 @@
     </children>
   </item>
   <item nodeId="node-217">
-    <command xml:space="preserve">talk to casper</command>
-    <result xml:space="preserve">Casper: "Have you tried crafting a slingshot using that stick and rubber band you have?"&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">put slingshot on the ground</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -2199,15 +2619,360 @@
     </children>
   </item>
   <item nodeId="node-218">
+    <command xml:space="preserve">drop slingshot</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-338">
+    <command xml:space="preserve">look at wall piece down</command>
+    <result xml:space="preserve">A piece of stone that appears to have broken off from somewhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-339">
+    <command xml:space="preserve">take stone</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-340"/>
+    </children>
+  </item>
+  <item nodeId="node-340">
+    <command xml:space="preserve">place stone in wall</command>
+    <result xml:space="preserve">The jagged stone seemed to fit perfectly into the broken wall. You hear a faint clicking sound.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-341"/>
+    </children>
+  </item>
+  <item nodeId="node-341">
+    <command xml:space="preserve">talk</command>
+    <result xml:space="preserve">(to Ghost)&#x000A;Casper: "Great, that fit perfectly!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-219">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-220"/>
+      <child nodeId="node-228"/>
+    </children>
+  </item>
+  <item nodeId="node-220">
+    <command xml:space="preserve">grab torch</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-221"/>
+    </children>
+  </item>
+  <item nodeId="node-221">
+    <command xml:space="preserve">use</command>
+    <result xml:space="preserve">(the wall torch on the wall torch)&#x000A;You cannot use wall torch on wall torch.&#x000A;&#x000A;Nothing happened.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-222"/>
+    </children>
+  </item>
+  <item nodeId="node-222">
+    <command xml:space="preserve">use torch on vines</command>
+    <result xml:space="preserve">You cannot use wall torch on man-eating vines.&#x000A;&#x000A;Nothing happened.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-223"/>
+    </children>
+  </item>
+  <item nodeId="node-223">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-224"/>
+    </children>
+  </item>
+  <item nodeId="node-224">
+    <command xml:space="preserve">take torch</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-225"/>
+    </children>
+  </item>
+  <item nodeId="node-225">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-226"/>
+    </children>
+  </item>
+  <item nodeId="node-226">
+    <command xml:space="preserve">ignite broom with torch</command>
+    <result xml:space="preserve">suspicious broom is not flammable.&#x000A;&#x000A;Janitor: Hey, what are you doing?! Get out of there before you get burned as well!&#x000A;The suspicious broom has been burnt to a crisp.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-227"/>
+    </children>
+  </item>
+  <item nodeId="node-227">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Supply Closet&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-228">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-229"/>
+      <child nodeId="node-234"/>
+    </children>
+  </item>
+  <item nodeId="node-229">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-230"/>
+    </children>
+  </item>
+  <item nodeId="node-230">
+    <command xml:space="preserve">take torch</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-231"/>
+    </children>
+  </item>
+  <item nodeId="node-231">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-232"/>
+    </children>
+  </item>
+  <item nodeId="node-232">
+    <command xml:space="preserve">ignite broom with torch</command>
+    <result xml:space="preserve">suspicious broom is not flammable.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-233"/>
+    </children>
+  </item>
+  <item nodeId="node-233">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Supply Closet&#x000A;You can see the suspicious broom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-234">
+    <command xml:space="preserve">take broom</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-235"/>
+    </children>
+  </item>
+  <item nodeId="node-235">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-236"/>
+    </children>
+  </item>
+  <item nodeId="node-236">
+    <command xml:space="preserve">fly on broom</command>
+    <result xml:space="preserve">As you approach the man-eating vines, a shiver goes down your entire body. You decide against flying across.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-237"/>
+    </children>
+  </item>
+  <item nodeId="node-237">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-238"/>
+    </children>
+  </item>
+  <item nodeId="node-238">
+    <command xml:space="preserve">use torch and torch</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-239">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">Here are some commands to get you started.&#x000A;go [cardinal direction] - Allows you to travel to a room in the specified cardinal direction.&#x000A;look - Allows you to obtain a description of the room.&#x000A;look at [something] - Allows you to examine something more closely.&#x000A;take [something] - Allows you to put an item into your inventory.&#x000A;inventory - Allows you to view the items in your possession.&#x000A;talk to [someone] - Allows you to speak with a non-playable character.&#x000A;&#x000A;There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type help.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-240"/>
+    </children>
+  </item>
+  <item nodeId="node-240">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net, broken wall and Ghost here.&#x000A;&#x000A;Voice: "Here there! You probably can't see me as I'm a ghost, but my name's Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-241"/>
+      <child nodeId="node-262"/>
+    </children>
+  </item>
+  <item nodeId="node-241">
+    <command xml:space="preserve">take stick</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-242"/>
+    </children>
+  </item>
+  <item nodeId="node-242">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-243"/>
+    </children>
+  </item>
+  <item nodeId="node-243">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Y-shaped wooden stick&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-262">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Central Room&#x000A;A rather barren room. You see a wizard at the north end next to what appears to be an exit. There are archways to your south, east, and west that seem to lead to rooms.&#x000A;&#x000A;You can see a Wizard here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-263"/>
+    </children>
+  </item>
+  <item nodeId="node-263">
+    <command xml:space="preserve">go west</command>
+    <result xml:space="preserve">Challenge Room 2 South&#x000A;You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet.&#x000A;&#x000A;To the north, there are man-eating vines that block a trench. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor feeding raw chicken to the vines.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-244">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-245"/>
+    </children>
+  </item>
+  <item nodeId="node-245">
+    <command xml:space="preserve">talk to wizard</command>
+    <result xml:space="preserve">Wizard: "Welcome to my magnificent escape room! You have been randomly chosen from an infinite number of universes, lucky you! To escape, you must go into the rooms to your south, east, and west. In each of those rooms is a gem that you must obtain. But, it's not that simple; the gems can only be acquired through a series of puzzles. Good luck! Oh, there are also some people inside the rooms. Maybe they'll say something useful if you talk to them."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-246">
+    <command xml:space="preserve">take stick</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-247"/>
+    </children>
+  </item>
+  <item nodeId="node-247">
+    <command xml:space="preserve">go east</command>
+    <result xml:space="preserve">Challenge Room 3&#x000A;You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?&#x000A;&#x000A;You can see an old chest (closed), an old table (on which are jagged stone, a suspicious pair of glasses, a rubber band and a strange potion), a Y-shaped wooden stick, a stack of boulders, a magical staff, a suspended net, a broken wall and Ghost here.&#x000A;&#x000A;Voice: "Here there! You probably can't see me as I'm a ghost, but my name's Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-248"/>
+    </children>
+  </item>
+  <item nodeId="node-248">
+    <command xml:space="preserve">take stick</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-249"/>
+    </children>
+  </item>
+  <item nodeId="node-249">
+    <command xml:space="preserve">take rubber</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-250"/>
+    </children>
+  </item>
+  <item nodeId="node-250">
+    <command xml:space="preserve">craft slingshot</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-251"/>
+    </children>
+  </item>
+  <item nodeId="node-251">
+    <command xml:space="preserve">craft stick and rubber</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-252"/>
+    </children>
+  </item>
+  <item nodeId="node-252">
+    <command xml:space="preserve">talk to casper</command>
+    <result xml:space="preserve">Casper: "Have you tried crafting a slingshot using that stick and rubber band you have?"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-253"/>
+    </children>
+  </item>
+  <item nodeId="node-253">
     <command xml:space="preserve">craft stick with rubber</command>
     <result xml:space="preserve">You now have a slingshot.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-219"/>
+      <child nodeId="node-254"/>
     </children>
   </item>
-  <item nodeId="node-219">
+  <item nodeId="node-254">
     <command xml:space="preserve">talk to casper</command>
     <result xml:space="preserve">Casper: "Why'd you drop that Y-shaped stick and rubber band? You could definitely craft a slingshot if you picked them back up."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>

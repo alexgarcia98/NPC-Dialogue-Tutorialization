@@ -4,8 +4,6 @@ Part 1 - Gameplay Modifications
 
 [ Gameplay ]
 
-Use brief room descriptions.
-
 Understand the commands "ask" and "tell" and "say" and "answer" as something new.
 
 Understand "ask [text]" or "tell [text]" or "answer [text]" or "say [text]" as a mistake ("[talk to instead]").
@@ -38,7 +36,7 @@ The player is in the Central Room.
 Understand "grab [something]" as taking.
 
 When play begins:
-	say "Hello, and welcome to Dungeon Quest![line break][line break]Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type [bold type]help[roman type].";
+	say "Hello, and welcome to Dungeon Quest![line break][line break]Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] - Allows you to obtain a description of the room.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type [bold type]help[roman type].";
 
 Part 2 - Challenge Room 1
 
@@ -80,38 +78,40 @@ North of Challenge Room 1 is a room called Central Room.
 
 Section 2 - NPC
 
-Stone-Encased Man is a man in Challenge Room 1. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingRedGem.
+Stone Encased Man is a man in Challenge Room 1. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingRedGem.
 
-Understand "stone encasing" as Stone-Encased Man.
+Understand "stone encasing" as Stone Encased Man.
 
-The description of the Stone-Encased Man is "[if the red gem is nowhere and the Stone-Encased Man is not talked to]There is a red gem embedded in the stone. Wait, there’s a sleeping head coming out of the stone.[otherwise if the red gem is nowhere and the Stone-Encased Man is talked to]It seems to be a man encased in stone. You can see a shiny red gem around where his belly-button would be.[otherwise]With the stone encasing removed, the man seems to be surprisingly well built. Perhaps he didn't get hungry while trapped in the stone."
+Understand "Stone Freed Man" as Stone Encased Man.
 
-Instead of talking to Stone-Encased Man:
+The description of the Stone Encased Man is "[if the red gem is nowhere and the Stone Encased Man is not talked to]There is a red gem embedded in the stone. Wait, there’s a sleeping head coming out of the stone.[otherwise if the red gem is nowhere and the Stone Encased Man is talked to]It seems to be a man encased in stone. You can see a shiny red gem around where his belly-button would be.[otherwise]With the stone encasing removed, the man seems to be surprisingly well built. Perhaps he didn't get hungry while trapped in the stone."
+
+Instead of talking to Stone Encased Man:
 	if player has red gem:
-		if timesTalkedToAfterGettingRedGem of Stone-Encased Man is 0:
-			say "Stone-Encased Man: 'Thanks again for freeing me... Go get the rest of the gems so you can get out of here!'";
+		if timesTalkedToAfterGettingRedGem of Stone Encased Man is 0:
+			say "Stone Freed Man: 'Thanks again for freeing me... Go get the rest of the gems so you can get out of here!'";
 		otherwise:
-			say "Stone-Encased Man: 'Why are you still here? There's nothing left to do here now that you've got the gem.'";
-		increment timesTalkedToAfterGettingRedGem of Stone-Encased Man;
-	otherwise if Stone-Encased Man is talked to:
+			say "Stone Freed Man: 'Why are you still here? There's nothing left to do here now that you've got the gem.'";
+		increment timesTalkedToAfterGettingRedGem of Stone Encased Man;
+	otherwise if Stone Encased Man is talked to:
 		if suspicious potion is in beaker:
-			say "Stone-Encased Man: 'No, no, no! It's not the correct potion! The right one has a… smell to it. I don't know what that will do, but you better [bold type]dump[roman type] that quickly before something bad happens!'";
+			say "Stone Encased Man: 'No, no, no! It's not the correct potion! The right one has a… smell to it. I don't know what that will do, but you better [bold type]dump[roman type] that quickly before something bad happens!'";
 		otherwise if purple potion is in beaker:
-			say "Stone-Encased Man: 'I think you've done it! That potion smells awful… Now hurry up and [bold type]pour[roman type] it on me so I can be free!'";
+			say "Stone Encased Man: 'I think you've done it! That potion smells awful… Now hurry up and [bold type]pour[roman type] it on me so I can be free!'";
 		otherwise if the book is seen:
-			say "Stone-Encased Man: 'Well, did you find the correct recipe?'";
+			say "Stone Encased Man: 'Well, did you find the correct recipe?'";
 		otherwise:
-			say "Stone-Encased Man: 'Didn't you hear me clearly? Look over there at the table. Do you see those vials? You should [bold type]mix[roman type] the correct ones together into a stone-dissolving potion and [bold type]pour[roman type] it over me!'";
+			say "Stone Encased Man: 'Didn't you hear me clearly? Look over there at the table. Do you see those vials? You should [bold type]mix[roman type] the correct ones together into a stone-dissolving potion and [bold type]pour[roman type] it over me!'";
 	otherwise:
 		if suspicious potion is in beaker:
-			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. Looks like you've already mixed some of the vials together to make a potion. If you can make the correct potion and pour it on me, it should turn me back to normal! The recipe book right there should tell you how!'";
+			say "Stone Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. Looks like you've already mixed some of the vials together to make a potion. If you can make the correct potion and pour it on me, it should turn me back to normal! The recipe book right there should tell you how!'";
 		otherwise if purple potion is in beaker:
-			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone… Wait, you've got the right potion! Quick -- [bold type]pour[roman type] it on me!'";
+			say "Stone Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone… Wait, you've got the right potion! Quick -- [bold type]pour[roman type] it on me!'";
 		otherwise if the book is seen:
-			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and [bold type]pour[roman type] it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how. I'd reckon you've already read the book so hurry up!'";
+			say "Stone Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and [bold type]pour[roman type] it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how. I'd reckon you've already read the book so hurry up!'";
 		otherwise:
-			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how.'";
-	now Stone-Encased Man is talked to;
+			say "Stone Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how.'";
+	now Stone Encased Man is talked to;
 
 Part 3 - Challenge Room 2
 
@@ -151,7 +151,7 @@ Carry out examining a thing:
 		
 Understand "Nimbus 2000" as suspicious broom.
 
-The description of Challenge Room 2 South is "You find yourself in a damp and smelly room; the air suffocates you. To the east is an open doorway that leads to an open area. To the west is a door to what looks like a closet."
+The description of Challenge Room 2 South is "You find yourself in a damp and smelly room; the air suffocates you. To the east is an open archway that leads to an open area. To the west is a door to what looks like a closet."
 
 Rule for printing the locale description of Challenge Room 2 South:
 	if the man-eating vines are in Challenge Room 2 South:
@@ -160,6 +160,8 @@ Rule for printing the locale description of Challenge Room 2 South:
 		say "There is a trench to the north. There appears to be something shiny on the other side. The walls are lined with torches for light. And in the middle of the room stands a janitor cleaning up the mess left by the vines.";
 
 The description of Challenge Room 2 North is "The air seems to be fresher here."
+
+The description of the Supply Closet is "There are a variety of cleaning supplies in this room. To the east is a door leading back to the musty room."
 
 Rule for printing the locale description of Challenge Room 2 North:
 	if the player has the yellow gem:
@@ -180,8 +182,8 @@ Instead of going to Challenge Room 2 North from Challenge Room 2 South:
 	otherwise:
 		say "You'd rather not join the food chain today.";
 
-[Instead of using torch on vines:]
-	
+Instead of going to Challenge Room 2 South from Challenge Room 2 North:
+	say "The trench is deep. It would be best to [bold type]fly[roman type] on the broom to get across.";	
 
 Section 2 - NPC
 
@@ -231,30 +233,26 @@ Section 1 - Items and Descriptions
 
 East of the Central Room is a room called Challenge Room 3.
 
-Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The old chest is a container. The old chest is fixed in place. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. The stack of boulders is fixed in place. Wall Piece Down is on the old table. Wall Piece Left is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. Wall Piece Right is nowhere. Wall Piece Up is nowhere. The suspended net is a thing. The suspended net is fixed in place. The torn net is a thing. The torn net is nowhere. The broken wall is a container. The carrying capacity of the broken wall is 0. The blue pedestal is a thing. The blue pedestal is fixed in place. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal.
+The broken stone is a thing. The stone slab is a thing. The stone shard is a thing. The jagged stone is a thing. The invisible key is a thing. The old chest is a container. The old chest is fixed in place. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. The stack of boulders is fixed in place. The jagged stone is on the old table. The broken stone is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. The stone slab is nowhere. The stone shard is nowhere. The suspended net is a thing. The suspended net is fixed in place. The torn net is a thing. The torn net is nowhere. The blue pedestal is a thing. The blue pedestal is fixed in place. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal. The broken wall is a thing.
 
 In Challenge Room 3 is the old table, the old chest, stack of boulders, Y-shaped wooden stick, suspended net, magical staff, broken wall.
 
 FirstEntered is a kind of Value. The FirstEntereds are trueEntered and falseEntered. A room has a FirstEntered. The FirstEntered of a room is falseEntered.
 
-The description of Challenge Room 3 is "[if the FirstEntered of Challenge Room 3 is falseEntered]You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?[otherwise]The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start?"
+The description of Challenge Room 3 is "[if the FirstEntered of Challenge Room 3 is falseEntered]You enter a room filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start? To the west is an open archway that leads to an open area.[otherwise]The room is filled with a variety of objects. A sense of dread comes over you as you look around. Where should you start? To the west is an open archway that leads to an open area."
 
 After printing the locale description of Challenge Room 3:
 	if the FirstEntered of Challenge Room 3 is falseEntered:
 		say "Voice: 'Here there! You probably can’t see me as I’m a ghost, but my name’s Casper! I was stuck in this room and died. Now that I have loads of free time, I figured out the puzzle. Or at least I think I did. Talk to me if you need any pointers!'";
 		now the FirstEntered of Challenge Room 3 is trueEntered;
 
-The printed name of Wall Piece Left is "broken stone". The printed name of Wall Piece Right is "stone slab". The printed name of Wall Piece Up is "stone shard".  The printed name of Wall Piece Down is "jagged stone".
+The description of broken stone is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
 
-Understand "broken stone" as Wall Piece Left. Understand "stone slab" as Wall Piece Right. Understand "stone shard" as Wall Piece Up. Understand "jagged stone" as Wall Piece Down.
+The description of stone slab is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
 
-The description of Wall Piece Left is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
+The description of stone shard is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
 
-The description of Wall Piece Right is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
-
-The description of Wall Piece Up is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
-
-The description of Wall Piece Down is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
+The description of jagged stone is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
 
 The description of the broken wall is "A wall that appears to have several holes in it. It looks like there are four places that something may fit into."
 
@@ -321,19 +319,19 @@ A person has a LastInteracted. The LastInteracted of a player is startInteract.
 
 The list of LeftItems is a list of objects that varies.
 
-The list of LeftItems is {old chest, invisible key, pair of magic glasses, Wall Piece Left}.
+The list of LeftItems is {old chest, invisible key, pair of magic glasses, broken stone}.
 
 The list of DownItems is a list of objects that varies.
 
-The list of DownItems is {Wall Piece Down}.
+The list of DownItems is {jagged stone}.
 
 The list of RightItems is a list of objects that varies.
 
-The list of RightItems is {suspended net, torn net, Y-shaped wooden stick, rubber band, slingshot, Wall Piece Right}.
+The list of RightItems is {suspended net, torn net, Y-shaped wooden stick, rubber band, slingshot, stone slab}.
 
 The list of UpItems is a list of objects that varies.
 
-The list of UpItems is {Wall Piece Up, stack of boulders, magical staff, lifting potion}
+The list of UpItems is {stone shard, stack of boulders, magical staff, lifting potion}
 
 The list of MiscItems is a list of objects that varies.
 
@@ -399,7 +397,7 @@ Instead of talking to Ghost:
 		say "Casper: 'Maybe something on that table can help you out.'";
 	otherwise if LastInteracted of the player is left1:
 		if left wall status of broken wall is leftAbsent:
-			if wall piece left is not obtained:
+			if broken stone is not obtained:
 				if the old chest is locked:
 					if the lockTry of the old chest is lockAttempt:
 						if invisible key is obtained:
@@ -415,24 +413,24 @@ Instead of talking to Ghost:
 					otherwise:
 						if invisible key is obtained:
 							if player has invisible key:
-								say “Casper: 'Fancy key you found, looks like it’s made out of pure gold. Maybe it unlocks a fancy chest!'”;
+								say “Casper: 'Fancy key you found, looks like it’s made out of pure gold. Maybe it [bold type]unlocks[roman type] a fancy chest!'”;
 							otherwise:
-								say “Casper: 'Didn't you come across a key already? Where did you put it? Maybe it could unlock a fancy chest!'”;
+								say “Casper: 'Didn't you come across a key already? Where did you put it? Maybe it could [bold type]unlock[roman type] a fancy chest!'”;
 						otherwise:
 							if invisible key is seen:
-								say “Casper: 'Didn't you come across a key earlier? Maybe it could unlock a fancy chest!'”;
+								say “Casper: 'Didn't you come across a key earlier? Maybe it could [bold type]unlock[roman type] a fancy chest!'”;
 							otherwise:
 								if the pair of magic glasses is obtained:
 									if the player has the pair of magic glasses:
 										if the player is wearing the pair of magic glasses:
 											say "Casper: 'Hey does that help your vision at all? Are you able to see anything new?'";
 										otherwise:
-											say "Casper: 'Fancy glasses you've got there! You should wear them! I think you'd look great in it.'";
+											say "Casper: 'Fancy glasses you've got there! You should [bold type]wear[roman type] them! I think you'd look great in it.'";
 									otherwise:
-										say "Casper: 'Where did you put those glasses from earlier? I want to see you wear them! I think you'd look great in it.'";
+										say "Casper: 'Where did you put those glasses from earlier? I want to see you [bold type]wear[roman type] them! I think you'd look great in it.'";
 								otherwise:
 									if the pair of magic glasses is seen:
-										say "Casper: 'Hey those are some fancy glasses over there. I want to see you wear them! I think you'd look great in it.'";
+										say "Casper: 'Hey those are some fancy glasses over there. I want to see you [bold type]wear[roman type] them! I think you'd look great in it.'";
 									otherwise:
 										say "Casper: 'Maybe something on that table can help you out.'";
 				otherwise:
@@ -441,17 +439,17 @@ Instead of talking to Ghost:
 					otherwise:
 						say "Casper: 'Was there nothing but a rock inside that chest all along? What a shame.'";
 			otherwise:
-				if player has wall piece left:
+				if player has broken stone:
 					if the broken wall is seen:
-						say "Casper: 'Maybe you can [bold type]place[roman type] that useless rock into that broken wall from earlier.'";
+						say "Casper: 'Maybe you can [bold type]place[roman type] that broken stone into that broken wall from earlier.'";
 					otherwise:
 						say "Casper: 'There wouldn't be a useless rock inside a locked chest for no reason. Try looking around to see if you can find a use for it.'";
 				otherwise:
 					if the broken wall is seen:
-						if wall piece left is obtained:
-							say "Casper: 'Maybe that useless rock you took from the chest fits into that broken wall from earlier. Try to [bold type]place[roman type] the rock into it.'";
+						if broken stone is obtained:
+							say "Casper: 'Maybe that useless rock you took from the chest fits into that broken wall from earlier. Try to [bold type]place[roman type] the broken stone into it.'";
 						otherwise:
-							say "Casper: 'Maybe that useless rock in the chest fits into that broken wall from earlier. Try to [bold type]place[roman type] the rock into it.'";
+							say "Casper: 'Maybe that useless rock in the chest fits into that broken wall from earlier. Try to [bold type]place[roman type] the broken stone into it.'";
 					otherwise:
 						say "Casper: 'There wouldn't be a useless rock inside a locked chest for no reason. Try looking around to see if you can find a use for it.'";
 		otherwise:
@@ -523,23 +521,23 @@ Instead of talking to Ghost:
 				otherwise: [player has obtained slingshot]
 					if player has slingshot:
 						if suspended net is seen:
-							say "Casper: 'You saw that suspended net, right? It looks really weak! I'm sure you could shoot it down using your slingshot.'";
+							say "Casper: 'You saw that suspended net, right? It looks really weak! I'm sure you could [bold type]shoot[roman type] it down using your slingshot.'";
 						otherwise:
-							say "Casper: 'Great work crafting that slingshot! You should be able to shoot down something in here... Look around!'";
+							say "Casper: 'Great work crafting that slingshot! You should be able to [bold type]shoot[roman type] down something in here... Look around!'";
 					otherwise:
 						say "Casper: 'Why'd you go through all the trouble of crafting that slingshot if you're just going to drop it?!'";
 			otherwise: [net was shot down]
 				if broken wall is seen:
-					if wall piece right is obtained:
-						if player has wall piece right:
+					if stone slab is obtained:
+						if player has stone slab:
 							say "Casper: 'Maybe you can [bold type]place[roman type] this stone slab into the broken wall from earlier...'";
 						otherwise:
 							say "Casper: 'Why'd you drop the stone slab? It looks like you might be able to [bold type]place[roman type] it in the broken wall from earlier...'";
 					otherwise:
 						say "Casper: 'Looks like something fell out of the net... Go check it out, you might be able to [bold type]place[roman type] it in the broken wall from earlier...'";
 				otherwise:
-					if wall piece right is obtained:
-						if player has wall piece right:
+					if stone slab is obtained:
+						if player has stone slab:
 							say "Casper: 'That stone slab's got to be useful for something right? Looks like it was broken off of something larger. Try looking around to see where it could belong.'";
 						otherwise:
 							say "Casper: 'Why'd you drop the stone slab? It's got to be useful for something, right?'";
@@ -569,13 +567,13 @@ Instead of talking to Ghost:
 					now the LastInteracted of the player is endInteract;	
 	otherwise if LastInteracted of the player is up1:
 		if up wall status of the broken wall is upAbsent:
-			if wall piece up is nowhere:
+			if stone shard is nowhere:
 				if the lift status of the player is normal: [player has not drank lift potion]
 					if the lifting potion is obtained:
 						if the player has the lifting potion:
-							say "Casper: 'That lifting potion you have seems like it could help you with those heavy boulders... you should drink it!'";
+							say "Casper: 'That lifting potion you have seems like it could help you with those heavy boulders... you should [bold type]drink[roman type] it!'";
 						otherwise:
-							say "Casper: 'That lifting potion you had seems like it could help you with those heavy boulders... you should get it back and then drink it!'";
+							say "Casper: 'That lifting potion you had seems like it could help you with those heavy boulders... you should get it back and then [bold type]drink[roman type] it!'";
 					otherwise if the magical staff is obtained:
 						if the player has the magical staff:
 							if the lifting potion is seen:
@@ -607,16 +605,16 @@ Instead of talking to Ghost:
 						say "Casper: 'Okay, you have the magical powers... But now you need a staff to channel those powers. I swear there was one lying around here somewhere...'";
 			otherwise:
 				if broken wall is seen:
-					if wall piece up is obtained:
-						if player has wall piece up:
+					if stone shard is obtained:
+						if player has stone shard:
 							say "Casper: 'Maybe you'll be able to [bold type]place[roman type] this stone shard into the broken wall from earlier...'";
 						otherwise:
 							say "Casper: 'Why'd you drop the stone shard? It looks like you could [bold type]place[roman type] it in the broken wall from earlier...'";
 					otherwise:
 						say "Casper: 'Looks like there was something behind the boulders... Go check it out, you might be able to [bold type]place[roman type] it in the broken wall from earlier...'";
 				otherwise:
-					if wall piece up is obtained:
-						if player has wall piece up:
+					if stone shard is obtained:
+						if player has stone shard:
 							say "Casper: 'That stone shard's got to be useful for something right? Looks like it was broken off of something larger. Try looking around to see where it could belong.'";
 						otherwise:
 							say "Casper: 'Why'd you drop the stone shard? It's got to be useful for something, right?'";
@@ -646,8 +644,8 @@ Instead of talking to Ghost:
 					now the LastInteracted of the player is endInteract;	
 	otherwise if LastInteracted of the player is down1:
 		if down wall status of broken wall is downAbsent:
-			if wall piece down is obtained:
-				if player has wall piece down:
+			if jagged stone is obtained:
+				if player has jagged stone:
 					if broken wall is seen:
 						say "Casper: 'That stone might fit into that broken wall you saw earlier. You should try to [bold type]place[roman type] it into the wall!'";
 					otherwise:
@@ -657,7 +655,7 @@ Instead of talking to Ghost:
 						say "Casper: 'That jagged stone you had earlier might fit into that broken wall you saw earlier. You should get it back and try to [bold type]place[roman type] it into the wall!'";
 					otherwise:
 						say "Casper: 'What happened to that jagged stone you picked up earlier? It looked peculiar.'";
-			otherwise if wall piece down is seen:
+			otherwise if jagged stone is seen:
 				if broken wall is seen:
 					say "Casper: 'That jagged stone over there might fit into that broken wall you saw earlier. You should try to [bold type]place[roman type] it into the wall!'";
 				otherwise:
@@ -701,66 +699,6 @@ Instead of talking to Ghost:
 				say "Casper: 'You solved the puzzle... and then DROPPED the gem?! Pick it up and get out of here!!'";
 		otherwise:
 			say "Casper: 'You solved the puzzle!! Go pick up the gem already...'";
-	[otherwise if LastInteracted of the player is misc1:
-		if blue pedestal is in Challenge Room 3:
-			say "a";
-		otherwise:
-			if wall piece down is obtained and the downComplete of Challenge Room 3 is downNotDone:
-				now the LastInteracted of the player is down1;
-				if player has wall piece down:
-					if broken wall is seen:
-						say "That stone might fit into that broken wall you saw earlier. You should try to place it into it!";
-					otherwise:
-						say "I wonder what you're planning on doing with that jagged stone. It's definitely shaped pretty weirdly though, like it broke off from somewhere.";
-				otherwise:
-					if broken wall is seen:
-						say "That jagged stone you had earlier might fit into that broken wall you saw earlier. You should get it back and try to place it into the wall!";
-					otherwise:
-						say "What happened to that jagged stone you picked up earlier? It looked peculiar.";
-			otherwise if wall piece down is seen and the downComplete of Challenge Room 3 is downNotDone:
-				now the LastInteracted of the player is down1;
-				if broken wall is seen:
-					say "That jagged stone over there might fit into that broken wall you saw earlier. You should try to place it into the wall!";
-				otherwise:
-					say "Check out that jagged stone you saw earlier. It looked peculiar.";
-			otherwise:
-				if the pair of magic glasses is obtained and the leftComplete of Challenge Room 3 is leftNotDone:
-					now the LastInteracted of the player is left1;
-					if the player has the pair of magic glasses:
-						if the player is wearing the pair of magic glasses:
-							say "Hey does that help your vision at all? Are you able to see anything new?";
-						otherwise:
-							say "Fancy glasses you've got there! You should wear them! I think you'd look great in it.";
-					otherwise:
-						say "Where did you put those glasses from earlier? I want to see you wear them! I think you'd look great in it.";
-				otherwise if the pair of magic glasses is seen and the leftComplete of Challenge Room 3 is leftNotDone:
-					now the LastInteracted of the player is left1;
-					say "Hey those are some fancy glasses over there. I want to see you wear them! I think you'd look great in it.";
-				otherwise:
-					if rubber band is obtained and the rightComplete of Challenge Room 3 is rightNotDone:
-						now the LastInteracted of the player is right1;
-						if the player has the rubber band:
-							if the Y-shaped stick is obtained:
-								if the player has the Y-shaped stick:
-									say “Have you tried crafting a slingshot using that stick and rubber band you have?”;
-								otherwise:
-							otherwise if the Y-shaped stick is seen:
-							otherwise:
-						otherwise:
-					otherwise if rubber band is seen and the rightComplete of Challenge Room 3 is rightNotDone:
-						now the LastInteracted of the player is right1;
-						if the Y-shaped stick is obtained:
-							if the player has the Y-shaped stick:
-							otherwise:
-						otherwise if the Y-shaped stick is seen:
-						otherwise:
-					otherwise:
-						if lifting potion is obtained and the upComplete of Challenge Room 3 is upNotDone:
-							now the LastInteracted of the player is up1;
-						otherwise if lifting potion is seen and the upComplete of Challenge Room 3 is upNotDone:
-							now the LastInteracted of the player is up1;
-						otherwise:
-							say "Maybe something on that table can help you out.";]
 	now Ghost is talked to;
 
 Part 5 - Endgame
@@ -781,8 +719,14 @@ Every turn:
 	if the player is in The Exit:
 		end the story;
 
-Rule for printing the locale description of the Central Room:
-	do nothing;
+Instead of dropping the red gem:
+	say "This gem looks valuable. I should probably hold on to it.";
+
+Instead of dropping the yellow gem:
+	say "This gem looks valuable. I should probably hold on to it.";
+	
+Instead of dropping the blue gem:
+	say "This gem looks valuable. I should probably hold on to it.";
 
 Section 2 - NPC
 
@@ -790,34 +734,43 @@ The Wizard is a man in the Central Room. A person has a number called timesTalke
 
 The description of the Wizard is "A typical wizard you would see in a typical RPG. You wonder if the long grey hair coming out of his pointy hat is real.".
 
+A gameCompleted is a kind of Value. The gameCompleteds are gameDone and gameNotDone.
+
+The Central Room has a gameCompleted. The gameCompleted of the Central Room is gameNotDone.
+
 Instead of talking to the Wizard:
-	if timesTalkedToWizard of the Wizard is 0:
-		if the player has the red gem and the player has the blue gem and the player has the yellow gem:
-			say “Wizard: 'Welcome to my magnificent escape room! You… already have all the gems. Well, how rude. You could have at least let me say my introduction. I worked very hard on it, you know!'”;
-		otherwise if the player has the red gem or the player has the blue gem or the player has the yellow gem:
-			say “Wizard: 'Welcome to my magnificent escape room! You have been randomly chosen from an infinite number of universes, lucky you! To escape-- oh, looks like you already have a gem! Each room contains a gem that you need in order to escape. Get all three and you’ll be free! Also, there may be people inside the rooms. Talk to them and they might say something useful!'”;
-		otherwise:
-			say “Wizard: 'Welcome to my magnificent escape room! You have been randomly chosen from an infinite number of universes, lucky you! To escape, you must go into the rooms to your south, east, and west. In each of those rooms is a gem that you must obtain. But, it’s not that simple; the gems can only be acquired through a series of puzzles. Good luck! Oh, there are also some people inside the rooms. Maybe they’ll say something useful if you talk to them.'”;
-	otherwise:
-		if the player has the red gem and the player has the blue gem and the player has the yellow gem:
-			say "Wizard: 'Congratulations, you were able to solve the escape room! You could walk out the door and go back to your mundane life, but do you really want to?'";
-		otherwise if the player has the red gem or the player has the blue gem or the player has the yellow gem:
-			if the player has the red gem:
-				if the player has the blue gem:
-					say “Wizard: 'Great, all you need is one more gem! Get the yellow gem from Challenge Room 2 and then you can be free!'”;
-				otherwise if the player has the yellow gem:
-					say “Wizard: 'Great, all you need is one more gem! Get the blue gem from Challenge Room 3 and then you can be free!'”;
-				otherwise:
-					say “Wizard: 'Great, all you need are two more gems! Get the yellow and blue gems from Challenge Room 2 and Challenge Room 3 and then you can be free!'”;
-			otherwise if the player has the blue gem:
-				 if the player has the yellow gem:
-					say “Wizard: 'Great, all you need is one more gem! Get the red gem from Challenge Room 1 and then you can be free!'”;
-				otherwise:
-					say “Wizard: 'Great, all you need are two more gems! Get the red and yellow gems from Challenge Room 1 and Challenge Room 2 and then you can be free!'”;
+	if the gameCompleted of the Central Room is gameNotDone:
+		if timesTalkedToWizard of the Wizard is 0:
+			if the player has the red gem and the player has the blue gem and the player has the yellow gem:
+				say “Wizard: 'Welcome to my magnificent escape room! You… already have all the gems. Well, how rude. You could have at least let me say my introduction. I worked very hard on it, you know!'”;
+				now the gameCompleted of the Central Room is gameDone;
+			otherwise if the player has the red gem or the player has the blue gem or the player has the yellow gem:
+				say “Wizard: 'Welcome to my magnificent escape room! You have been randomly chosen from an infinite number of universes, lucky you! To escape-- oh, looks like you already have a gem! Each room contains a gem that you need in order to escape. Get all three and you’ll be free! Also, there may be people inside the rooms. Talk to them and they might say something useful!'”;
 			otherwise:
-				say “Wizard: 'Great, all you need are two more gems! Get the red and blue gems from Challenge Room 1 and Challenge Room 3 and then you can be free!'”;
+				say “Wizard: 'Welcome to my magnificent escape room! You have been randomly chosen from an infinite number of universes, lucky you! To escape, you must go into the rooms to your south, east, and west. In each of those rooms is a gem that you must obtain. But, it’s not that simple; the gems can only be acquired through a series of puzzles. Good luck! Oh, there are also some people inside the rooms. Maybe they’ll say something useful if you talk to them.'”;
 		otherwise:
-			say “Wizard: 'Did you not hear me the first time? Go into the rooms and get the gems. There are also people inside the rooms you can talk to.'”;
+			if the player has the red gem and the player has the blue gem and the player has the yellow gem:
+				say "Wizard: 'Congratulations, you were able to solve the escape room! You could walk out the door and go back to your mundane life, but do you really want to?'";
+				now the gameCompleted of the Central Room is gameDone;
+			otherwise if the player has the red gem or the player has the blue gem or the player has the yellow gem:
+				if the player has the red gem:
+					if the player has the blue gem:
+						say “Wizard: 'Great, all you need is one more gem! Get the yellow gem from Challenge Room 2 and then you can be free!'”;
+					otherwise if the player has the yellow gem:
+						say “Wizard: 'Great, all you need is one more gem! Get the blue gem from Challenge Room 3 and then you can be free!'”;
+					otherwise:
+						say “Wizard: 'Great, all you need are two more gems! Get the yellow and blue gems from Challenge Room 2 and Challenge Room 3 and then you can be free!'”;
+				otherwise if the player has the blue gem:
+					 if the player has the yellow gem:
+						say “Wizard: 'Great, all you need is one more gem! Get the red gem from Challenge Room 1 and then you can be free!'”;
+					otherwise:
+						say “Wizard: 'Great, all you need are two more gems! Get the red and yellow gems from Challenge Room 1 and Challenge Room 2 and then you can be free!'”;
+				otherwise:
+					say “Wizard: 'Great, all you need are two more gems! Get the red and blue gems from Challenge Room 1 and Challenge Room 3 and then you can be free!'”;
+			otherwise:
+				say “Wizard: 'Did you not hear me the first time? Go into the rooms and get the gems. There are also people inside the rooms you can talk to.'”;
+	otherwise:
+		say “Wizard: 'Go through the exit already! I promise you have more important things to get to right now.'”;
 	increment timesTalkedToWizard of the Wizard;
 
 Part 6 - Custom Actions
@@ -940,38 +893,55 @@ Report dumping it:
 	if the noun is the purple potion or the noun is the suspicious potion:
 		say "The [noun] fizzled away.";
 	otherwise if the noun is the beaker:
-		if something is in the beaker:
-			say "The potion fizzled away.";
+		say "The potion fizzled away.";
 
 Section 5 - Potion Use Implementation
 
 Understand the command "use" as something new. Understand "use [something] on [something]" as using it on. Using it on is an action applying to two things.
 
 Check using it on:
-	if the noun is not the purple potion and the noun is not the suspicious potion:
-		say "You cannot use [noun] on [second noun]." instead;
+	if the noun is not the beaker:
+		if the noun is not the purple potion and the noun is not the suspicious potion:
+			say "You cannot use [noun] on [second noun]." instead;
 
 Carry out using it on:
 	if the noun is the purple potion:
 		now the purple potion is nowhere;
-		if the second noun is Stone-Encased Man:
+		if the second noun is Stone Encased Man:
 			move the red gem to the player;
 	otherwise if the noun is the suspicious potion:
 		now the suspicious potion is nowhere;
 
 Report using it on:
-	if the second noun is the Stone-Encased Man:
-		if the Stone-Encased Man is talked to:
-			if the noun is the purple potion:
-				say "The stone-dissolving potion turns the Stone-Encased Man's body back to normal.[line break]Stone-Encased Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
+	if the second noun is the Stone Encased Man:
+		if the noun is not the beaker:
+			if the Stone Encased Man is talked to:
+				if the noun is the purple potion:
+					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
+					now the printed name of the Stone Encased Man is "Stone Freed Man";
+				otherwise:
+					say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
 			otherwise:
-				say "The suspicious potion had no effect.[line break]Stone-Encased Man: '*sputters* Ah! It didn't work!'";
+				now Stone Encased Man is talked to;
+				if the noun is the purple potion:
+					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
+					now the printed name of the Stone Encased Man is "Stone Freed Man";
+				otherwise:
+					say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
 		otherwise:
-			now Stone-Encased Man is talked to;
-			if the noun is the purple potion:
-				say "The stone-dissolving potion turns the Stone-Encased Man's body back to normal.[line break]Stone-Encased Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
+			if the Stone Encased Man is talked to:
+				if the purple potion is in the beaker:
+					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
+					now the printed name of the Stone Encased Man is "Stone Freed Man";
+				otherwise:
+					say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
 			otherwise:
-				say "The suspicious potion had no effect.[line break]Stone-Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
+				now Stone Encased Man is talked to;
+				if the purple potion is in the beaker:
+					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
+					now the printed name of the Stone Encased Man is "Stone Freed Man";
+				otherwise:
+					say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
 	otherwise:
 		say "Nothing happened.";
 		
@@ -996,6 +966,7 @@ Carry out flying on:
 			now the holder of the noun is in Challenge Room 2 North;
 	otherwise if the holder of the noun is in Challenge Room 2 North:
 		now the holder of the noun is in Challenge Room 2 South;
+	now the suspicious broom is seen;
 
 Report flying on:
 	if the holder of the noun is in Challenge Room 2 North:
@@ -1017,7 +988,7 @@ Carry out shooting it with:
 	if the noun is the suspended net:
 		now the suspended net is nowhere;
 		now the torn net is in Challenge Room 3;
-		now Wall Piece Right is in Challenge Room 3;
+		now stone slab is in Challenge Room 3;
 	
 Report shooting it with:
 	if the noun is the suspended net:
@@ -1099,7 +1070,7 @@ Check lifting it with:
 Carry out lifting it with:
 	if the lift status of the player is capable:
 		if the noun is the stack of boulders:
-			now Wall Piece Up is in Challenge Room 3;
+			now stone shard is in Challenge Room 3;
 			if the rock staff status of the player is no attempt:
 				now the rock staff status of the player is tried;
 			otherwise if the rock staff status of the player is tried:
@@ -1149,25 +1120,25 @@ Understand the command "place" as something new. Understand "place [something pr
 
 Check placing it in:
 	if the second noun is the broken wall:
-		if the noun is not Wall Piece Up and the noun is not Wall Piece Down and the noun is not Wall Piece Left and the noun is not Wall Piece Right:
+		if the noun is not stone shard and the noun is not jagged stone and the noun is not broken stone and the noun is not stone slab:
 			say "The [noun] does not seem to fit in the broken wall." instead;
 	otherwise:
 		say "There is no space to place the [noun] on the [second noun]." instead;
 
 Carry out placing it in:
 	if the second noun is the broken wall:
-		if the noun is Wall Piece Up:
+		if the noun is stone shard:
 			now the up wall status of the broken wall is upPresent;
-			now Wall Piece Up is nowhere;
-		otherwise if the noun is Wall Piece Down:
+			now stone shard is nowhere;
+		otherwise if the noun is jagged stone:
 			now the down wall status of the broken wall is downPresent;
-			now Wall Piece Down is nowhere;
-		otherwise if the noun is Wall Piece Left:
+			now jagged stone is nowhere;
+		otherwise if the noun is broken stone:
 			now the left wall status of the broken wall is leftPresent;
-			now Wall Piece Left is nowhere;
-		otherwise if the noun is Wall Piece Right:
+			now broken stone is nowhere;
+		otherwise if the noun is stone slab:
 			now the right wall status of the broken wall is rightPresent;
-			now Wall Piece Right is nowhere;
+			now stone slab is nowhere;
 		if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
 			now the blue pedestal is in Challenge Room 3.
 		
@@ -1213,5 +1184,5 @@ Section 12 - Help Menu
 Understand the command "help" as something new. Understand "help" as helping. Helping is an action applying to nothing.
 
 Report helping:
-	say "Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type [bold type]help[roman type].";
+	say "Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] - Allows you to obtain a description of the room.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type [bold type]help[roman type].";
 
