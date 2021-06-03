@@ -41,7 +41,7 @@ Challenge Room 1 is a room.
 
 The description of Challenge Room 1 is "You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area."
 
-In Challenge Room 1 is a supporter called the experimentation table. On the experimentation table is a container called the potion tray. On the experimentation table is a thing called the recipe book. On the experimentation table is a container called a beaker. The carrying capacity of the beaker is 1. In Challenge Room 1 is a thing called the broken vial.
+In Challenge Room 1 is a supporter called the experimentation table. On the experimentation table is a container called the potion tray. The potion tray is fixed in place. On the experimentation table is a thing called the recipe book. The recipe book is fixed in place. On the experimentation table is a container called a beaker. The carrying capacity of the beaker is 1. In Challenge Room 1 is a thing called the broken vial. The broken vial is fixed in place.
 
 The red vial is a thing. The yellow vial is a thing. The blue vial is a thing. The white vial is a thing. The black vial is a thing. The clear vial is a thing.
 
@@ -128,7 +128,7 @@ West of Challenge Room 2 South is a room called Supply Closet.
 
 In Supply Closet is a thing called the suspicious broom.
 
-The wall torch is a thing. The man-eating vines is a thing.
+The wall torch is a thing. The man-eating vines is a thing. The man-eating vines are fixed in place.
 
 In Challenge Room 2 South is the wall torch, the vines.
 
@@ -225,7 +225,7 @@ Section 1 - Items and Descriptions
 
 East of the Central Room is a room called Challenge Room 3.
 
-Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The old chest is a container. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. Wall Piece Down is on the old table. Wall Piece Left is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. Wall Piece Right is nowhere. Wall Piece Up is nowhere. The suspended net is a thing. The torn net is a thing. The torn net is nowhere. The broken wall is a thing. The blue pedestal is a thing. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal.
+Wall Piece Left is a thing. Wall Piece Right is a thing. Wall Piece Up is a thing. Wall Piece Down is a thing. The invisible key is a thing. The old chest is a container. The old chest is fixed in place. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. The stack of boulders is fixed in place. Wall Piece Down is on the old table. Wall Piece Left is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. Wall Piece Right is nowhere. Wall Piece Up is nowhere. The suspended net is a thing. The suspended net is fixed in place. The torn net is a thing. The torn net is nowhere. The broken wall is a thing. The blue pedestal is a thing. The blue pedestal is fixed in place. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal.
 
 In Challenge Room 3 is the old table, the old chest, stack of boulders, Y-shaped wooden stick, net, magical staff, broken wall.
 
@@ -1006,6 +1006,20 @@ A person has a rock status. The rock status of a player is none.
 A person has a rock staff status. The rock staff status of a player is no attempt.
 
 Understand the command "lift" as something new. Understand "lift [something]" as lifting it. Lifting it is an action applying to one thing. Understand "lift [something] with [something preferably held]" as lifting it with. Lifting it with is an action applying to two things.
+
+Instead of taking the stack of boulders:
+	if the rock status of the player is not none:
+		if the lift status of the player is capable:
+			say "The magical aura does not seem to have made lifting the stack of boulders any easier.";
+		otherwise:
+			say "Despite your best efforts, you are unable to lift the stack of boulders.";
+		now the rock status of the player is multiple;
+	otherwise:
+		if the lift status of the player is capable:
+			say "Despite consuming the lifting potion, the stack of boulders does not seem like it will move easily.";
+		otherwise:
+			say "The stack of boulders seems to be too heavy for you to lift by hand.";
+		now the rock status of the player is first;
 
 Carry out lifting it:
 	if the noun is the stack of boulders:
