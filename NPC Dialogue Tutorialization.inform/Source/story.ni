@@ -571,9 +571,9 @@ Instead of talking to Ghost:
 				if the lift status of the player is normal: [player has not drank lift potion]
 					if the lifting potion is obtained:
 						if the player has the lifting potion:
-							say "Casper: 'That lifting potion you have seems like it could help you with those heavy boulders... you should [bold type]drink[roman type] it!'";
+							say "Casper: 'That potion you have seems like it could help you with those heavy boulders... you should [bold type]drink[roman type] it!'";
 						otherwise:
-							say "Casper: 'That lifting potion you had seems like it could help you with those heavy boulders... you should get it back and then [bold type]drink[roman type] it!'";
+							say "Casper: 'That potion you had seems like it could help you with those heavy boulders... you should get it back and then [bold type]drink[roman type] it!'";
 					otherwise if the magical staff is obtained:
 						if the player has the magical staff:
 							if the lifting potion is seen:
