@@ -38,7 +38,7 @@ The player is in the Central Room.
 Understand "grab [something]" as taking.
 
 When play begins:
-	say "Hello, and welcome to Dungeon Quest![line break][line break]Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. To bring this message back up in the future, type [bold type]help[roman type].";
+	say "Hello, and welcome to Dungeon Quest![line break][line break]Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type [bold type]help[roman type].";
 
 Part 2 - Challenge Room 1
 
@@ -63,21 +63,14 @@ Understand "stone-dissolving potion" as purple potion. The printed name of purpl
 The suspicious potion is fixed in place. The purple potion is fixed in place.
 
 Rule for printing the locale description of Challenge Room 1:
-	say "In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it."
+	say "In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it. There seems to be a human head popping out of the stone..."
 
 The description of the potion tray is "Some vials containing unknown liquids in a tray. Reminds you of potions class and how you almost failed because the teacher was a complete--";
 
 The description of the broken vial is "I can probably slip on this. Better avoid it for now."
 
 The description of the recipe book is 
-"The recipe book contains several recipes scribbled into it. [line break][line break]
-Mix these vials together to get a magical result![line break]
-Cure grey hair = black + white [line break]
-Madness potion = red + black [line break]
-Dissolve stone = blue + red [line break]
-Become invisible = yellow + blue [line break]
-??? = clear + anything [line break]
-Injury cure = black + blue";
+"The recipe book contains several recipes scribbled into it. [line break][line break]Cure grey hair: [bold type]mix[roman type] black vial with white vial[line break]Madness potion: [bold type]mix[roman type] red vial with black vial [line break]Dissolve stone: [bold type]mix[roman type] blue vial with red vial[line break]Become invisible: [bold type]mix[roman type] yellow vial with blue vial[line break]Colored water: [bold type]mix[roman type] clear vial with any vial [line break]Injury cure: [bold type]mix[roman type] black vial with blue vial";
 
 The description of the beaker is "A glass beaker used to safely mix potions. Magically enhanced to withstand whatever dangerous substances you may pour into it."
 
@@ -102,20 +95,20 @@ Instead of talking to Stone-Encased Man:
 		increment timesTalkedToAfterGettingRedGem of Stone-Encased Man;
 	otherwise if Stone-Encased Man is talked to:
 		if suspicious potion is in beaker:
-			say "Stone-Encased Man: 'No, no, no! It's not the correct potion! The right one has a… smell to it.'";
+			say "Stone-Encased Man: 'No, no, no! It's not the correct potion! The right one has a… smell to it. I don't know what that will do, but you better [bold type]dump[roman type] that quickly before something bad happens!'";
 		otherwise if purple potion is in beaker:
-			say "Stone-Encased Man: 'I think you've done it! That potion smells awful… Now hurry up and pour it on me so I can be free!'";
+			say "Stone-Encased Man: 'I think you've done it! That potion smells awful… Now hurry up and [bold type]pour[roman type] it on me so I can be free!'";
 		otherwise if the book is seen:
 			say "Stone-Encased Man: 'Well, did you find the correct recipe?'";
 		otherwise:
-			say "Stone-Encased Man: 'Didn't you hear me clearly? Look over there at the table. Do you see those vials? Mix the correct ones together into a stone-dissolving potion and pour it over me!'";
+			say "Stone-Encased Man: 'Didn't you hear me clearly? Look over there at the table. Do you see those vials? You should [bold type]mix[roman type] the correct ones together into a stone-dissolving potion and [bold type]pour[roman type] it over me!'";
 	otherwise:
 		if suspicious potion is in beaker:
 			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. Looks like you've already mixed some of the vials together to make a potion. If you can make the correct potion and pour it on me, it should turn me back to normal! The recipe book right there should tell you how!'";
 		otherwise if purple potion is in beaker:
-			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone… Wait, you've got the right potion! Quick -- pour it on me!'";
+			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone… Wait, you've got the right potion! Quick -- [bold type]pour[roman type] it on me!'";
 		otherwise if the book is seen:
-			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how. I'd reckon you've already read the book so hurry up!'";
+			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and [bold type]pour[roman type] it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how. I'd reckon you've already read the book so hurry up!'";
 		otherwise:
 			say "Stone-Encased Man: 'Urg, ah! Oh hey, didn't notice you there. Can you help me out here? I tried to make a new potion and I've gotten my entire body turned to stone! Luckily, it hasn't turned my head to stone. You see those vials on the table there? If you can make the correct potion and pour it on me, it should turn me back to normal! I don't remember how to make it, but the recipe book on the table should tell you how.'";
 	now Stone-Encased Man is talked to;
@@ -204,32 +197,32 @@ Instead of talking to Janitor:
 			say "Janitor: 'Are you deaf?! I said it’s time for you to move on to the next room!'”;
 		increment timesTalkedToAfterGettingYellowGem of Janitor;
 	otherwise if Janitor is talked to:
-		if the man-eating vines are not in Challenge Room 2 South:
+		if the man-eating vines are nowhere:
 			if Supply Closet is visited:
 				if player has the suspicious broom:
-					say "Janitor: 'That’s a Nimbus 2000 (property of Hogwarts) you found! You should be able fly across the gap no problem now that the vines are gone!'”;
+					say "Janitor: 'That’s a Nimbus 2000 (property of Hogwarts) you found! You should be able [bold type]fly[roman type] across the gap no problem now that the vines are gone!'”;
 					now the printed name of the suspicious broom is "Nimbus 2000";
 				otherwise:
 					say "Janitor: 'Well, the vines are dead, but I don’t see a way across. Did you find anything in the closet that would be helpful?'”;
 			otherwise:
 				say "Janitor: 'Well, the vines are dead, but I don’t see a way across. Maybe check in the closet?'”;
 		otherwise if player has the wall torch:
-			say "Janitor: 'Be careful around them with that torch you’re holding; the vines are really flammable, you see. One wrong move and you could burn them down along with yourself.'”;
+			say "Janitor: 'Be careful around them with that torch you’re holding; the vines are really flammable, you see. One wrong move and you could [bold type]burn[roman type] them down along with yourself.'”;
 		otherwise:
-			say "Janitor: 'Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don’t burn yourself in the process, okay?'”;
+			say "Janitor: 'Them vines are coated with oil, so if you ever do get caught, just [bold type]burn[roman type] it down! Just don’t burn yourself in the process, okay?'”;
 	otherwise:
-		if the man-eating vines are not in Challenge Room 2 South:
+		if the man-eating vines are nowhere:
 			if Supply Closet is visited:
 				if player has the suspicious broom:
-					say "Janitor: 'Hey, how are you? You shouldn’t be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there’s a trench between us and that orb over there. Maybe you can use that broom to get over it.'”;
+					say "Janitor: 'Hey, how are you? You shouldn’t be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there’s a trench between us and that orb over there. Maybe you can use that broom to [bold type]fly[roman type] over it.'”;
 				otherwise:
 					say "Janitor: 'Hey, how are you? You shouldn’t be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there’s a trench between us and that orb over there. I saw you going through the closet. Did you find anything that would be helpful?'”;
 			otherwise:
 				say "Janitor: 'Hey, how are you? You shouldn’t be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there’s a trench between us and that orb over there. Maybe there’s something useful in the closet that can help you.'”;
 		otherwise if player has the wall torch:
-			say "Janitor: 'Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Be careful around them with that torch you’re holding; they’re really flammable, you see. One wrong move and you could burn them down along with yourself.'”;
+			say "Janitor: 'Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Be careful around them with that torch you’re holding; they’re really flammable, you see. One wrong move and you could [bold type]burn[roman type] them down along with yourself.'”;
 		otherwise:
-			say “Janitor: 'Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just burn it down! Just don’t burn yourself in the process, okay?'”;
+			say “Janitor: 'Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just [bold type]burn[roman type] it down! Just don’t burn yourself in the process, okay?'”;
 	now Janitor is talked to;
 
 Part 4 - Challenge Room 3
@@ -450,15 +443,15 @@ Instead of talking to Ghost:
 			otherwise:
 				if player has wall piece left:
 					if the broken wall is seen:
-						say "Casper: 'Maybe that useless rock fits into that broken wall from earlier.'";
+						say "Casper: 'Maybe you can [bold type]place[roman type] that useless rock into that broken wall from earlier.'";
 					otherwise:
 						say "Casper: 'There wouldn't be a useless rock inside a locked chest for no reason. Try looking around to see if you can find a use for it.'";
 				otherwise:
 					if the broken wall is seen:
 						if wall piece left is obtained:
-							say "Casper: 'Maybe that useless rock you took from the chest fits into that broken wall from earlier. Try to place the rock into it.'";
+							say "Casper: 'Maybe that useless rock you took from the chest fits into that broken wall from earlier. Try to [bold type]place[roman type] the rock into it.'";
 						otherwise:
-							say "Casper: 'Maybe that useless rock in the chest fits into that broken wall from earlier. Try to place the rock into it.'";
+							say "Casper: 'Maybe that useless rock in the chest fits into that broken wall from earlier. Try to [bold type]place[roman type] the rock into it.'";
 					otherwise:
 						say "Casper: 'There wouldn't be a useless rock inside a locked chest for no reason. Try looking around to see if you can find a use for it.'";
 		otherwise:
@@ -491,36 +484,36 @@ Instead of talking to Ghost:
 						if the player has the rubber band: [has rubber band]
 							if the Y-shaped stick is obtained:
 								if the player has the Y-shaped stick:
-									say “Casper: 'Have you tried crafting a slingshot using that stick and rubber band you have?'”;
+									say “Casper: 'Have you tried [bold type]combining[roman type] that stick with rubber band you have? You might be able to make something useful, like a slingshot.'”;
 								otherwise:
-									say "Casper: 'Why'd you drop that Y-shaped stick? You could definitely craft a slingshot if you picked it back up and combined it with that rubber band you have.'";
+									say "Casper: 'Why'd you drop that Y-shaped stick? You could definitely craft a slingshot if you picked it back up and [bold type]combined[roman type] it with that rubber band you have.'";
 							otherwise if the Y-shaped stick is seen:
-								say "Casper: 'You saw the Y-shaped stick, right? You could definitely craft a slingshot if you picked it up and combined it with that rubber band you have.'"; 
+								say "Casper: 'You saw the Y-shaped stick, right? You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it with that rubber band you have.'"; 
 							otherwise:
-								say "Casper: 'There should be a stick somewhere around here... You could definitely craft a slingshot if you found it and combined it with that rubber band you have.'";
+								say "Casper: 'There should be a stick somewhere around here... You could definitely craft a slingshot if you found it and [bold type]combined[roman type] it with that rubber band you have.'";
 						otherwise: [rubber band dropped]
 							if the Y-shaped stick is obtained:
 								if the player has the Y-shaped stick:
-									say "Casper: 'Why'd you drop that rubber band? You could definitely craft a slingshot if you picked it back up and combined it with that Y-shaped stick you have.'";
+									say "Casper: 'Why'd you drop that rubber band? You could definitely craft a slingshot if you picked it back up and [bold type]combined[roman type] it with that Y-shaped stick you have.'";
 								otherwise:
 									say "Casper: 'Why'd you drop that Y-shaped stick and rubber band? You could definitely craft a slingshot if you picked them back up.'";
 							otherwise if the Y-shaped stick is seen:
-								say "Casper: 'You saw that Y-shaped stick, right? You could definitely craft a slingshot if you combined it with that rubber band you dropped.'";
+								say "Casper: 'You saw that Y-shaped stick, right? You could definitely craft a slingshot if you [bold type]combined[roman type] it with that rubber band you dropped.'";
 							otherwise:
 								say "Casper: 'Why'd you drop that rubber band? I'm sure it will be useful for something...'";
 					otherwise if rubber band is seen: [rubber band seen]
 						if the Y-shaped stick is obtained:
 							if the player has the Y-shaped stick:
-								say "Casper: 'You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and combined it with that Y-shaped stick you have.'"; 
+								say "Casper: 'You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it with that Y-shaped stick you have.'"; 
 							otherwise:
-								say "Casper: 'You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and combined it with that Y-shaped stick you dropped.'"; 
+								say "Casper: 'You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it with that Y-shaped stick you dropped.'"; 
 						otherwise if the Y-shaped stick is seen:
 							say "Casper: 'You saw that Y-shaped stick and rubber band, right? You could definitely craft a slingshot if you picked them up.'";
 						otherwise:
 							say "Casper: 'You saw that rubber band, right? I'm sure it will be useful for something...'";
 					otherwise if the Y-shaped stick is obtained:
 						if the player has the Y-shaped stick:
-							say "Casper: 'There should be a rubber band somewhere around here... You could definitely craft a slingshot if you picked it up and combined it with that Y-shaped stick you have.'";
+							say "Casper: 'There should be a rubber band somewhere around here... You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it with that Y-shaped stick you have.'";
 						otherwise:
 							say "Casper: 'Why'd you drop that Y-shaped stick? I'm sure it will be useful for something...'";
 					otherwise if the Y-shaped stick is seen:
@@ -539,13 +532,19 @@ Instead of talking to Ghost:
 				if broken wall is seen:
 					if wall piece right is obtained:
 						if player has wall piece right:
-							say "Casper: 'Maybe this oddly shaped stone will fit into the broken wall from earlier...'";
+							say "Casper: 'Maybe you can [bold type]place[roman type] this stone slab into the broken wall from earlier...'";
 						otherwise:
-							say "Casper: 'Why'd you drop the oddly shaped stone? It looks like it might fit in the broken wall from earlier...'";
+							say "Casper: 'Why'd you drop the stone slab? It looks like you might be able to [bold type]place[roman type] it in the broken wall from earlier...'";
 					otherwise:
-						say "Casper: 'Looks like something fell out of the net... Go check it out, it might fit in the broken wall from earlier...'";
+						say "Casper: 'Looks like something fell out of the net... Go check it out, you might be able to [bold type]place[roman type] it in the broken wall from earlier...'";
 				otherwise:
-					say "Casper: 'Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere...'";
+					if wall piece right is obtained:
+						if player has wall piece right:
+							say "Casper: 'That stone slab's got to be useful for something right? Looks like it was broken off of something larger. Try looking around to see where it could belong.'";
+						otherwise:
+							say "Casper: 'Why'd you drop the stone slab? It's got to be useful for something, right?'";
+					otherwise:
+						say "Casper: 'Looks like something fell out of the net... Go check it out, I'm sure it will be useful somewhere...'";
 		otherwise:
 			if rightComplete of Challenge Room 3 is rightNotDone:
 				say “Casper: 'Great, that fit perfectly!'”;
@@ -580,7 +579,7 @@ Instead of talking to Ghost:
 					otherwise if the magical staff is obtained:
 						if the player has the magical staff:
 							if the lifting potion is seen:
-								say "Casper: 'That staff won't be enough on it's own... Maybe that lifting potion will help...'";
+								say "Casper: 'That staff won't be enough on it's own... Maybe that potion will help...'";
 							otherwise:
 								say "Casper: 'That staff won't be enough on it's own... You'll need something to assist your magical powers...'";
 						otherwise:
@@ -597,7 +596,7 @@ Instead of talking to Ghost:
 					if the magical staff is obtained:
 						if the player has the magical staff:
 							if the rock staff status is no attempt:
-								say "Casper: 'You have the staff and you drank the potion, right? Looks like you should be able to lift the boulders now!'";
+								say "Casper: 'You have the staff and you drank the potion, right? Looks like you should be able to lift the boulders now! Try to [bold type]lift[roman type] it [bold type]with[roman type] the staff.'";
 							otherwise:
 								say "Casper: 'WOW! I can feel the magical energy coming off of you. With that staff and that power, you should have a better time lifting the boulders.'";
 						otherwise:
@@ -610,13 +609,19 @@ Instead of talking to Ghost:
 				if broken wall is seen:
 					if wall piece up is obtained:
 						if player has wall piece up:
-							say "Casper: 'Maybe this oddly shaped stone will fit into the broken wall from earlier...'";
+							say "Casper: 'Maybe you'll be able to [bold type]place[roman type] this stone shard into the broken wall from earlier...'";
 						otherwise:
-							say "Casper: 'Why'd you drop the oddly shaped stone? It looks like it might fit in the broken wall from earlier...'";
+							say "Casper: 'Why'd you drop the stone shard? It looks like you could [bold type]place[roman type] it in the broken wall from earlier...'";
 					otherwise:
-						say "Casper: 'Looks like there was something behind the boulders... Go check it out, it might fit in the broken wall from earlier...'";
+						say "Casper: 'Looks like there was something behind the boulders... Go check it out, you might be able to [bold type]place[roman type] it in the broken wall from earlier...'";
 				otherwise:
-					say "Casper: 'Looks like there was something behind the boulders... Go check it out, I'm sure it will be useful somewhere...'";
+					if wall piece up is obtained:
+						if player has wall piece up:
+							say "Casper: 'That stone shard's got to be useful for something right? Looks like it was broken off of something larger. Try looking around to see where it could belong.'";
+						otherwise:
+							say "Casper: 'Why'd you drop the stone shard? It's got to be useful for something, right?'";
+					otherwise:
+						say "Casper: 'Looks like there was something behind the boulders... Go check it out, I'm sure it will be useful somewhere...'";
 		otherwise:
 			if upComplete of Challenge Room 3 is upNotDone:
 				say “Casper: 'Great, that fit perfectly!'”;
@@ -644,17 +649,17 @@ Instead of talking to Ghost:
 			if wall piece down is obtained:
 				if player has wall piece down:
 					if broken wall is seen:
-						say "Casper: 'That stone might fit into that broken wall you saw earlier. You should try to place it into it!'";
+						say "Casper: 'That stone might fit into that broken wall you saw earlier. You should try to [bold type]place[roman type] it into the wall!'";
 					otherwise:
 						say "Casper: 'I wonder what you're planning on doing with that jagged stone. It's definitely shaped pretty weirdly though, like it broke off from somewhere.'";
 				otherwise:
 					if broken wall is seen:
-						say "Casper: 'That jagged stone you had earlier might fit into that broken wall you saw earlier. You should get it back and try to place it into the wall!'";
+						say "Casper: 'That jagged stone you had earlier might fit into that broken wall you saw earlier. You should get it back and try to [bold type]place[roman type] it into the wall!'";
 					otherwise:
 						say "Casper: 'What happened to that jagged stone you picked up earlier? It looked peculiar.'";
 			otherwise if wall piece down is seen:
 				if broken wall is seen:
-					say "Casper: 'That jagged stone over there might fit into that broken wall you saw earlier. You should try to place it into the wall!'";
+					say "Casper: 'That jagged stone over there might fit into that broken wall you saw earlier. You should try to [bold type]place[roman type] it into the wall!'";
 				otherwise:
 					say "Casper: 'Check out that jagged stone you saw earlier. It looked peculiar.'";
 			otherwise:
@@ -1208,5 +1213,5 @@ Section 12 - Help Menu
 Understand the command "help" as something new. Understand "help" as helping. Helping is an action applying to nothing.
 
 Report helping:
-	say "Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. To bring this message back up in the future, type [bold type]help[roman type].";
+	say "Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type [bold type]help[roman type].";
 
