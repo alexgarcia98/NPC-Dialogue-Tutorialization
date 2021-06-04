@@ -770,7 +770,7 @@ Instead of talking to the Wizard:
 				say “Wizard: 'Welcome to my magnificent escape room! You have been randomly chosen from an infinite number of universes, lucky you! To escape, you must go into the rooms to your south, east, and west. In each of those rooms is a gem that you must obtain. But, it’s not that simple; the gems can only be acquired through a series of puzzles. Good luck! Oh, there are also some people inside the rooms. Maybe they’ll say something useful if you talk to them.'”;
 		otherwise:
 			if the player has the red gem and the player has the blue gem and the player has the yellow gem:
-				say "Wizard: 'Congratulations, you were able to solve the escape room! You could walk out the door and go back to your mundane life, but do you really want to?'";
+				say "Wizard: 'Congratulations, you were able to solve the escape room! You could walk out the door to the north and go back to your mundane life, but do you really want to?'";
 				now the gameCompleted of the Central Room is gameDone;
 			otherwise if the player has the red gem or the player has the blue gem or the player has the yellow gem:
 				if the player has the red gem:
@@ -790,7 +790,7 @@ Instead of talking to the Wizard:
 			otherwise:
 				say “Wizard: 'Did you not hear me the first time? Go into the rooms and get the gems. There are also people inside the rooms you can talk to.'”;
 	otherwise:
-		say “Wizard: 'Go through the exit already! I promise you have more important things to get to right now.'”;
+		say “Wizard: 'Go north through the exit already! I promise you have more important things to get to right now.'”;
 	increment timesTalkedToWizard of the Wizard;
 
 Part 6 - Custom Actions
