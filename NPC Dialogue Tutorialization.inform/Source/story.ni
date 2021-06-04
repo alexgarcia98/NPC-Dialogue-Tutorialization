@@ -729,6 +729,8 @@ The description of the Central Room is "A rather barren room. You see a wizard a
 
 Instead of going to The Exit from the Central Room:
 	if the player has the red gem and the player has the blue gem and the player has the yellow gem:
+		if the timesTalkedToWizard of the Wizard is 0:
+			say "Wizard: 'You're just going to ignore me to the end? How rude. Go leave if that's what you want to do.'";
 		end the story;
 	otherwise:
 		say "You feel a strong force repel you away from the exit.";
