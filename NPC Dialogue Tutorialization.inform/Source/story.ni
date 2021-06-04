@@ -504,34 +504,34 @@ Instead of talking to Ghost:
 								if the player has the Y-shaped stick:
 									say “Casper: 'Have you tried [bold type]combining[roman type] that stick with rubber band you have? You might be able to make something useful, like a slingshot.'”;
 								otherwise:
-									say "Casper: 'Why'd you drop that Y-shaped stick? You could definitely craft a slingshot if you picked it back up and [bold type]combined[roman type] it with that rubber band you have.'";
+									say "Casper: 'Why'd you drop that Y-shaped stick? You could definitely craft a slingshot if you picked it back up and [bold type]combined[roman type] it [bold type]with[roman type] that rubber band you have.'";
 							otherwise if the Y-shaped stick is seen:
-								say "Casper: 'You saw the Y-shaped stick, right? You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it with that rubber band you have.'"; 
+								say "Casper: 'You saw the Y-shaped stick, right? You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it [bold type]with[roman type] that rubber band you have.'"; 
 							otherwise:
-								say "Casper: 'There should be a stick somewhere around here... You could definitely craft a slingshot if you found it and [bold type]combined[roman type] it with that rubber band you have.'";
+								say "Casper: 'There should be a stick somewhere around here... You could definitely craft a slingshot if you found it and [bold type]combined[roman type] it [bold type]with[roman type] that rubber band you have.'";
 						otherwise: [rubber band dropped]
 							if the Y-shaped stick is obtained:
 								if the player has the Y-shaped stick:
-									say "Casper: 'Why'd you drop that rubber band? You could definitely craft a slingshot if you picked it back up and [bold type]combined[roman type] it with that Y-shaped stick you have.'";
+									say "Casper: 'Why'd you drop that rubber band? You could definitely craft a slingshot if you picked it back up and [bold type]combined[roman type] it [bold type]with[roman type] that Y-shaped stick you have.'";
 								otherwise:
 									say "Casper: 'Why'd you drop that Y-shaped stick and rubber band? You could definitely craft a slingshot if you picked them back up.'";
 							otherwise if the Y-shaped stick is seen:
-								say "Casper: 'You saw that Y-shaped stick, right? You could definitely craft a slingshot if you [bold type]combined[roman type] it with that rubber band you dropped.'";
+								say "Casper: 'You saw that Y-shaped stick, right? You could definitely craft a slingshot if you [bold type]combined[roman type] it [bold type]with[roman type] that rubber band you dropped.'";
 							otherwise:
 								say "Casper: 'Why'd you drop that rubber band? I'm sure it will be useful for something...'";
 					otherwise if rubber band is seen: [rubber band seen]
 						if the Y-shaped stick is obtained:
 							if the player has the Y-shaped stick:
-								say "Casper: 'You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it with that Y-shaped stick you have.'"; 
+								say "Casper: 'You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it [bold type]with[roman type] that Y-shaped stick you have.'"; 
 							otherwise:
-								say "Casper: 'You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it with that Y-shaped stick you dropped.'"; 
+								say "Casper: 'You saw that rubber band, right? You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it [bold type]with[roman type] that Y-shaped stick you dropped.'"; 
 						otherwise if the Y-shaped stick is seen:
 							say "Casper: 'You saw that Y-shaped stick and rubber band, right? You could definitely craft a slingshot if you picked them up.'";
 						otherwise:
 							say "Casper: 'You saw that rubber band, right? I'm sure it will be useful for something...'";
 					otherwise if the Y-shaped stick is obtained:
 						if the player has the Y-shaped stick:
-							say "Casper: 'There should be a rubber band somewhere around here... You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it with that Y-shaped stick you have.'";
+							say "Casper: 'There should be a rubber band somewhere around here... You could definitely craft a slingshot if you picked it up and [bold type]combined[roman type] it [bold type]with[roman type] that Y-shaped stick you have.'";
 						otherwise:
 							say "Casper: 'Why'd you drop that Y-shaped stick? I'm sure it will be useful for something...'";
 					otherwise if the Y-shaped stick is seen:
@@ -1013,15 +1013,12 @@ Section 7 - Slingshot Implementation
 
 Understand the command "shoot" as something new. Understand "shoot [something] with [something preferably held]" as shooting it with. Shooting it with is an action applying to two things.
 
-Understand "shoot [something]" as shooting. Shooting is an action applying to one thing.
-
-Report shooting:
-	say "Try to [bold type]shoot[roman type] something [bold type]with[roman type] the [noun].";
-
 Check shooting it with:
-	if the second noun is not the slingshot:
+	if the noun is the slingshot:
+		say "Try to [bold type]shoot[roman type] [second noun] [bold type]with[roman type] the slingshot." instead;
+	otherwise if the second noun is not the slingshot:
 		say "You cannot use [second noun] to shoot things with." instead;
-		
+
 Carry out shooting it with:
 	if the noun is the suspended net:
 		now the suspended net is nowhere;
