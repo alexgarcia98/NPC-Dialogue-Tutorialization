@@ -88,6 +88,8 @@ Understand "human head" as stone encased man.
 
 Understand "head" as stone encased man.
 
+Understand "human" as stone encased man.
+
 The description of the Stone Encased Man is "[if the red gem is nowhere and the Stone Encased Man is not talked to]There is a red gem embedded in the stone. Wait, there’s a sleeping head coming out of the stone.[otherwise if the red gem is nowhere and the Stone Encased Man is talked to]It seems to be a man encased in stone. You can see a shiny red gem around where his belly-button would be.[otherwise]With the stone encasing removed, the man seems to be surprisingly well built. Perhaps he didn't get hungry while trapped in the stone."
 
 Instead of talking to Stone Encased Man:
@@ -237,7 +239,7 @@ Section 1 - Items and Descriptions
 
 East of the Central Room is a room called Challenge Room 3.
 
-The broken stone is a thing. The stone slab is a thing. The stone shard is a thing. The jagged stone is a thing. The invisible key is a thing. The old chest is a container. The old chest is fixed in place. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting potion is a thing. The lifting potion is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. The stack of boulders is fixed in place. The jagged stone is on the old table. The broken stone is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. The stone slab is nowhere. The stone shard is nowhere. The suspended net is a thing. The suspended net is fixed in place. The torn net is a thing. The torn net is nowhere. The blue pedestal is a thing. The blue pedestal is fixed in place. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal. The broken wall is a thing.
+The broken stone is a thing. The stone slab is a thing. The stone shard is a thing. The jagged stone is a thing. The invisible key is a thing. The old chest is a container. The old chest is fixed in place. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting elixir is a thing. The lifting elixir is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. The stack of boulders is fixed in place. The jagged stone is on the old table. The broken stone is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. The stone slab is nowhere. The stone shard is nowhere. The suspended net is a thing. The suspended net is fixed in place. The torn net is a thing. The torn net is nowhere. The blue pedestal is a thing. The blue pedestal is fixed in place. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal. The broken wall is a thing.
 
 In Challenge Room 3 is the old table, the old chest, stack of boulders, Y-shaped wooden stick, suspended net, magical staff, broken wall.
 
@@ -288,8 +290,8 @@ The printed name of the pair of magic glasses is "suspicious pair of glasses".
 Carry out examining a thing:
 	if the noun is pair of magic glasses:
 		now the printed name of the pair of magic glasses is "pair of magic glasses";
-	otherwise if the noun is lifting potion:
-		now the printed name of the lifting potion is "lifting potion";
+	otherwise if the noun is lifting elixir:
+		now the printed name of the lifting elixir is "lifting elixir";
 		
 The description of the pair of magic glasses is "A pair of glasses that seems to be exuding a magical aura."
 
@@ -305,11 +307,11 @@ The description of the stack of boulders is "A giant stack of boulders; it looks
 
 The description of the magical staff is "A magical staff for magical people."
 
-The printed name of the lifting potion is "strange potion".
+The printed name of the lifting elixir is "strange elixir".
 
-Understand "strange potion" as lifting potion.
+Understand "strange elixir" as lifting elixir.
 
-The description of the lifting potion is "The potion looks suspicious, but you’ve drank swamp water before, so it can’t be that bad. It's labeled 'Lifting Potion'."
+The description of the lifting elixir is "The potion looks suspicious, but you’ve drank swamp water before, so it can’t be that bad. It's labeled 'Lifting Elixir'."
 
 The description of the blue pedestal is "A rotting wooden pedestal. What is it with this room and wood?"
 
@@ -343,7 +345,7 @@ The list of RightItems is {suspended net, torn net, Y-shaped wooden stick, rubbe
 
 The list of UpItems is a list of objects that varies.
 
-The list of UpItems is {stone shard, stack of boulders, magical staff, lifting potion}
+The list of UpItems is {stone shard, stack of boulders, magical staff, lifting elixir}
 
 The list of MiscItems is a list of objects that varies.
 
@@ -581,15 +583,15 @@ Instead of talking to Ghost:
 		if up wall status of the broken wall is upAbsent:
 			if stone shard is nowhere:
 				if the lift status of the player is normal: [player has not drank lift potion]
-					if the lifting potion is obtained:
-						if the player has the lifting potion:
-							say "Casper: 'That potion you have seems like it could help you with those heavy boulders... you should [bold type]drink[roman type] it!'";
+					if the lifting elixir is obtained:
+						if the player has the lifting elixir:
+							say "Casper: 'That elixir you have seems like it could help you with those heavy boulders... you should [bold type]drink[roman type] it!'";
 						otherwise:
-							say "Casper: 'That potion you had seems like it could help you with those heavy boulders... you should get it back and then [bold type]drink[roman type] it!'";
+							say "Casper: 'That elixir you had seems like it could help you with those heavy boulders... you should get it back and then [bold type]drink[roman type] it!'";
 					otherwise if the magical staff is obtained:
 						if the player has the magical staff:
-							if the lifting potion is seen:
-								say "Casper: 'That staff won't be enough on it's own... Maybe that potion will help...'";
+							if the lifting elixir is seen:
+								say "Casper: 'That staff won't be enough on it's own... Maybe that elixir will help...'";
 							otherwise:
 								say "Casper: 'That staff won't be enough on it's own... You'll need something to assist your magical powers...'";
 						otherwise:
@@ -606,7 +608,7 @@ Instead of talking to Ghost:
 					if the magical staff is obtained:
 						if the player has the magical staff:
 							if the rock staff status is no attempt:
-								say "Casper: 'You have the staff and you drank the potion, right? Looks like you should be able to lift the boulders now! Try to [bold type]lift[roman type] it [bold type]with[roman type] the staff.'";
+								say "Casper: 'You have the staff and you drank the elixir, right? Looks like you should be able to lift the boulders now! Try to [bold type]lift[roman type] it [bold type]with[roman type] the staff.'";
 							otherwise:
 								say "Casper: 'WOW! I can feel the magical energy coming off of you. With that staff and that power, you should have a better time lifting the boulders.'";
 						otherwise:
@@ -1028,12 +1030,12 @@ A person has a lift status. The lift status of a player is normal.
 Understand the command "drink" as something new. Understand "drink [something]" as drinking it. Drinking it is an action applying to one thing.
 
 Check drinking it:
-	if the noun is not the lifting potion:
+	if the noun is not the lifting elixir:
 		say "You don't think it's a good idea to drink this." instead;
 
 Carry out drinking it:
 	now the lift status of the player is capable;
-	now the printed name of the lifting potion is "lifting potion";
+	now the printed name of the lifting elixir is "lifting elixir";
 	
 Report drinking it:
 	say "You are now exuding a strange magical aura. It feels as if you can now lift things with ease."
@@ -1059,7 +1061,7 @@ Instead of taking the stack of boulders:
 		now the rock status of the player is multiple;
 	otherwise:
 		if the lift status of the player is capable:
-			say "Despite consuming the lifting potion, the stack of boulders does not seem like it will move easily.";
+			say "Despite consuming the lifting elixir, the stack of boulders does not seem like it will move easily.";
 		otherwise:
 			say "The stack of boulders seems to be too heavy for you to lift by hand.";
 		now the rock status of the player is first;
@@ -1080,7 +1082,7 @@ Report lifting it:
 				say "Despite your best efforts, you are unable to lift the [noun].";
 		otherwise:
 			if the lift status of the player is capable:
-				say "Despite consuming the lifting potion, the [noun] does not seem like it will move easily.";
+				say "Despite consuming the lifting elixir, the [noun] does not seem like it will move easily.";
 			otherwise:
 				say "The [noun] seems to be too heavy for you to lift by hand.";
 	otherwise:
@@ -1153,17 +1155,31 @@ Carry out placing it in:
 		if the noun is stone shard:
 			now the up wall status of the broken wall is upPresent;
 			now stone shard is nowhere;
+			now the upComplete of Challenge Room 3 is upDone;
 		otherwise if the noun is jagged stone:
 			now the down wall status of the broken wall is downPresent;
 			now jagged stone is nowhere;
+			now the downComplete of Challenge Room 3 is downDone;
 		otherwise if the noun is broken stone:
 			now the left wall status of the broken wall is leftPresent;
 			now broken stone is nowhere;
+			now the leftComplete of Challenge Room 3 is leftDone;
 		otherwise if the noun is stone slab:
 			now the right wall status of the broken wall is rightPresent;
 			now stone slab is nowhere;
+			now the rightComplete of Challenge Room 3 is rightDone;
 		if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
-			now the blue pedestal is in Challenge Room 3.
+			now the blue pedestal is in Challenge Room 3;
+		if rightComplete of Challenge Room 3 is rightNotDone:
+			now the LastInteracted of the player is right1;
+		otherwise if upComplete of Challenge Room 3 is upNotDone:
+			now the LastInteracted of the player is up1;
+		otherwise if leftComplete of Challenge Room 3 is leftNotDone:
+			now the LastInteracted of the player is left1;
+		otherwise if downComplete of Challenge Room 3 is downNotDone:
+			now the LastInteracted of the player is down1;
+		otherwise:
+			now the LastInteracted of the player is endInteract;
 		
 Report placing it in:
 	if the second noun is the broken wall:
@@ -1238,8 +1254,8 @@ Instead of using the suspicious broom:
 	otherwise:
 		say "You are unable to do anything with the broom.";
 		
-Instead of using the lifting potion:
-	try drinking the lifting potion;
+Instead of using the lifting elixir:
+	try drinking the lifting elixir;
 
 Section 13 - Help Menu
 
