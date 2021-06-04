@@ -36,7 +36,7 @@ The player is in the Central Room.
 Understand "grab [something]" as taking.
 
 When play begins:
-	say "Hello, and welcome to Dungeon Quest![line break][line break]Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] - Allows you to obtain a description of the room.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type [bold type]help[roman type].";
+	say "Hello, and welcome to Dungeon Quest! To bring this message back up in the future, type [bold type]help[roman type].[line break][line break]Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] - Allows you to obtain a description of the room.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind!";
 
 Part 2 - Challenge Room 1
 
@@ -46,13 +46,13 @@ Challenge Room 1 is a room.
 
 The description of Challenge Room 1 is "You find yourself in a strange room. There is an open archway on the north side of the room, which seems to lead to an open area."
 
-In Challenge Room 1 is a supporter called the experimentation table. On the experimentation table is a container called the potion tray. The potion tray is fixed in place. On the experimentation table is a thing called the recipe book. The recipe book is fixed in place. On the experimentation table is a container called a beaker. The carrying capacity of the beaker is 1. In Challenge Room 1 is a thing called the broken vial. The broken vial is fixed in place.
+In Challenge Room 1 is a supporter called the experimentation table. On the experimentation table is a container called the tray. The tray is fixed in place. On the experimentation table is a thing called the recipe book. The recipe book is fixed in place. On the experimentation table is a container called a beaker. The carrying capacity of the beaker is 1. In Challenge Room 1 is a thing called the broken vial. The broken vial is fixed in place.
 
 The red vial is a thing. The yellow vial is a thing. The blue vial is a thing. The white vial is a thing. The black vial is a thing. The clear vial is a thing.
 
 Understand "red potion" as red vial. Understand "yellow potion" as yellow vial. Understand "blue potion" as blue vial. Understand "white potion" as white vial. Understand "black potion" as black vial. Understand "clear potion" as clear vial.
 
-In the potion tray is the red vial, the yellow vial, the blue vial, the white vial, the black vial, the clear vial. 
+In the tray is the red vial, the yellow vial, the blue vial, the white vial, the black vial, the clear vial. 
 
 The purple potion is a thing. The purple potion is nowhere. The suspicious potion is a thing. The suspicious potion is nowhere. The red gem is a thing. The red gem is nowhere.
 
@@ -63,7 +63,7 @@ The suspicious potion is fixed in place. The purple potion is fixed in place.
 Rule for printing the locale description of Challenge Room 1:
 	say "In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it. There seems to be a human head popping out of the stone..."
 
-The description of the potion tray is "Some vials containing unknown liquids in a tray. Reminds you of potions class and how you almost failed because the teacher was a complete--";
+The description of the tray is "Some vials containing unknown liquids in a tray. Reminds you of potions class and how you almost failed because the teacher was a complete--";
 
 The description of the broken vial is "I can probably slip on this. Better avoid it for now."
 
@@ -83,6 +83,10 @@ Stone Encased Man is a man in Challenge Room 1. A person can be talked to or not
 Understand "stone encasing" as Stone Encased Man.
 
 Understand "Stone Freed Man" as Stone Encased Man.
+
+Understand "human head" as stone encased man.
+
+Understand "head" as stone encased man.
 
 The description of the Stone Encased Man is "[if the red gem is nowhere and the Stone Encased Man is not talked to]There is a red gem embedded in the stone. Wait, there’s a sleeping head coming out of the stone.[otherwise if the red gem is nowhere and the Stone Encased Man is talked to]It seems to be a man encased in stone. You can see a shiny red gem around where his belly-button would be.[otherwise]With the stone encasing removed, the man seems to be surprisingly well built. Perhaps he didn't get hungry while trapped in the stone."
 
@@ -131,9 +135,9 @@ West of Challenge Room 2 South is a room called Supply Closet.
 
 In Supply Closet is a thing called the suspicious broom.
 
-The wall torch is a thing. The man-eating vines is a thing. The man-eating vines are fixed in place.
+The torch is a thing. The man-eating vines is a thing. The man-eating vines are fixed in place.
 
-In Challenge Room 2 South is the wall torch, the vines.
+In Challenge Room 2 South is the torch, the vines.
 
 The description of the yellow gem is "[if yellow gem is on pedestal]The gem that you need from this room. It’s on a nice looking pedestal. You wonder if you could also take the pedestal with you.[otherwise]The yellow gem that you need to escape. It's vibrancy reminds you of the sun."
 
@@ -141,7 +145,7 @@ The description of the pedestal is "It's very detailed and covered in gold. You 
 
 The description of the man-eating vines is "They’re vines and they eat men. A monstrosity created in the name of science (and probably some ugly deity)."
 
-The description of the wall torch is "Your eyes are drawn to its flames. It excites you with the possibility of burning. You look away before you start manically laughing."
+The description of the torch is "Your eyes are drawn to its flames. It excites you with the possibility of burning. You look away before you start manically laughing."
 
 The description of the suspicious broom is "On the broom is a metal tag. It reads, 'Nimbus 2000 (property of Hogwarts).' It’s an older model, so nobody will miss it if you take it."
 
@@ -208,7 +212,7 @@ Instead of talking to Janitor:
 					say "Janitor: 'Well, the vines are dead, but I don’t see a way across. Did you find anything in the closet that would be helpful?'”;
 			otherwise:
 				say "Janitor: 'Well, the vines are dead, but I don’t see a way across. Maybe check in the closet?'”;
-		otherwise if player has the wall torch:
+		otherwise if player has the torch:
 			say "Janitor: 'Be careful around them with that torch you’re holding; the vines are really flammable, you see. One wrong move and you could [bold type]burn[roman type] them down along with yourself.'”;
 		otherwise:
 			say "Janitor: 'Them vines are coated with oil, so if you ever do get caught, just [bold type]burn[roman type] it down! Just don’t burn yourself in the process, okay?'”;
@@ -221,7 +225,7 @@ Instead of talking to Janitor:
 					say "Janitor: 'Hey, how are you? You shouldn’t be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there’s a trench between us and that orb over there. I saw you going through the closet. Did you find anything that would be helpful?'”;
 			otherwise:
 				say "Janitor: 'Hey, how are you? You shouldn’t be wondering around here. Well, not that the vines are gone, I guess you can look around if you want to. Looks like there’s a trench between us and that orb over there. Maybe there’s something useful in the closet that can help you.'”;
-		otherwise if player has the wall torch:
+		otherwise if player has the torch:
 			say "Janitor: 'Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Be careful around them with that torch you’re holding; they’re really flammable, you see. One wrong move and you could [bold type]burn[roman type] them down along with yourself.'”;
 		otherwise:
 			say “Janitor: 'Hey, how are you? You shouldn’t be wondering around here. You see those vines? Those be man-eating vines. Nasty little things; I have to keep them happy with some meat from time to time and let me tell you, they make a horrible mess. Be careful around them if you ever see one out in the jungle. Them vines are coated with oil, so if you ever do get caught, just [bold type]burn[roman type] it down! Just don’t burn yourself in the process, okay?'”;
@@ -266,6 +270,14 @@ Instead of unlocking the old chest with the invisible key:
 Understand "shiny key" as invisible key;
 
 Understand "gold key" as invisible key;
+
+Understand "boulder" as stack of boulders;
+
+Understand "hook" as suspended net;
+
+Understand "wooden hook" as suspended net;
+
+Understand "rotting wooden hook" as suspended net;
 
 The description of the invisible key is "A shiny key that dazzles you with how shiny it is."
 
@@ -897,56 +909,67 @@ Report dumping it:
 
 Section 5 - Potion Use Implementation
 
-Understand the command "use" as something new. Understand "use [something] on [something]" as using it on. Using it on is an action applying to two things.
+Understand the command "pour" as something new. Understand "pour [something] on [something]" as pouring it on. Pouring it on is an action applying to two thing.
 
-Check using it on:
+PotionType is a kind of Value. The PotionTypes are purpleType and susType.
+
+A beaker has a PotionType.
+
+Check pouring it on:
 	if the noun is not the beaker:
 		if the noun is not the purple potion and the noun is not the suspicious potion:
 			say "You cannot use [noun] on [second noun]." instead;
+	if the second noun is not the stone encased man:
+		say "Nothing happened. The potion fizzled away." instead;
 
-Carry out using it on:
-	if the noun is the purple potion:
-		now the purple potion is nowhere;
-		if the second noun is Stone Encased Man:
-			move the red gem to the player;
-	otherwise if the noun is the suspicious potion:
-		now the suspicious potion is nowhere;
-
-Report using it on:
-	if the second noun is the Stone Encased Man:
-		if the noun is not the beaker:
-			if the Stone Encased Man is talked to:
-				if the noun is the purple potion:
-					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
-					now the printed name of the Stone Encased Man is "Stone Freed Man";
-				otherwise:
-					say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
-			otherwise:
-				now Stone Encased Man is talked to;
-				if the noun is the purple potion:
-					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
-					now the printed name of the Stone Encased Man is "Stone Freed Man";
-				otherwise:
-					say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
-		otherwise:
-			if the Stone Encased Man is talked to:
-				if the purple potion is in the beaker:
-					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
-					now the printed name of the Stone Encased Man is "Stone Freed Man";
-				otherwise:
-					say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
-			otherwise:
-				now Stone Encased Man is talked to;
-				if the purple potion is in the beaker:
-					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
-					now the printed name of the Stone Encased Man is "Stone Freed Man";
-				otherwise:
-					say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
+Carry out pouring it on:
+	if the noun is not the beaker:
+		if the noun is the purple potion:
+			now the purple potion is nowhere;
+			if the second noun is Stone Encased Man:
+				move the red gem to the player;
+		otherwise if the noun is the suspicious potion:
+			now the suspicious potion is nowhere;
 	otherwise:
-		say "Nothing happened.";
-		
-Understand the command "pour" as something new. Understand "pour [something] on [something]" as using it on.
+		if the purple potion is not nowhere:
+			now the purple potion is nowhere;
+			now the PotionType of the beaker is purpleType;
+			if the second noun is Stone Encased Man:
+				move the red gem to the player;
+		otherwise if the suspicious potion is not nowhere:
+			now the suspicious potion is nowhere;
+			now the PotionType of the beaker is susType;
 
+Report pouring it on:
+	if the noun is not the beaker:
+		if the Stone Encased Man is talked to:
+			if the noun is the purple potion:
+				say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
+				now the printed name of the Stone Encased Man is "Stone Freed Man";
+			otherwise:
+				say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
+		otherwise:
+			now Stone Encased Man is talked to;
+			if the noun is the purple potion:
+				say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
+				now the printed name of the Stone Encased Man is "Stone Freed Man";
+			otherwise:
+				say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
+	otherwise:
+		if the Stone Encased Man is talked to:
+			if the PotionType of the beaker is purpleType:
+				say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
+				now the printed name of the Stone Encased Man is "Stone Freed Man";
+			otherwise:
+				say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
+		otherwise:
+			now Stone Encased Man is talked to;
+			if the PotionType of the beaker is purpleType:
+				say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
+				now the printed name of the Stone Encased Man is "Stone Freed Man";
+			otherwise:
+				say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
+		
 Section 6 - Broom Flying Implementation
 
 Understand the command "fly" as something new. Understand "fly on [something]" as flying on. Flying on is an action applying to one thing.
@@ -1179,7 +1202,46 @@ After taking off the pair of magic glasses:
 		if the player does not have the invisible key:
 			say "The key seems to have disappeared from sight."
 			
-Section 12 - Help Menu
+Section 12 - Use Overload
+
+Understand the command "use" as something new. Understand "use [something] on [something]" as using it on. Using it on is an action applying to two things.
+
+Understand "use [something]" as using. Using is an action applying to one thing.
+
+Report using it on:
+	say "You cannot use [noun] on [second noun].";
+	
+Report using:
+	say "You are unable to do anything with the [noun]";
+
+Instead of using the slingshot on something:
+	try shooting the second noun with the slingshot;
+	
+Instead of using the torch on something:
+	try igniting the second noun with the torch;
+	
+Instead of using the purple potion on something:
+	try pouring the purple potion on the second noun;
+	
+Instead of using the suspicious potion on something:
+	try pouring the suspicious potion on the second noun;
+	
+Instead of using the beaker on something:
+	try pouring the beaker on the second noun;
+
+Instead of using the invisible key on something:
+	try unlocking the second noun with the invisible key;
+
+Instead of using the suspicious broom:
+	if the broom is seen:
+		try flying on the broom;
+	otherwise:
+		say "You are unable to do anything with the broom.";
+		
+Instead of using the lifting potion:
+	try drinking the lifting potion;
+
+Section 13 - Help Menu
 
 Understand the command "help" as something new. Understand "help" as helping. Helping is an action applying to nothing.
 
