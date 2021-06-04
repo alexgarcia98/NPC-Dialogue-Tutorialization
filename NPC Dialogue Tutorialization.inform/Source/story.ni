@@ -58,8 +58,6 @@ The purple potion is a thing. The purple potion is nowhere. The suspicious potio
 
 Understand "stone-dissolving potion" as purple potion. The printed name of purple potion is "stone-dissolving potion".
 
-The suspicious potion is fixed in place. The purple potion is fixed in place.
-
 Rule for printing the locale description of Challenge Room 1:
 	say "In this room, you see a table with a tray on it. Inside the tray are vials containing red, yellow, blue, black, white, and clear potions. Also on the table is a beaker and a recipe book. To the right is a stone encasing with a broken vial on the floor near it. There seems to be a human head popping out of the stone..."
 
@@ -76,6 +74,12 @@ The description of the red gem is "The gem that you need to obtain from this roo
 
 North of Challenge Room 1 is a room called Central Room.
 
+Instead of taking the purple potion:
+	say "I better avoid touching this directly.";
+	
+Instead of taking the suspicious potion:
+	say "I better avoid touching this directly.";
+	
 Section 2 - NPC
 
 Stone Encased Man is a man in Challenge Room 1. A person can be talked to or not talked to. A person is usually not talked to. A person has a number called timesTalkedToAfterGettingRedGem.
