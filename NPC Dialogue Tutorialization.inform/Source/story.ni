@@ -36,7 +36,7 @@ The player is in the Central Room.
 Understand "grab [something]" as taking.
 
 When play begins:
-	say "Hello, and welcome to Dungeon Quest! To bring this message back up in the future, type [bold type]help[roman type].[line break][line break]Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] - Allows you to obtain a description of the room.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind!";
+	say "Hello, and welcome to Dungeon Quest! To bring this message back up in the future, type [bold type]help[roman type].[line break][line break]You are stuck in a dungeon and need to escape! Collecting the three gems found in the various rooms are the key to leaving this place. Talk to anyone that you meet along the way to get advice.[line break][line break]Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] - Allows you to obtain a description of the room.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind!";
 
 Part 2 - Challenge Room 1
 
@@ -155,6 +155,8 @@ The description of the torch is "Your eyes are drawn to its flames. It excites y
 
 The description of the suspicious broom is "On the broom is a metal tag. It reads, 'Nimbus 2000 (property of Hogwarts).' It’s an older model, so nobody will miss it if you take it."
 
+Understand "torches" as torch.
+
 Carry out examining a thing:
 	If the noun is suspicious broom:
 		now the printed name of the suspicious broom is "Nimbus 2000".
@@ -221,7 +223,7 @@ Instead of talking to Janitor:
 		otherwise if player has the torch:
 			say "Janitor: 'Be careful around them with that torch you’re holding; the vines are really flammable, you see. One wrong move and you could [bold type]burn[roman type] them down along with yourself.'”;
 		otherwise:
-			say "Janitor: 'Them vines are coated with oil, so if you ever do get caught, just [bold type]burn[roman type] it down! Just don’t burn yourself in the process, okay?'”;
+			say "Janitor: 'Them vines are coated with oil, so if you ever do get caught, just [bold type]burn[roman type] it down! Just don’t burn yourself in the process, okay? One of them torches would probably do it in a cinch.'”;
 	otherwise:
 		if the man-eating vines are nowhere:
 			if Supply Closet is visited:
@@ -1316,5 +1318,5 @@ Section 13 - Help Menu
 Understand the command "help" as something new. Understand "help" as helping. Helping is an action applying to nothing.
 
 Report helping:
-	say "Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] - Allows you to obtain a description of the room.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type [bold type]help[roman type].";
+	say "You are stuck in a dungeon and need to escape! Collecting the three gems found in the various rooms are the key to leaving this place. Talk to anyone that you meet along the way to get advice.[line break][line break]Here are some commands to get you started.[line break][bold type]go[roman type] [bracket]cardinal direction[close bracket] - Allows you to travel to a room in the specified cardinal direction.[line break][bold type]look[roman type] - Allows you to obtain a description of the room.[line break][bold type]look[roman type] at [bracket]something[close bracket] - Allows you to examine something more closely.[line break][bold type]take[roman type] [bracket]something[close bracket] - Allows you to put an item into your inventory.[line break][bold type]inventory[roman type] - Allows you to view the items in your possession.[line break][bold type]talk[roman type] to [bracket]someone[close bracket] - Allows you to speak with a non-playable character.[line break][line break]There are other supported actions that you will come across during the game. Try out anything that comes to mind! To bring this message back up in the future, type [bold type]help[roman type].";
 
