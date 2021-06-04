@@ -264,7 +264,7 @@ The description of stone shard is "[if the broken wall is seen]An oddly shaped p
 
 The description of jagged stone is "[if the broken wall is seen]An oddly shaped piece of stone. It looks like it may fit in the broken wall.[otherwise]A piece of stone that appears to have broken off from somewhere."
 
-The description of the broken wall is "A wall that appears to have several holes in it. It looks like there are four places that something may fit into."
+The description of the broken wall is "[if the numberOfSpaces of the broken wall is 4]A wall that appears to have several holes in it. It looks like there are four places that something may fit into.[otherwise if the numberOfSpaces of the broken wall is 3]A wall that appears to have several holes in it. It looks like there are three places that something may fit into.[otherwise if the numberOfSpaces of the broken wall is 2]A wall that appears to have several holes in it. It looks like there are two places that something may fit into.[otherwise if the numberOfSpaces of the broken wall is 1]A wall that appears to have several holes in it. It looks like there is one place that something may fit into.[otherwise]A wall that has been filled in with rocks that you found around this room."
 
 The description of the old chest is "An old chest that looks like it might contain a pirate’s treasure."
 
@@ -1145,6 +1145,8 @@ The broken wall has an left wall status. The left wall status of the broken wall
 
 The broken wall has an right wall status. The right wall status of the broken wall is rightAbsent.
 
+The broken wall has a number called numberOfSpaces. The numberOfSpaces of the broken wall is 4.
+
 Understand the command "place" as something new. Understand "place [something preferably held] in [something]" as placing it in. Placing it in is an action applying to two things. Understand "place [something preferably held] into [something]" as placing it in.
 
 Check placing it in:
@@ -1184,6 +1186,7 @@ Carry out placing it in:
 			now the LastInteracted of the player is down1;
 		otherwise:
 			now the LastInteracted of the player is endInteract;
+		decrement numberOfSpaces of the broken wall;
 		
 Report placing it in:
 	if the second noun is the broken wall:
