@@ -1011,6 +1011,11 @@ Section 7 - Slingshot Implementation
 
 Understand the command "shoot" as something new. Understand "shoot [something] with [something preferably held]" as shooting it with. Shooting it with is an action applying to two things.
 
+Understand "shoot [something]" as shooting. Shooting is an action applying to one thing.
+
+Report shooting:
+	say "Try to [bold type]shoot[roman type] something [bold type]with[roman type] the [noun].";
+
 Check shooting it with:
 	if the second noun is not the slingshot:
 		say "You cannot use [second noun] to shoot things with." instead;
@@ -1151,6 +1156,11 @@ The broken wall has a number called numberOfSpaces. The numberOfSpaces of the br
 
 Understand the command "place" as something new. Understand "place [something preferably held] in [something]" as placing it in. Placing it in is an action applying to two things. Understand "place [something preferably held] into [something]" as placing it in.
 
+Understand the command "fix" as something new. Understand "fix [something preferably held] with [something]" as fixing it with. Fixing it with is an action applying to two things.
+
+Instead of fixing something with something:
+	try placing the second noun in the noun;
+
 Check placing it in:
 	if the second noun is the broken wall:
 		if the noun is not stone shard and the noun is not jagged stone and the noun is not broken stone and the noun is not stone slab:
@@ -1196,6 +1206,8 @@ Report placing it in:
 		if the up wall status of the broken wall is upPresent and the down wall status of the broken wall is downPresent and the left wall status of the broken wall is leftPresent and the right wall status of the broken wall is rightPresent:
 			say "With that last piece, you hear a strange sound behind you. You see a pedestal rising up from the ground, holding a blue gem.";
 
+
+
 Section 11 - Magic Glasses and Invisible Key
 
 KeyVisibility is a kind of value. The KeyVisibilities are keyVisible and keyInvisible.
@@ -1237,7 +1249,7 @@ Report using it on:
 	say "You cannot use [noun] on [second noun].";
 	
 Report using:
-	say "You are unable to do anything with the [noun]";
+	say "You are unable to do anything with the [noun].";
 
 Instead of using the slingshot on something:
 	try shooting the second noun with the slingshot;
@@ -1265,6 +1277,39 @@ Instead of using the suspicious broom:
 		
 Instead of using the lifting elixir:
 	try drinking the lifting elixir;
+	
+Instead of using the glasses:
+	try wearing the glasses;
+	
+Instead of using the slingshot:
+	say "Try to [bold type]shoot[roman type] something [bold type]with[roman type] the slingshot.";
+	
+Instead of using the invisible key:
+	say "Try to [bold type]unlock[roman type] something [bold type]with[roman type] the invisible key.";
+
+Instead of using the jagged stone:
+	say "Try to [bold type]place[roman type] the jagged stone [bold type]in[roman type] something."
+	
+Instead of using the stone slab:
+	say "Try to [bold type]place[roman type] the stone slab [bold type]in[roman type] something."
+	
+Instead of using the broken stone:
+	say "Try to [bold type]place[roman type] the broken stone [bold type]in[roman type] something."
+	
+Instead of using the stone shard:
+	say "Try to [bold type]place[roman type] the stone shard [bold type]in[roman type] something."
+	
+Instead of using the jagged stone on something:
+	try placing the jagged stone in the second noun;
+	
+Instead of using the stone slab on something:
+	try placing the jagged stone in the second noun;
+	
+Instead of using the stone shard on something:
+	try placing the stone shard in the second noun;
+	
+Instead of using the broken stone on something:
+	try placing the broken stone in the second noun;
 
 Section 13 - Help Menu
 
