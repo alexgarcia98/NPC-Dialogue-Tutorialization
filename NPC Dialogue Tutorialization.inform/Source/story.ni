@@ -245,7 +245,7 @@ Section 1 - Items and Descriptions
 
 East of the Central Room is a room called Challenge Room 3.
 
-The broken stone is a thing. The stone slab is a thing. The stone shard is a thing. The jagged stone is a thing. The invisible key is a thing. The old chest is a container. The old chest is fixed in place. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting elixir is a thing. The lifting elixir is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. The stack of boulders is fixed in place. The jagged stone is on the old table. The broken stone is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. The stone slab is nowhere. The stone shard is nowhere. The suspended net is a thing. The suspended net is fixed in place. The torn net is a thing. The torn net is nowhere. The blue pedestal is a thing. The blue pedestal is fixed in place. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal. The broken wall is a thing.
+The broken stone is a thing. The stone slab is a thing. The stone shard is a thing. The jagged stone is a thing. The invisible key is a thing. The old chest is a container. The old chest is fixed in place. The old chest is lockable and locked. The matching key of old chest is the invisible key. The pair of magic glasses is a thing. The pair of magic glasses is wearable. The old table is a supporter. The rubber band is a thing. The rubber band is on the old table. The invisible key is nowhere. The pair of magic glasses is on the old table. The lifting elixir is a thing. The lifting elixir is on the old table. The Y-shaped wooden stick is a thing. The stack of boulders is a thing. The stack of boulders is fixed in place. The jagged stone is on the old table. The broken stone is in the old chest. The magical staff is a thing. The slingshot is a thing. The slingshot is nowhere. The stone slab is nowhere. The stone shard is nowhere. The suspended net is a thing. The suspended net is fixed in place. The torn net is a thing. The torn net is nowhere. The blue pedestal is a thing. The blue pedestal is fixed in place. The blue pedestal is nowhere. The blue gem is a thing. The blue gem is on the blue pedestal. The broken wall is a thing. The broken wall is fixed in place.
 
 In Challenge Room 3 is the old table, the old chest, stack of boulders, Y-shaped wooden stick, suspended net, magical staff, broken wall.
 
@@ -929,8 +929,6 @@ Check pouring it on:
 	if the noun is not the beaker:
 		if the noun is not the purple potion and the noun is not the suspicious potion:
 			say "You cannot use [noun] on [second noun]." instead;
-	if the second noun is not the stone encased man:
-		say "Nothing happened. The potion fizzled away." instead;
 
 Carry out pouring it on:
 	if the noun is not the beaker:
@@ -951,34 +949,37 @@ Carry out pouring it on:
 			now the PotionType of the beaker is susType;
 
 Report pouring it on:
-	if the noun is not the beaker:
-		if the Stone Encased Man is talked to:
-			if the noun is the purple potion:
-				say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
-				now the printed name of the Stone Encased Man is "Stone Freed Man";
+	if the second noun is the stone encased man:
+		if the noun is not the beaker:
+			if the Stone Encased Man is talked to:
+				if the noun is the purple potion:
+					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
+					now the printed name of the Stone Encased Man is "Stone Freed Man";
+				otherwise:
+					say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
 			otherwise:
-				say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
+				now Stone Encased Man is talked to;
+				if the noun is the purple potion:
+					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
+					now the printed name of the Stone Encased Man is "Stone Freed Man";
+				otherwise:
+					say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
 		otherwise:
-			now Stone Encased Man is talked to;
-			if the noun is the purple potion:
-				say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
-				now the printed name of the Stone Encased Man is "Stone Freed Man";
+			if the Stone Encased Man is talked to:
+				if the PotionType of the beaker is purpleType:
+					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
+					now the printed name of the Stone Encased Man is "Stone Freed Man";
+				otherwise:
+					say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
 			otherwise:
-				say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
+				now Stone Encased Man is talked to;
+				if the PotionType of the beaker is purpleType:
+					say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
+					now the printed name of the Stone Encased Man is "Stone Freed Man";
+				otherwise:
+					say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
 	otherwise:
-		if the Stone Encased Man is talked to:
-			if the PotionType of the beaker is purpleType:
-				say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'That seems to have done the trick. Thank you for helping me out! It looks like a valuable gem fell out of the rock, here you go.'[line break]You received the red gem.";
-				now the printed name of the Stone Encased Man is "Stone Freed Man";
-			otherwise:
-				say "The suspicious potion had no effect.[line break]Stone Encased Man: '*sputters* Ah! It didn't work!'";
-		otherwise:
-			now Stone Encased Man is talked to;
-			if the PotionType of the beaker is purpleType:
-				say "The stone-dissolving potion turns the Stone Encased Man's body back to normal.[line break]Stone Freed Man: 'AH! What are you doing?! Wait… I'm free! Thank you! But I would've preferred if you had given me a warning first.'[line break]The red gem, freed from the stone encasing, falls to the ground. You pick up the red gem.";
-				now the printed name of the Stone Encased Man is "Stone Freed Man";
-			otherwise:
-				say "The suspicious potion had no effect.[line break]Stone Encased Man: 'AH! What are you doing?! I… Were you trying to help me? I guess I should be grateful, but you've got the wrong potion. You need to pour the correct potion on me to release me. The recipe book on the table there should point you in the right direction.'";
+		say "Nothing happened. The potion fizzled away.";
 		
 Section 6 - Broom Flying Implementation
 
@@ -1054,7 +1055,7 @@ Section 9 - Lifting Implementation
 
 Rock status is a kind of value. The rock statuses are none, first, multiple.
 
-Rock staff status is a kind of value. The rock staff statuses are no attempt, tried, tried again, and successful.
+Rock staff status is a kind of value. The rock staff statuses are no attempt, tried, tried again, successful, successful1, successful2.
 
 A person has a rock status. The rock status of a player is none.
 
@@ -1105,11 +1106,17 @@ Check lifting it with:
 Carry out lifting it with:
 	if the lift status of the player is capable:
 		if the noun is the stack of boulders:
-			now stone shard is in Challenge Room 3;
 			if the rock staff status of the player is no attempt:
-				now the rock staff status of the player is tried;
-			otherwise if the rock staff status of the player is tried:
 				now the rock staff status of the player is successful;
+				now stone shard is in Challenge Room 3;
+			otherwise if the rock staff status of the player is tried:
+				now the rock staff status of the player is successful1;
+				now stone shard is in Challenge Room 3;
+			otherwise if the rock staff status of the player is tried again:
+				now the rock staff status of the player is successful1;
+				now stone shard is in Challenge Room 3;
+			otherwise:
+				now the rock staff status of the player is successful2;
 		otherwise:
 			if the rock staff status of the player is no attempt:
 				now the rock staff status of the player is tried;
@@ -1118,12 +1125,14 @@ Carry out lifting it with:
 			
 Report lifting it with:
 	if the lift status of the player is capable:
-		if the rock staff status of the player is tried:
+		if the rock staff status of the player is successful:
 			if the noun is the stack of boulders:
 				say "You channeled your newfound aura into the staff. To your surprise, the [noun] began to float in the air. Behind the [noun] was a stone shard. You moved the [noun] to the side, allowing access to the stone shard.";
 			otherwise:
 				say "You channeled your newfound aura into the staff. To your surprise, the [noun] began to float in the air. However you found nothing interesting. You decided to put the [noun] back down.";
-		otherwise if the rock staff status of the player is tried again:
+		otherwise if the rock staff status of the player is tried:
+			say "You channeled your newfound aura into the staff. To your surprise, the [noun] began to float in the air. However you found nothing interesting. You decided to put the [noun] back down.";
+		otherwise if the rock staff status of the player is successful1:
 			if the noun is the stack of boulders:
 				say "The [noun] began to float in the air. Behind the [noun] was a stone shard. You moved the [noun] to the side, allowing access to the stone shard.";
 			otherwise:
